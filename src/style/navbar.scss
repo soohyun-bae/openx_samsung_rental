@@ -41,7 +41,8 @@ nav.navbar {
 
 nav.navbar.scrolled {
   background-image: none;
-  background: linear-gradient(180deg, white 0%, white 80%, transparent 100%);
+  // background: linear-gradient(180deg, white 0%, white 80%, transparent 100%);
+  background-color: rgba(255, 255, 255, 0.63);
   padding: 20px 93px;
   // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
