@@ -1,0 +1,26 @@
+@import "./variables.scss";
+
+.en-title {
+  @include text-sm-semibold;
+  color: $dark-blue;
+}
+
+.ko-title {
+  @include text-xl-bold;
+  background: linear-gradient(90deg, #0d1b3e 0%, $dark-blue 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.description {
+  @include text-lg-regular;
+  color: $light-black;
+}
+
+.section-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  text-align: center;
+}

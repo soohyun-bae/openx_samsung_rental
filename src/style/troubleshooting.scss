@@ -1,0 +1,108 @@
+@import "_variables.scss";
+
+.troubleshooting-section {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  padding: 180px 0;
+}
+
+// card
+.first-card-title {
+  @include text-xs-regular;
+  padding: 6px 35px;
+  background-color: $light-black;
+  width: max-content;
+  border-radius: 6px;
+  color: white;
+}
+
+.second-card-title {
+  @include text-xs-regular;
+  padding: 6px 35px;
+  background-color: $dark-blue;
+  width: max-content;
+  border-radius: 6px;
+  color: white;
+}
+
+.first-contents-container {
+  border: 1px solid $border-gray;
+  background-color: $light-gray;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 581.44px;
+  padding: 57px 180px;
+  @include text-xs-regular;
+  border-radius: 12px;
+  color: $light-black;
+  position: relative;
+}
+
+.second-contents-container {
+  border: 1px solid $border-gray;
+  background-color: white;
+  padding: 57px 122px;
+  display: flex;
+  flex-direction: column;
+  width: 581.44px;
+  gap: 24px;
+  @include text-lg-semibold;
+  border-radius: 12px;
+  color: $light-black;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 58px;
+  width: 100%;
+  position: relative;
+}
+
+.card-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  justify-items: center;
+  align-items: center;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: max-content;
+  position: relative;
+}
+
+.first-contents-container .contents::after {
+  content: "";
+  position: absolute;
+  left: 270px;
+  top: 50%;
+  width: 316px;
+  height: 1px;
+  background: linear-gradient(90deg, white 0%, #1428a0 100%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.x-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.checkbox-icon {
+  width: 24px;
+  height: 24px;
+}

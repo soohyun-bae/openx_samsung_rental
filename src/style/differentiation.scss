@@ -1,0 +1,54 @@
+@import "../style/_variables.scss";
+
+.differentiation-section {
+  background: linear-gradient(
+    45deg,
+    $border-gray 0%,
+    white 50%,
+    $border-gray 100%
+  );
+  padding: 180px 0;
+}
+
+.differentiation-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.differentiation-card-container {
+  border: 1px solid $border-gray;
+  border-radius: 15px;
+}
+
+.differentiation-contents-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.differentiation-img-icon {
+  width: 85px;
+  height: auto;
+}
+
+.differentiation-cards-wrapper
+  .differentiation-card-container:nth-child(3)
+  .differentiation-img-icon {
+  width: 247px;
+}
+
+.differentiation-cards-wrapper
+  .differentiation-card-container:nth-child(2)
+  .differentiation-img-icon::after {
+  content: "";
+  display: block;
+  width: 247px;
+}
+
+.differentiation-title {
+  @include text-lg-semibold;
+}
+
+.differentiation-description {
+  @include text-xs-regular;
+}

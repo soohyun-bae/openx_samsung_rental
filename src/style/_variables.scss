@@ -1,0 +1,78 @@
+$font-size-xs: 15px;
+$font-size-sm: 17px;
+$font-size-md: 18px;
+$font-size-lg: 30px;
+$font-size-xl: 45px;
+$font-size-2xl: 60px;
+
+@mixin text-xs-light {
+  font-size: $font-size-xs;
+  font-weight: 300;
+}
+
+@mixin text-xs-regular {
+  font-size: $font-size-xs;
+  font-weight: 400;
+}
+
+@mixin text-xs-semibold {
+  font-size: $font-size-xs;
+  font-weight: 600;
+}
+
+@mixin text-xs-bold {
+  font-size: $font-size-xs;
+  font-weight: 700;
+}
+
+@mixin text-sm-light {
+  font-size: $font-size-sm;
+  font-weight: 300;
+}
+
+@mixin text-sm-semibold {
+  font-size: $font-size-sm;
+  font-weight: 600;
+}
+
+@mixin text-md-light {
+  font-size: $font-size-md;
+  font-weight: 300;
+}
+
+@mixin text-md-bold {
+  font-size: $font-size-md;
+  font-weight: 700;
+}
+
+@mixin text-lg-regular {
+  font-size: $font-size-lg;
+  font-weight: 400;
+}
+
+@mixin text-lg-semibold {
+  font-size: $font-size-lg;
+  font-weight: 600;
+}
+
+@mixin text-lg-bold {
+  font-size: $font-size-lg;
+  font-weight: 700;
+}
+
+@mixin text-xl-bold {
+  font-size: $font-size-xl;
+  font-weight: 700;
+}
+
+@mixin text-2xl-bold {
+  font-size: $font-size-2xl;
+  font-weight: 700;
+}
+
+// color
+$light-black: #424242;
+$dark-blue: #1428a0;
+$border-gray: #eeeeee;
+$light-gray: #f8f8f8;
+$dark-gray: #747474;

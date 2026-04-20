@@ -1,12 +1,33 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import "./_variables.scss";
 
 html,
 body {
   font-family: "Pretendard", sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  @include text-2xl-bold;
+}
+
+h2 {
+  @include text-xl-bold;
+}
+
+h3 {
+  @include text-lg-bold;
 }

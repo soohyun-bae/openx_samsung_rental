@@ -1,0 +1,21 @@
+.hero-section {
+  background-image: url("https://res.cloudinary.com/dnigvhehc/image/upload/v1776671346/hero_bg_wvfn6t.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.hero-main-text {
+  color: #0d1b3e;
+  z-index: 5;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 38%;
+  padding-top: 18%;
+  gap: 19px;
+}
