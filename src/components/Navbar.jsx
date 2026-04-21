@@ -99,7 +99,7 @@ const Navbar = () => {
             <div className="fixed inset-0 z-50 lg:hidden">
               <div className="absolute inset-0 bg-black/40" />
               <div className="absolute top-0 right-0 h-screen w-85 bg-white/80 shadow-xl">
-                <div className="flex items-center justify-end border-b border-[#8a8989ae] p-7 pb-4">
+                <div className="flex items-center justify-end border-b border-[#8a8989ae] p-8">
                   <button type="button" onClick={onClickSmMenu}>
                     <img
                       src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776665114/x-icon_v6lctg.png"
@@ -111,7 +111,7 @@ const Navbar = () => {
                   {navbarMenu.map((item, index) => (
                     <a
                       key={index}
-                      className={`block border-b border-[#8a8989ae] pb-6 text-[18px] transition-colors duration-200 ${
+                      className={`block pb-6 text-[18px] transition-colors duration-200 ${
                         activeSection === item.link
                           ? "text-yellow font-semibold"
                           : "text-black"
@@ -178,7 +178,6 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-      {/* <div className={isScrolled ? "h-[72px]" : "h-[130px]"} /> */}
     </>
   );
 };
