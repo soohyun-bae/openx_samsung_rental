@@ -14,7 +14,7 @@ export const TroubleshootingCard = () => {
                 index === 0
                   ? "bg-light-black font-regular"
                   : "bg-blue font-bold"
-              } text-white px-8.75 text-md py-3.25 rounded-[58px] md:ts-card-title text-nowrap`}
+              } text-white px-8.75 py-3.25 rounded-[58px] ts-card-title text-nowrap`}
             >
               {item.title}
             </div>
@@ -37,7 +37,7 @@ export const TroubleshootingCard = () => {
                             className="w-6.25 h-6.25"
                             src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776665114/x-icon_v6lctg.png"
                           />
-                          <p className="text-sm font-regular md:ts-card-content">
+                          <p className="font-regular ts-card-content">
                             {content}
                           </p>
                         </div>
@@ -57,7 +57,7 @@ export const TroubleshootingCard = () => {
                           className="w-6 h-6"
                           src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776664636/blue-checkbox_f6p3cc.png"
                         />
-                        <p className="text-sm font-regular md:ts-card-content">
+                        <p className="font-regular ts-card-content">
                           {content}
                         </p>
                       </div>

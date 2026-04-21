@@ -51,6 +51,41 @@ h1 {
   font-weight: 700;
 }
 
+@layer components {
+  .main-sm-text {
+    font-size: var(--text-sm);
+    font-weight: 300;
+  }
+
+  .sm-semibold {
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .sm-regular {
+    font-size: var(--text-sm);
+    font-weight: 400;
+  }
+
+  .md-regular {
+    font-size: var(--text-md);
+    font-weight: 400;
+  }
+
+  .lg-bold {
+    font-size: var(--text-lg);
+    font-weight: 700;
+  }
+
+  .ts-card-title {
+    font-size: var(--text-md);
+  }
+
+  .ts-card-content {
+    font-size: var(--text-sm);
+  }
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: clamp(var(--text-lg), calc((60 / 1920) * 100vw), 60px);
@@ -59,6 +94,30 @@ h1 {
 
   .main-sm-text {
     font-size: clamp(var(--text-sm), calc((20 / 1920) * 100vw), var(--text-md));
+    font-weight: 300;
+  }
+
+  .sm-semibold {
+    font-size: clamp(var(--text-sm), calc((20 / 1920) * 100vw), var(--text-md));
+    font-weight: 600;
+  }
+
+  .sm-regular {
+    font-size: clamp(var(--text-sm), calc((20 / 1920) * 100vw), var(--text-md));
+    font-weight: 400;
+  }
+
+  .md-regular {
+    font-size: clamp(var(--text-md), calc((25 / 1920) * 100vw), 25px);
+    font-weight: 400;
+  }
+
+  .lg-bold {
+    font-size: clamp(var(--text-lg), calc((45 / 1920) * 100vw), 45px);
+  }
+
+  .section-title-en {
+    font-size: clamp(16px, calc((45 / 1920) * 100vw), 45px);
   }
 
   .ts-card-title {

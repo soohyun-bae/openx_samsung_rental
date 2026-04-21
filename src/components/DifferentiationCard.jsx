@@ -2,7 +2,7 @@ import { differentiationCardData } from "../datas/differentiation.jsx";
 
 export const DifferentiationCard = () => {
   return (
-    <div className="grid grid-cols-1 gap-5.5">
+    <div className="grid grid-cols-1 gap-5.5 lg:grid-cols-2">
       {differentiationCardData.map((item, index) => (
         <div
           key={index}
@@ -23,7 +23,7 @@ export const DifferentiationCard = () => {
             />
             <div className="flex flex-col items-center gap-5.5">
               <p className="text-[24px] font-bold text-blue">{item.title}</p>
-              <p className="text-sm font-normal text-light-black text-center">
+              <p className="text-sm font-normal text-light-black text-center break-keep">
                 {item.description}
               </p>
             </div>

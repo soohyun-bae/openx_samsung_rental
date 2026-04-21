@@ -3,7 +3,7 @@ import { TroubleshootingCard } from "../components/TroubleshootingCard.jsx";
 
 const Troubleshooting = () => {
   return (
-    <section className="flex flex-col gap-17.5 w-full items-center px-7.5 py-25 md:px-90">
+    <section className="flex flex-col gap-17.5 w-full items-center px-7.5 py-25 md:py-45 md:px-90">
       <SectionTitle
         en="TROUBLESHOOTING"
         ko={
