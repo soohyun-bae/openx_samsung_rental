@@ -9,6 +9,7 @@ export const DifferentiationCard = () => {
           className="border border-border-gray bg-white rounded-[15px] px-5.25 py-11.25"
         >
           <div className="flex flex-col gap-[48.85px] items-center">
+            <div className="h-22.5 flex-row-center">
             <img
               src={item.imgSrc}
               className={
@@ -21,9 +22,10 @@ export const DifferentiationCard = () => {
                       : "w-[79.7px] h-auto"
               }
             />
+            </div>
             <div className="flex flex-col items-center gap-5.5">
-              <p className="text-[24px] font-bold text-blue">{item.title}</p>
-              <p className="text-sm font-normal text-light-black text-center break-keep">
+              <p className="text-lg font-bold text-blue">{item.title}</p>
+              <p className="text-[16px] font-regular text-light-black text-center break-keep">
                 {item.description}
               </p>
             </div>

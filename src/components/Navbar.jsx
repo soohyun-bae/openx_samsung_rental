@@ -111,10 +111,10 @@ const Navbar = () => {
                   {navbarMenu.map((item, index) => (
                     <a
                       key={index}
-                      className={`block pb-6 text-[18px] transition-colors duration-200 ${
+                      className={`block pb-6 text-nav transition-colors duration-200 ${
                         activeSection === item.link
-                          ? "text-yellow font-semibold"
-                          : "text-black"
+                          ? "text-yellow font-bold"
+                          : "text-black font-light"
                       }`}
                       href={`#${item.link}`}
                       onClick={(event) => {
@@ -160,10 +160,10 @@ const Navbar = () => {
             {navbarMenu.map((item, index) => (
               <a
                 key={index}
-                className={`text-md font-light transition-colors duration-200 ${
+                className={`text-nav transition-colors duration-200 ${
                   activeSection === item.link
                     ? "text-dark-blue font-bold"
-                    : "text-black"
+                    : "text-black font-light"
                 }`}
                 href="#"
                 onClick={(event) => {

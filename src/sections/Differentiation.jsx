@@ -11,13 +11,13 @@ const Differentiation = () => {
         en="DIFFERENTIATION POINT"
         ko={
           <>
-            삼성전자 가전 렌탈 창업, <br />
+            삼성전자 가전 렌탈 창업, <br className="md:hidden" />
             이래서 다릅니다
           </>
         }
         description={
           <>
-            다른 가전 렌탈 창업과는 <br />
+            다른 가전 렌탈 창업과는 <br className="md:hidden" />
             남다른 차별화된 서비스를 제공합니다
           </>
         }
