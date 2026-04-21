@@ -1,10 +1,9 @@
 import { SectionTitle } from "../components/SectionTitle.jsx";
 import { TroubleshootingCard } from "../components/TroubleshootingCard.jsx";
-import "../style/troubleshooting.scss";
 
 const Troubleshooting = () => {
   return (
-    <section className="troubleshooting-section">
+    <section className="flex flex-col gap-[70px] items-center py-[180px]">
       <SectionTitle
         en="TROUBLESHOOTING"
         ko="아직도 높은 리스크의 창업을 고민하고 계신가요?"

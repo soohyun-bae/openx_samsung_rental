@@ -1,10 +1,9 @@
 import { DifferentiationCard } from "../components/DifferentiationCard.jsx";
 import { SectionTitle } from "../components/SectionTitle.jsx";
-import "../style/differentiation.scss";
 
 const Differentiation = () => {
   return (
-    <section className="differentiation-section">
+    <section className="differentiation-section py-[180px]">
       <SectionTitle
         en="DIFFERENTIATION POINT"
         ko="삼성전자 가전 렌탈 창업, 이래서 다릅니다"

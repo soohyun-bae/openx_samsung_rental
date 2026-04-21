@@ -1,12 +1,9 @@
-import "../style/sectionTitle.scss";
-// import { SectionTitle } from "./SectionTitle";
-
 export const SectionTitle = ({ en, ko, description }) => {
   return (
-    <div className="section-title-container">
-      <p className="en-title">{en}</p>
-      <p className="ko-title">{ko}</p>
-      <p className="description">{description}</p>
+    <div className="flex flex-col gap-[22px] text-center">
+      <p className="text-sm font-semibold text-dark-blue">{en}</p>
+      <p className="text-xl font-bold gradient-text">{ko}</p>
+      <p className="text-lg font-normal text-light-black">{description}</p>
     </div>
   );
 };
