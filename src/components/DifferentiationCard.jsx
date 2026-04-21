@@ -1,17 +1,32 @@
-import { differentiationCardData } from "../datas/differentiation.js";
+import { differentiationCardData } from "../datas/differentiation.jsx";
 
 export const DifferentiationCard = () => {
   return (
-    <div className="grid grid-cols-2 gap-0">
+    <div className="grid grid-cols-1 gap-5.5">
       {differentiationCardData.map((item, index) => (
-        <div key={index} className="border border-border-gray rounded-[15px] p-6">
-          <div className="flex flex-col gap-[22px]">
-            <img 
-              src={item.imgSrc} 
-              className={index === 2 ? "w-[247px] h-auto" : "w-[85px] h-auto"}
+        <div
+          key={index}
+          className="border border-border-gray bg-white rounded-[15px] px-5.25 py-11.25"
+        >
+          <div className="flex flex-col gap-[48.85px] items-center">
+            <img
+              src={item.imgSrc}
+              className={
+                index === 1
+                  ? "w-[96.68px] h-auto"
+                  : index === 2
+                    ? "w-54.75"
+                    : index === 3
+                      ? "w-[76.25px]"
+                      : "w-[79.7px] h-auto"
+              }
             />
-            <p className="text-lg font-semibold text-light-black">{item.title}</p>
-            <p className="text-sm font-normal text-light-black">{item.description}</p>
+            <div className="flex flex-col items-center gap-5.5">
+              <p className="text-[24px] font-bold text-blue">{item.title}</p>
+              <p className="text-sm font-normal text-light-black text-center">
+                {item.description}
+              </p>
+            </div>
           </div>
         </div>
       ))}

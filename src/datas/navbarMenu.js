@@ -1,18 +1,18 @@
 export const navbarMenu = [
   {
     title: "삼성전자 가전 창업",
-    url: "",
+    link: "",
   },
   {
     title: "창업소개",
-    url: "",
+    link: "dirrentiation",
   },
   {
     title: "수익구조",
-    url: "",
+    link: "",
   },
   {
     title: "상담신청",
-    url: "",
+    link: "",
   },
 ];

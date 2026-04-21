@@ -4,18 +4,35 @@
 @theme {
   --font-sans: "Pretendard", sans-serif;
 
-  --color-dark-blue: #1428A0;
+  --color-blue: #1428a0;
+  --color-dark-blue: #0d1b3e;
+  --color-light-blue: #0049ff;
+  --color-light-black: #424242;
+  --color-gray: #424242;
+  --color-border-gray: #eeeeee;
+  --color-light-gray: #f8f8f8;
+  --color-beige: #fff6d4;
+
+  --text-xs: 15px;
+  --text-sm: 16px;
+  --text-md: 20px;
+  --text-lg: 30px;
+  --text-xl: 45px;
 }
 
-html, body {
+html,
+body {
   font-family: var(--font-sans);
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -23,8 +40,34 @@ p {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: clamp(var(--text-lg), calc((60 / 1920) * 100vw), 60px);
+    font-weight: 700;
+  }
+
+  .main-sm-text {
+    font-size: clamp(var(--text-sm), calc((20 / 1920) * 100vw), var(--text-md));
+  }
+
+  .ts-card-title {
+    font-size: clamp(var(--text-md), calc((25 / 1920) * 100vw), 25px);
+  }
+
+  .ts-card-content {
+    font-size: clamp(16px, calc((20 / 1920) * 100vw), 20px);
+  }
 }
 
 /* Navbar Styles */

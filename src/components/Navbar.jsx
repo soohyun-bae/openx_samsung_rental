@@ -68,9 +68,9 @@ const Navbar = () => {
   };
 
   return (
-     <>
-      <header
-        className={`fixed top-0 left-0 z-50 w-full text-white transition-all duration-300 ease-out lg:hidden ${
+    <>
+      <div
+        className={`fixed top-0 left-0 z-10 w-full text-white transition-all duration-300 ease-out lg:hidden ${
           isScrolled
             ? "bg-white/80 pb-6"
             : "bg-linear-to-b from-50% from-white to-transparent h-46"
@@ -89,18 +89,22 @@ const Navbar = () => {
             />
           </button>
           <button className="cursor-pointer" onClick={onClickSmMenu}>
-            <img src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776737974/hamburger-menu_xnwojj.png" className={isSmMenuActive ? "hidden" : "w-6 h-6"} alt="hambuger-menu" />
+            <img
+              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776737974/hamburger-menu_xnwojj.png"
+              className={isSmMenuActive ? "hidden" : "w-6 h-6"}
+              alt="hambuger-menu"
+            />
           </button>
           {isSmMenuActive && (
             <div className="fixed inset-0 z-50 lg:hidden">
               <div className="absolute inset-0 bg-black/40" />
               <div className="absolute top-0 right-0 h-screen w-85 bg-white/80 shadow-xl">
                 <div className="flex items-center justify-end border-b border-[#8a8989ae] p-7 pb-4">
-                  <button
-                    type="button"
-                    onClick={onClickSmMenu}
-                                      >
-                    <img src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776665114/x-icon_v6lctg.png" className="w-6 h-6" />
+                  <button type="button" onClick={onClickSmMenu}>
+                    <img
+                      src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776665114/x-icon_v6lctg.png"
+                      className="w-6 h-6"
+                    />
                   </button>
                 </div>
                 <nav className="mt-6 space-y-6 p-6">
@@ -126,15 +130,17 @@ const Navbar = () => {
             </div>
           )}
         </nav>
-      </header>
+      </div>
       <header
-        className={`desktop-nav-text fixed top-0 left-0 z-50 hidden w-full transition-all duration-300 ease-out md:hidden lg:block ${
+        className={`fixed top-0 left-0 z-50 hidden w-full transition-all duration-300 ease-out md:hidden lg:block ${
           isScrolled
-            ? "bg-black/70 py-4 text-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] backdrop-blur-sm"
+            ? "bg-white/70 pb-4 text-black shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
             : "h-94.25 bg-linear-to-b from-26% from-white to-transparent text-white"
         }`}
       >
-        <div className="mt-[54.96px] mx-auto flex h-10.25 w-full items-center justify-between px-23.25">
+        <div
+          className={`${isScrolled ? "mt-5" : "mt-[54.96px]"} mx-auto flex h-10.25 w-full items-center justify-between px-23.25`}
+        >
           <button
             type="button"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -154,7 +160,7 @@ const Navbar = () => {
             {navbarMenu.map((item, index) => (
               <a
                 key={index}
-                className={`text-[20px] font-light transition-colors duration-200 ${
+                className={`text-md font-light transition-colors duration-200 ${
                   activeSection === item.link
                     ? "text-dark-blue font-bold"
                     : "text-black"
