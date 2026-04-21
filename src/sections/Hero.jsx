@@ -15,7 +15,7 @@ const Hero = () => {
         <Navbar />
       </header>
       <div
-        className="flex flex-col items-center gap-5.5 bg-linear-to-t from-63% from-white pt-40 to-transparent z-15 h-max absolute bottom-0 w-full pb-25 
+        className="flex flex-col items-center gap-5.5 bg-linear-to-t from-63% from-white pt-40 to-transparent z-5 h-max absolute bottom-0 w-full pb-25 
       md:bg-none md:top-[20%] md:w-[40%] md:items-end md:gap-5.25"
       >
         <h1 className="text-dark-blue">
