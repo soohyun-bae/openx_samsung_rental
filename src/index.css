@@ -93,12 +93,15 @@ h3 {
     font-weight: 700;
   }
 
-  .section-p {
-    padding-top: clamp(100px,calc((180/1920)*100vw),180px);
-    padding-bottom: clamp(100px,calc((180/1920)*100vw),180px);
-    padding-left: clamp(300px,calc((360/1920)*100vw),360px);
-    padding-right: clamp(300px,calc((360/1920)*100vw),360px);
-  }
+  .gradient-wave {
+  background: linear-gradient(90deg, #949494 0%, #ffffff 50%, #949494 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  animation: wave 1.5s linear infinite;
+}
+
 }
 
 @keyframes money1 {
@@ -225,6 +228,15 @@ h3 {
   100% {
     transform: translate(0, 0) rotate(0deg);
     opacity: 1;
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
   }
 }
 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Troubleshooting = () => {
   return (
-    <section className="flex-col-center w-full gap-17.5 px-7.5 py-25 md:px-90 md:py-45">
+    <section className="flex-col-center w-full gap-17.5 py-25 px-7.5 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((180/1920)*100vw),180px)]">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

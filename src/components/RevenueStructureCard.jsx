@@ -43,7 +43,7 @@ export const RevenueStructureCard = () => {
             className="absolute top-[85%] right-[0%] w-[9vw] opacity-70 md:w-[5vw] md:opacity-100 lg:w-[3vw]"
           />
         </div>
-        <div className="flex-col-center gap-5.5 py-11.25 2xl:w-full 2xl:flex-row 2xl:justify-start 2xl:gap-[58px] 2xl:px-[132px]">
+        <div className="flex-col-center gap-5.5 py-11.25 2xl:w-full 2xl:flex-row 2xl:justify-start 2xl:gap-[58px] 2xl:px-[100px]">
           <img
             src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776831318/money-icon_i6iwpx.png"
             className="h-14 w-14 xl:h-[81px] xl:w-[81px]"
@@ -52,7 +52,7 @@ export const RevenueStructureCard = () => {
             <p className="text-lg-to-20 font-semibold text-white">
               1건당 판매 수수료
             </p>
-            <p className="bg-[linear-gradient(90deg,#B8B8B8_0%,white_50%,#B8B8B8_100%)] bg-clip-text text-3xl font-bold text-transparent">
+            <p className="gradient-wave text-3xl font-bold">
               약 00만원
             </p>
           </div>
@@ -60,7 +60,7 @@ export const RevenueStructureCard = () => {
       </div>
       {/* 2 */}
       <div className="flex-row-center rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)] 2xl:py-[130px]">
-        <div className="flex-col-center gap-5.5 py-11.25 2xl:w-full 2xl:flex-row 2xl:justify-start 2xl:gap-[74px] 2xl:px-[139px]">
+        <div className="flex-col-center gap-5.5 py-11.25 2xl:w-full 2xl:flex-row 2xl:justify-start 2xl:gap-[74px] 2xl:px-[100px]">
           <img
             src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776831351/infinite-icon_f6khd1.png"
             className="w-21 2xl:w-[124px]"
@@ -69,19 +69,19 @@ export const RevenueStructureCard = () => {
             <p className="text-lg-to-20 font-semibold text-nowrap text-white">
               월 반복 수익
             </p>
-            <p className="bg-[linear-gradient(90deg,#B8B8B8_0%,white_50%,#B8B8B8_100%)] bg-clip-text text-3xl font-bold text-nowrap text-transparent">
+            <p className="gradient-wave text-3xl font-bold text-nowrap">
               약 O만원 x 약정 기간
             </p>
           </div>
         </div>
       </div>
       {/* 3 */}
-      <div className="flex-row-center rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)] 2xl:py-[123px]">
-        <div className="flex-col-center gap-5.5 py-11.25 2xl:items-start">
-          <div className="flex-col-center gap-5.5">
+      <div className="flex-row-center rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)] px-[22px] md:px-[clamp(22px,calc((90/1920)*100vw),90px)] 2xl:py-[123px] 2xl:px-[90px]">
+        <div className="relative flex-col-center gap-5.5 py-11.25 2xl:items-start w-full">
+          <div className="flex-col-center gap-5.5 2xl:pl-[48px]">
             <p className="text-2xl font-semibold text-white">
               월 건당{" "}
-              <span className="bg-[linear-gradient(90deg,#B8B8B8_0%,white_50%,#B8B8B8_100%)] bg-clip-text text-3xl font-bold text-transparent">
+              <span className="gradient-wave text-3xl font-bold">
                 5배 수익
               </span>
             </p>
@@ -89,9 +89,10 @@ export const RevenueStructureCard = () => {
               (운영비 월 10만원 차감 후)
             </p>
           </div>
-          <div className="mt-[40px]">
+          <div className="mt-10 flex w-full justify-center">
             <RevenueGraph />
           </div>
+          <div className="absolute bottom-[113px] left-center z-1 h-px w-full bg-white" />
         </div>
       </div>
     </div>
