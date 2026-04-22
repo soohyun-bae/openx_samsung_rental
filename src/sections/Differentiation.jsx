@@ -5,7 +5,7 @@ const Differentiation = () => {
   return (
     <section
       id="dirrentiation"
-      className="bg-[linear-gradient(100deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] px-7.5 py-25 flex flex-col gap-17.5 lg:py-45 lg:px-90"
+      className="bg-[linear-gradient(100deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] px-7.5 py-25 flex flex-col gap-17.5 xl:py-45 xl:px-90"
     >
       <SectionTitle
         en="DIFFERENTIATION POINT"

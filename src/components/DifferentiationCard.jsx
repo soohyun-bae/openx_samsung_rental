@@ -8,7 +8,7 @@ export const DifferentiationCard = () => {
           key={index}
           className="border border-border-gray bg-white rounded-[15px] px-5.25 py-11.25"
         >
-          <div className="flex flex-col gap-[48.85px] items-center">
+          <div className="flex flex-col gap-[48.85px] md:gap-2.5 items-center">
             <div className="h-22.5 flex-row-center">
             <img
               src={item.imgSrc}
@@ -25,7 +25,7 @@ export const DifferentiationCard = () => {
             </div>
             <div className="flex flex-col items-center gap-5.5">
               <p className="text-lg font-bold text-blue">{item.title}</p>
-              <p className="text-[16px] font-regular text-light-black text-center break-keep">
+              <p className="text-[16px] font-regular text-light-black text-center break-keep text-nowrap">
                 {item.description}
               </p>
             </div>
