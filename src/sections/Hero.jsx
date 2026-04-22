@@ -9,7 +9,7 @@ const Hero = () => {
         src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776671346/hero_bg_wvfn6t.png"
       />
       <img
-        className="md:hidden"
+        className="h-dvh md:hidden"
         src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776745226/samsung_rental_mobile_bg_rje9cd.png"
       />
       <header>

@@ -1,9 +1,16 @@
 import { troubleshootingCard } from "../datas/troubleshooting.js";
+import { motion } from "framer-motion";
 
 export const TroubleshootingCard = () => {
   return (
     <div className="flex-row-center w-full">
-      <div className="flex-col-center w-full gap-8 lg:flex-row lg:gap-15">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="flex-col-center w-full gap-8 lg:flex-row lg:gap-15"
+      >
         {troubleshootingCard.map((item, index) => (
           <div className="flex-col-center w-full gap-5.5" key={index}>
             <div
@@ -41,7 +48,14 @@ export const TroubleshootingCard = () => {
                       </div>
                     ) : (
                       <div className="relative flex items-center gap-2.75 lg:gap-7.5">
-                        <div className="to-blue absolute right-[calc(100%-0.4rem)] z-0 hidden h-px w-[14vw] bg-linear-to-r from-white lg:block 2xl:w-[16vw]" />
+                        <motion.div
+                          style={{ transformOrigin: "right" }}
+                          initial={{ scaleX: 0 }}
+                          whileInView={{ scaleX: 1 }}
+                          viewport={{ once: true, amount: 0.3 }}
+                          transition={{ duration: 0.8, delay: 0.8 }}
+                          className="to-blue absolute right-[calc(100%-0.4rem)] z-0 hidden h-px w-[14vw] bg-linear-to-r from-white lg:block 2xl:w-[16vw]"
+                        />
                         <img
                           className="h-6 w-6"
                           src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776664636/blue-checkbox_f6p3cc.png"
@@ -57,7 +71,7 @@ export const TroubleshootingCard = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

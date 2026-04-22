@@ -15,16 +15,16 @@ const RevenueStructure = () => {
           en="REVENUE STRUCTURE"
           ko={
             <>
-              가전 렌탈 1건당 <br />
+              가전 렌탈 1건당 <br className="md:hidden" />
               수익구조
             </>
           }
           description={
-            <>
-              계약이 쌓일수록 매달 반복되는 <br />
-              안정적인 수익, 렌탈 사업은 <br />한 번의 계약이 장기 수익으로
-              이어집니다
-            </>
+            <div className="md:text-nowrap">
+              계약이 쌓일수록 매달 반복되는 <br className="md:hidden" />
+              안정적인 수익, 렌탈 사업은 <br className="md:hidden" />한 번의
+              계약이 장기 수익으로 이어집니다
+            </div>
           }
         />
       </motion.div>
