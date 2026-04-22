@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar.jsx";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -14,7 +15,13 @@ const Hero = () => {
       <header>
         <Navbar />
       </header>
-      <div className="flex-col-center absolute bottom-0 z-5 h-max w-full gap-5.5 bg-linear-to-t from-white from-63% to-transparent pt-[25vh] pb-25 md:top-[20%] md:w-[40%] md:items-end md:gap-5.25 md:bg-none">
+      <motion.div
+        className="flex-col-center absolute bottom-0 z-5 h-max w-full gap-5.5 bg-linear-to-t from-white from-63% to-transparent pt-[25vh] pb-25 md:top-[20%] md:w-[40%] md:items-end md:gap-5.25 md:bg-none"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8 }}
+      >
         <h1>
           월 10만원으로 시작하는
           <br />
@@ -24,7 +31,7 @@ const Hero = () => {
           매장 없이, 재고 없이, 삼성 브랜드의 힘으로 <br />
           누구나 가전 렌탈 사업자가 될 수 있습니다
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };

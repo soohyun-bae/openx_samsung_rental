@@ -89,7 +89,7 @@ export const RevenueStructureCard = () => {
               (운영비 월 10만원 차감 후)
             </p>
           </div>
-          <div>
+          <div className="mt-[40px]">
             <RevenueGraph />
           </div>
         </div>
