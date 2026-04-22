@@ -10,7 +10,7 @@ export const RevenueGraph = () => {
           <p className="text-[20px] font-semibold text-nowrap text-white">
             00만원
           </p>
-          <div className="h-[26px] w-[49px] bg-[#747474]" />
+          <div className="h-[26px] w-[49px] bg-[#747474] 2xl:w-[79.87px]" />
         </div>
         <p className="text-center text-[16px] font-light text-white">
           월 10건 <br />
@@ -24,7 +24,7 @@ export const RevenueGraph = () => {
           <p className="text-[20px] font-semibold text-nowrap text-white">
             000만원
           </p>
-          <div className="h-[69px] w-[49px] bg-[#747474]" />
+          <div className="h-[69px] w-[49px] bg-[#747474] 2xl:w-[79.87px]" />
         </div>
         <p className="text-center text-[16px] font-light text-white">
           월 20건 <br />
@@ -33,8 +33,8 @@ export const RevenueGraph = () => {
       </div>
       <div className="flex flex-col items-center gap-[20px]">
         <div className="relative flex flex-col items-center">
-          <div className="z-1 mb-40 flex flex-col items-center">
-            <div className="z-3 h-[6px] w-[6px] rounded-full bg-white" />
+          <div className="z-3 mb-40 flex flex-col items-center">
+            <div className="h-[6px] w-[6px] rounded-full bg-white" />
             <p className="pt-[30px] text-[16px] font-light text-white">
               월 수익
             </p>
@@ -48,11 +48,11 @@ export const RevenueGraph = () => {
             whileInView={{ scaleY: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, delay: 0 }}
-            className="absolute bottom-0"
+            className="absolute bottom-0 2xl:h-[425px] 2xl:w-[238.23px]"
           >
             <img
               src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776841282/revenue-graph-arrow_lkgsah.png"
-              className="h-[292px] w-[115px]"
+              className="h-[292px] w-[115px] 2xl:h-[425px] 2xl:w-[238.23px]"
             />
           </motion.div>
         </div>
@@ -66,14 +66,14 @@ export const RevenueGraph = () => {
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0 }}
-        className="absolute top-[158px] left-[41px] z-2 h-[2px] w-[113px] origin-left rotate-[-22deg] bg-[linear-gradient(90deg,#062237_0%,#7F8D98_100%)] 2xl:left-[6%] 2xl:w-[42%] 2xl:rotate-[-8deg]"
+        className="absolute top-[158px] left-[41px] z-2 h-[2px] w-[113px] origin-left rotate-[-22deg] bg-[linear-gradient(90deg,#062237_0%,#7F8D98_100%)] 2xl:left-[6%] 2xl:w-[44%] 2xl:rotate-[-7.5deg]"
       />
       <motion.div
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="absolute top-[114px] left-[148px] z-2 h-[2px] w-[153px] origin-left rotate-[-40.3deg] bg-[linear-gradient(90deg,#7F8D98_100%,white_100%)] 2xl:left-[48%] 2xl:w-[46%] 2xl:rotate-[-17deg]"
+        className="absolute top-[114px] left-[148px] z-2 h-[2px] w-[153px] origin-left rotate-[-40.3deg] bg-[linear-gradient(90deg,#7F8D98_100%,white_100%)] 2xl:left-[49%] 2xl:w-[46%] 2xl:rotate-[-16.5deg]"
       />
       <div className="absolute bottom-[68px] left-[-8px] z-1 h-px w-full bg-white" />
     </div>

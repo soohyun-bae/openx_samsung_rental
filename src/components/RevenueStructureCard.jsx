@@ -4,7 +4,7 @@ export const RevenueStructureCard = () => {
   return (
     <div className="flex flex-col gap-5.5">
       {/* 1 */}
-      <div className="flex-row-center relative rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)]">
+      <div className="flex-row-center relative rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)] 2xl:py-[130px]">
         <div className="absolute inset-0 overflow-hidden">
           <img
             src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776833433/money-1_mx2lwr.png"
@@ -43,12 +43,12 @@ export const RevenueStructureCard = () => {
             className="absolute top-[85%] right-[0%] w-[9vw] opacity-70 md:w-[5vw] md:opacity-100 lg:w-[3vw]"
           />
         </div>
-        <div className="flex-col-center gap-5.5 py-11.25">
+        <div className="flex-col-center gap-5.5 py-11.25 2xl:w-full 2xl:flex-row 2xl:justify-start 2xl:gap-[58px] 2xl:px-[132px]">
           <img
             src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776831318/money-icon_i6iwpx.png"
-            className="h-14 w-14"
+            className="h-14 w-14 xl:h-[81px] xl:w-[81px]"
           />
-          <div className="flex-col-center gap-5.5">
+          <div className="flex-col-center gap-5.5 2xl:flex-row 2xl:gap-[87px]">
             <p className="text-lg-to-20 font-semibold text-white">
               1건당 판매 수수료
             </p>
@@ -59,25 +59,25 @@ export const RevenueStructureCard = () => {
         </div>
       </div>
       {/* 2 */}
-      <div className="flex-row-center rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)]">
-        <div className="flex-col-center gap-5.5 py-11.25">
+      <div className="flex-row-center rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)] 2xl:py-[130px]">
+        <div className="flex-col-center gap-5.5 py-11.25 2xl:w-full 2xl:flex-row 2xl:justify-start 2xl:gap-[74px] 2xl:px-[139px]">
           <img
             src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776831351/infinite-icon_f6khd1.png"
-            className="w-21"
+            className="w-21 2xl:w-[124px]"
           />
-          <div className="flex-col-center gap-5.5">
-            <p className="text-lg-to-20 font-semibold text-white">
+          <div className="flex-col-center gap-5.5 2xl:flex-row 2xl:gap-[87px]">
+            <p className="text-lg-to-20 font-semibold text-nowrap text-white">
               월 반복 수익
             </p>
-            <p className="bg-[linear-gradient(90deg,#B8B8B8_0%,white_50%,#B8B8B8_100%)] bg-clip-text text-3xl font-bold text-transparent">
+            <p className="bg-[linear-gradient(90deg,#B8B8B8_0%,white_50%,#B8B8B8_100%)] bg-clip-text text-3xl font-bold text-nowrap text-transparent">
               약 O만원 x 약정 기간
             </p>
           </div>
         </div>
       </div>
       {/* 3 */}
-      <div className="flex-row-center rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)]">
-        <div className="flex-col-center gap-5.5 py-11.25">
+      <div className="flex-row-center rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)] 2xl:py-[123px]">
+        <div className="flex-col-center gap-5.5 py-11.25 2xl:items-start">
           <div className="flex-col-center gap-5.5">
             <p className="text-2xl font-semibold text-white">
               월 건당{" "}
