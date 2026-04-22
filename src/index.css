@@ -18,10 +18,22 @@
   --text-md: clamp(16px,calc((20/1920)*100vw),20px);
   --text-middle: clamp(20px,calc((25/1920)*100vw),25px);
   --text-lg: clamp(24px,calc((30/1920)*100vw),30px);
+  --text-lg-to-20: clamp(20px,calc((30/1920)*100vw),30px);
   --text-xl: clamp(30px,calc((45/1920)*100vw),45px);
+  --text-2xl: clamp(25px,calc((50/1920)*100vw),50px);
+  --text-3xl: clamp(30px,calc(60/1920)*100vw,60px);
 
   --text-nav: clamp(18px,calc((20/1920)*100vw),20px);
-  --text-hero-lg: clamp(30px,calc(60/1920)*100vw,60px);
+
+  --animate-money1: money1 2s ease-in;
+  --animate-money2: money2 2s ease-in;
+  --animate-money3: money2 2s ease-in;
+  --animate-money4: money2 2s ease-in;
+  --animate-money5: money2 2s ease-in;
+  --animate-money6: money2 2s ease-in;
+  --animate-money7: money2 2s ease-in;
+  --animate-money8: money2 2s ease-in;
+  --animate-money9: money2 2s ease-in;
 }
 
 html,
@@ -86,6 +98,133 @@ h3 {
     padding-bottom: clamp(100px,calc((180/1920)*100vw),180px);
     padding-left: clamp(300px,calc((360/1920)*100vw),360px);
     padding-right: clamp(300px,calc((360/1920)*100vw),360px);
+  }
+}
+
+@keyframes money1 {
+    0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 0) rotate(90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes money2 {
+    0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 0) rotate(90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes money3 {
+    0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 0) rotate(90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes money4 {
+    0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 0) rotate(90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes money5 {
+    0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 0) rotate(90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes money6 {
+    0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 0) rotate(90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes money7 {
+    0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 0) rotate(90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes money8 {
+    0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 0) rotate(90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes money9 {
+    0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 0) rotate(90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
   }
 }
 

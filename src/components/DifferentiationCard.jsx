@@ -2,7 +2,7 @@ import { differentiationCardData } from "../datas/differentiation.jsx";
 
 export const DifferentiationCard = () => {
   return (
-    <div className="grid grid-cols-1 gap-5.5 lg:grid-cols-2">
+    <div className="grid grid-cols-1 gap-5.5 xl:grid-cols-2">
       {differentiationCardData.map((item, index) => (
         <div
           key={index}
