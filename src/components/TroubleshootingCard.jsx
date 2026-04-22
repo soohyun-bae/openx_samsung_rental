@@ -49,7 +49,7 @@ export const TroubleshootingCard = () => {
                     ) : (
                       <div className="relative flex items-center gap-2.75 lg:gap-7.5">
                         <motion.div
-                          style={{ transformOrigin: "right" }}
+                          style={{ transformOrigin: "left" }}
                           initial={{ scaleX: 0 }}
                           whileInView={{ scaleX: 1 }}
                           viewport={{ once: true, amount: 0.3 }}

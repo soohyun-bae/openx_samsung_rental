@@ -11,7 +11,7 @@ export const DifferentiationCard = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{
             duration: 0.6,
-            delay: index * 0.3,
+            delay: index * 0.1,
           }}
           key={index}
           className="border-border-gray rounded-[15px] border bg-white px-5.25 py-11.25"
