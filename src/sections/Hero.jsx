@@ -22,11 +22,15 @@ const Hero = () => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8 }}
       >
-        <h1>
-          월 10만원으로 시작하는
+        <p className="text-dark-blue text-center font-bold md:text-right">
+          <span className="text-[30px] text-nowrap md:text-[25px] lg:text-[clamp(30px,calc((50/1920)*100vw),50px)]">
+            2026 삼성전자 가전 렌탈 사업
+          </span>
           <br />
-          삼성전자 가전 렌탈 사업
-        </h1>
+          <span className="text-[25px] md:text-[clamp(25px,calc((45/1920)*100vw),45px)]">
+            망설이지 말고 지금 도전하세요!
+          </span>
+        </p>
         <p className="text-md text-center leading-[1.7] font-light break-keep md:text-end">
           매장 없이, 재고 없이, 삼성 브랜드의 힘으로 <br />
           누구나 가전 렌탈 사업자가 될 수 있습니다

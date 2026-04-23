@@ -1,7 +1,7 @@
 export const navbarMenu = [
   {
     title: "삼성전자 가전 창업",
-    link: "",
+    link: "troubleshooting",
   },
   {
     title: "창업소개",
@@ -9,10 +9,10 @@ export const navbarMenu = [
   },
   {
     title: "수익구조",
-    link: "",
+    link: "revenue",
   },
   {
-    title: "상담신청",
-    link: "",
+    title: "신뢰도",
+    link: "reliability",
   },
 ];

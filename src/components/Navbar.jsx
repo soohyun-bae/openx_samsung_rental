@@ -73,14 +73,14 @@ const Navbar = () => {
         className={`fixed top-0 left-0 z-10 w-full text-white transition-all duration-300 ease-out lg:hidden ${
           isScrolled
             ? "bg-white/80 pb-6"
-            : "bg-linear-to-b from-50% from-white to-transparent h-46"
+            : "h-46 bg-linear-to-b from-white from-50% to-transparent"
         }`}
       >
-        <nav className="mt-8.25 mx-auto flex w-[90%] items-center justify-between">
+        <nav className="mx-auto mt-8.25 flex w-[90%] items-center justify-between">
           <button>
             <img
-              className={`w-32 cursor-pointer`}
-              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776402377/samsung_logo_ypanx9.png"
+              className={`w-[78px] cursor-pointer`}
+              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776910703/samsung_logo_fn1psv.png"
               alt="logo"
               onClick={(event) => {
                 event.preventDefault();
@@ -91,7 +91,7 @@ const Navbar = () => {
           <button className="cursor-pointer" onClick={onClickSmMenu}>
             <img
               src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776737974/hamburger-menu_xnwojj.png"
-              className={isSmMenuActive ? "hidden" : "w-6 h-6"}
+              className={isSmMenuActive ? "hidden" : "h-6 w-6"}
               alt="hambuger-menu"
             />
           </button>
@@ -103,7 +103,7 @@ const Navbar = () => {
                   <button type="button" onClick={onClickSmMenu}>
                     <img
                       src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776665114/x-icon_v6lctg.png"
-                      className="w-6 h-6"
+                      className="h-6 w-6"
                     />
                   </button>
                 </div>
@@ -111,10 +111,10 @@ const Navbar = () => {
                   {navbarMenu.map((item, index) => (
                     <a
                       key={index}
-                      className={`block pb-6 text-nav transition-colors duration-200 ${
+                      className={`text-nav block pb-6 transition-colors duration-200 ${
                         activeSection === item.link
                           ? "text-yellow font-bold"
-                          : "text-black font-light"
+                          : "font-light text-black"
                       }`}
                       href={`#${item.link}`}
                       onClick={(event) => {
@@ -135,7 +135,7 @@ const Navbar = () => {
         className={`fixed top-0 left-0 z-50 hidden w-full transition-all duration-300 ease-out md:hidden lg:block ${
           isScrolled
             ? "bg-white/70 pb-4 text-black shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
-            : "h-94.25 bg-linear-to-b from-26% from-white to-transparent text-white"
+            : "h-94.25 bg-linear-to-b from-white from-26% to-transparent text-white"
         }`}
       >
         <div
@@ -148,7 +148,7 @@ const Navbar = () => {
           >
             <img
               className={`${isScrolled ? "w-[131.5px]" : "w-[131.5px]"} cursor-pointer`}
-              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776402377/samsung_logo_ypanx9.png"
+              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776910703/samsung_logo_fn1psv.png"
               alt="logo"
               onClick={(event) => {
                 event.preventDefault();
@@ -163,7 +163,7 @@ const Navbar = () => {
                 className={`text-nav transition-colors duration-200 ${
                   activeSection === item.link
                     ? "text-dark-blue font-bold"
-                    : "text-black font-light"
+                    : "font-light text-black"
                 }`}
                 href="#"
                 onClick={(event) => {

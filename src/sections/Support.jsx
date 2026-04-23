@@ -9,7 +9,7 @@ const Support = () => {
         ko={
           <>
             처음이어도 괜찮습니다 <br />
-            본사가 처음부터 <br />
+            본사가 처음부터 <br className="md:hidden" />
             끝까지 함께합니다
           </>
         }

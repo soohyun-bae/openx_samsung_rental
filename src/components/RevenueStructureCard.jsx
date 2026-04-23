@@ -44,20 +44,27 @@ export const RevenueStructureCard = () => {
           />
         </div>
         <div className="flex-col-center gap-5.5 py-11.25 2xl:w-full 2xl:flex-row 2xl:justify-start 2xl:gap-14.5 2xl:px-25 2xl:py-0">
-          <img
-            src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776831318/money-icon_i6iwpx.png"
-            className="h-14 w-14 xl:h-[81px] xl:w-[81px]"
-          />
-          <div className="flex-col-center gap-5.5 2xl:flex-row 2xl:gap-[87px]">
-            <p className="text-lg-to-20 font-semibold text-white">
-              1건당 판매 수수료
-            </p>
-            <p className="gradient-wave text-3xl font-bold">약 00만원</p>
+          <p className="leading-[] text-[30px] font-semibold text-white">
+            1건당 판매 수수료
+          </p>
+          <div className="flex-col-center gap-[31px] 2xl:flex-row 2xl:gap-[87px]">
+            <img
+              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776926662/revenue-1_j1rawv.png"
+              className="h-14 w-14 xl:h-[81px] xl:w-[81px]"
+            />
+            <div className="flex flex-col items-center gap-[8px]">
+              <p className="text-[20px] leading-[16px] font-semibold text-white">
+                냉난방기
+              </p>
+              <p className="gradient-wave text-xl leading-[63px] font-bold">
+                약 90만원
+              </p>
+            </div>
           </div>
         </div>
       </div>
       {/* 2 */}
-      <div className="flex-row-center rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)] 2xl:py-32.5">
+      {/* <div className="flex-row-center rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)] 2xl:py-32.5">
         <div className="flex-col-center gap-5.5 py-11.25 2xl:w-full 2xl:flex-row 2xl:justify-start 2xl:gap-18.5 2xl:px-25 2xl:py-0">
           <img
             src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776831351/infinite-icon_f6khd1.png"
@@ -72,7 +79,7 @@ export const RevenueStructureCard = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* 3 */}
       <div className="flex-row-center rounded-[15px] bg-[linear-gradient(100deg,#02101B_0%,#07243A_50%,#02101B_100%)] px-5.5 md:px-[clamp(22px,calc((90/1920)*100vw),90px)] 2xl:px-22.5 2xl:py-30.75">
         <div className="flex-col-center relative w-full gap-5.5 py-11.25 2xl:items-start 2xl:py-0">
