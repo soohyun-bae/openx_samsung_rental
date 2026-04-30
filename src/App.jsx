@@ -8,6 +8,7 @@ import Reliability from "./sections/Reliability.jsx";
 import RevenueStructure from "./sections/RevenueStructure.jsx";
 import Support from "./sections/Support.jsx";
 import Troubleshooting from "./sections/Troubleshooting.jsx";
+import Research from "./sections/Research.jsx";
 
 function App() {
   const footerRef = useRef(null);
@@ -33,6 +34,7 @@ function App() {
     <div className="relative">
       {/* <Navbar /> */}
       <Hero />
+      <Research />
       <Troubleshooting />
       <Differentiation />
       <RevenueStructure />

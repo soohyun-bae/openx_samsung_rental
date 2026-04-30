@@ -6,7 +6,7 @@ const Troubleshooting = () => {
   return (
     <section
       id="troubleshooting"
-      className="flex-col-center w-full gap-17.5 px-7.5 py-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((180/1920)*100vw),180px)]"
+      className="flex-col-center w-full gap-17.5 px-7.5 py-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((180/1920)*100vw),200px)]"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -18,9 +18,9 @@ const Troubleshooting = () => {
           en="TROUBLESHOOTING"
           ko={
             <>
-              아직도 <br className="md:hidden" />
-              높은 리스크의 창업을 <br className="md:hidden" />
-              고민하고 계신가요?
+              <span className="text-2xl font-normal">리스크 높은 창업을</span>
+              <br />
+              고민만하고 계신가요?
             </>
           }
           description={

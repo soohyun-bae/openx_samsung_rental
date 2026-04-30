@@ -54,6 +54,7 @@ const Navbar = () => {
   };
 
   const handleSmNavClick = (id) => {
+    document.body.style.overflow = "";
     setIsSmMenuActive(false);
     window.setTimeout(() => {
       scrollToSection(id);

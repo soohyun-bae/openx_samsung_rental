@@ -9,26 +9,26 @@ export const TroubleshootingCard = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="flex-col-center w-full gap-8 lg:flex-row lg:gap-15"
+        className="flex-col-center w-full gap-[52px] lg:flex-row lg:gap-15"
       >
         {troubleshootingCard.map((item, index) => (
-          <div className="flex-col-center w-full gap-5.5" key={index}>
-            <div
-              className={`${
-                index === 0
-                  ? "bg-light-black font-regular"
-                  : "bg-blue font-bold"
-              } text-middle rounded-[58px] px-8.75 py-3.25 leading-none text-nowrap text-white`}
-            >
-              {item.title}
-            </div>
+          <div className="flex-col-center w-full" key={index}>
             <div
               className={`${
                 index === 0
                   ? "bg-light-gray font-normal"
                   : "bg-white font-semibold lg:py-10"
-              } border-border-gray text-md text-light-black flex flex-col rounded-xl border p-10 md:items-center lg:w-full`}
+              } border-border-gray text-md text-light-black relative flex flex-col rounded-xl border p-10 shadow-lg shadow-black/5 md:items-center lg:w-full`}
             >
+              <div
+                className={`${
+                  index === 0
+                    ? "bg-light-black font-regular"
+                    : "bg-blue font-bold"
+                } text-middle absolute -top-6 rounded-[58px] px-8.75 py-3.25 leading-none text-nowrap text-white`}
+              >
+                {item.title}
+              </div>
               <div
                 className={`${index === 0 ? "space-y-3" : "space-y-3"} w-max`}
               >

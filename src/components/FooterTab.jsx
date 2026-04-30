@@ -136,7 +136,7 @@ const DesktopFooterTab = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex-row-center gap-[30px]">
-      <p className="from-dark-blue to-blue bg-linear-to-l bg-clip-text text-[clamp(16px,calc((40/1920)*100vw),40px)] font-bold text-transparent">
+      <p className="font-line from-dark-blue to-blue bg-linear-to-l bg-clip-text text-[clamp(16px,calc((40/1920)*100vw),40px)] font-bold text-transparent">
         빠른 창업상담
       </p>
       <div className="flex items-center gap-[11px]">
@@ -145,14 +145,14 @@ const DesktopFooterTab = () => {
           name="성함"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(14px,calc((18/1920)*100vw),18px)]"
+          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(14px,calc((18/1920)*100vw),18px)] text-[15px]"
         />
         <input
           placeholder="연락처 (- 제외 숫자만 입력)"
           name="연락처"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(14px,calc((18/1920)*100vw),18px)]"
+          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(14px,calc((18/1920)*100vw),18px)] text-[15px]"
         />
       </div>
       <div className="flex items-center gap-[11px]">
