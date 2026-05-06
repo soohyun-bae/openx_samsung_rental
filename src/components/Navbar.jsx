@@ -74,7 +74,7 @@ const Navbar = () => {
         className={`fixed top-0 left-0 z-10 w-full text-white transition-all duration-300 ease-out lg:hidden ${
           isScrolled
             ? "bg-white/80 pb-6"
-            : "h-46 bg-linear-to-b from-white from-50% to-transparent"
+            : "h-40 bg-linear-to-b from-white from-50% to-transparent"
         }`}
       >
         <nav className="mx-auto mt-8.25 flex w-[90%] items-center justify-between">

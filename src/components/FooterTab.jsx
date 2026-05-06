@@ -7,7 +7,7 @@ export const FooterTabContainer = () => {
       <div className="bg-white xl:hidden">
         <MobileFooterTab />
       </div>
-      <div className="hidden xl:flex xl:h-[119px] xl:justify-center xl:bg-linear-to-t xl:from-white xl:from-90% xl:to-transparent">
+      <div className="hidden xl:flex xl:justify-center xl:bg-linear-to-t xl:from-white xl:from-90% xl:to-transparent xl:pt-[40px] xl:pb-[23px]">
         <DesktopFooterTab />
       </div>
     </div>

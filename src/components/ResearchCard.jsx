@@ -2,7 +2,11 @@ import { ResearchCardGraph } from "./ResearchCardGraph.jsx";
 
 export const ResearchCard = () => {
   return (
-    <div className="space-y-[39px] rounded-[30px] bg-white pt-[33px] shadow-lg shadow-black/5">
+    <div className="space-y-[39px] rounded-[30px] bg-white/88 pt-[33px] shadow-lg shadow-black/5">
+      <img
+        className="absolute top-[43%] left-[6%] w-[75%] origin-center -rotate-[13.11deg]"
+        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778040784/research_arrow_imaana.png"
+      />
       <div className="flex flex-col gap-[13px]">
         <p className="text-md text-center font-medium">
           국내 렌탈시장 규모 추이 및 전망
@@ -23,7 +27,7 @@ export const ResearchCard = () => {
                 <br /> 5,000억{" "}
               </>
             }
-            year={"2011"}
+            // year={"2011"}
           />
           <ResearchCardGraph
             height={"h-[87px]"}
@@ -35,7 +39,7 @@ export const ResearchCard = () => {
                 9,000억
               </>
             }
-            year={"2016"}
+            // year={"2016"}
           />
           <ResearchCardGraph
             height={"h-[140px]"}
@@ -47,7 +51,7 @@ export const ResearchCard = () => {
                 9,000억
               </>
             }
-            year={"2018"}
+            // year={"2018"}
           />
           <ResearchCardGraph
             height={"h-[184px]"}
@@ -59,7 +63,7 @@ export const ResearchCard = () => {
                 1,000억
               </>
             }
-            year={"2020"}
+            // year={"2020"}
           />
           <ResearchCardGraph
             height={"h-[367px]"}
@@ -72,7 +76,7 @@ export const ResearchCard = () => {
                 <br /> <span className="text-md font-light">(예상)</span>
               </p>
             }
-            year={"2026"}
+            // year={"2026"}
           />
         </div>
         <div className="text-md text-light-black flex justify-around pt-[8px] pb-[21px] font-semibold">
