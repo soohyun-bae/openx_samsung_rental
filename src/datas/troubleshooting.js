@@ -1,6 +1,6 @@
 export const troubleshootingCard = [
   {
-    title: "삼성전자 가전 렌탈 창업",
+    title: "삼성 가전 렌탈 창업",
     content: [
       "월 10만원 서비스비용만으로 시작",
       "매장 없는 온라인 사업",

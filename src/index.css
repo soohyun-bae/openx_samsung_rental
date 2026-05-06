@@ -51,7 +51,8 @@
 
   --text-ko-section-title: clamp(35px, calc(60/1920) * 100vw, 60px);
   --text-research-graph-sm: clamp(12px, calc((20/1920) * 100vw), 20px);
-  --text-research-graph-md: clamp(25px, calc((20/1920) * 100vw), 35px);
+  --text-research-graph-md: clamp(25px, calc((35/1920) * 100vw), 35px);
+  --text-trouble-shooting-card-title: clamp(18px, calc((25/1920) * 100vw), 25px);
 
   --text-nav: clamp(18px, calc((20/1920) * 100vw), 20px);
 
