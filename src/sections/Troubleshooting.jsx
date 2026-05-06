@@ -18,9 +18,11 @@ const Troubleshooting = () => {
           en="TROUBLESHOOTING"
           ko={
             <>
-              <span className="text-2xl font-normal">리스크 높은 창업을</span>
+              <span className="text-2xl leading-[55px] font-normal">
+                리스크 높은 창업을
+              </span>
               <br />
-              고민만하고 계신가요?
+              <span className="leading-[55px]">고민만하고 계신가요?</span>
             </>
           }
           description={

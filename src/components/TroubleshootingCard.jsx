@@ -16,15 +16,15 @@ export const TroubleshootingCard = () => {
             <div
               className={`${
                 index === 0
-                  ? "bg-light-gray font-normal"
-                  : "bg-white font-semibold lg:py-10"
+                  ? "bg-white font-semibold lg:py-10"
+                  : "bg-light-gray font-normal"
               } border-border-gray text-md text-light-black relative flex flex-col rounded-xl border p-10 shadow-lg shadow-black/5 md:items-center lg:w-full`}
             >
               <div
                 className={`${
                   index === 0
-                    ? "bg-light-black font-regular"
-                    : "bg-blue font-bold"
+                    ? "bg-blue font-bold"
+                    : "bg-light-black font-regular"
                 } text-middle absolute -top-6 rounded-[58px] px-8.75 py-3.25 leading-none text-nowrap text-white`}
               >
                 {item.title}
@@ -35,18 +35,6 @@ export const TroubleshootingCard = () => {
                 {item.content.map((content, contentIndex) => (
                   <div className="w-max" key={contentIndex}>
                     {index === 0 ? (
-                      <div className="flex-row-center md:w-full">
-                        <div className="flex-row-center w-max gap-4.5">
-                          <img
-                            className="h-6.25 w-6.25"
-                            src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776665114/x-icon_v6lctg.png"
-                          />
-                          <p className="font-regular text-md relative z-5">
-                            {content}
-                          </p>
-                        </div>
-                      </div>
-                    ) : (
                       <div className="relative flex items-center gap-2.75 lg:gap-7.5">
                         <motion.div
                           style={{ transformOrigin: "left" }}
@@ -63,6 +51,18 @@ export const TroubleshootingCard = () => {
                         <p className="text-md relative z-10 font-semibold">
                           {content}
                         </p>
+                      </div>
+                    ) : (
+                      <div className="flex-row-center md:w-full">
+                        <div className="flex-row-center w-max gap-4.5">
+                          <img
+                            className="h-6.25 w-6.25"
+                            src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776665114/x-icon_v6lctg.png"
+                          />
+                          <p className="font-regular text-md relative z-5">
+                            {content}
+                          </p>
+                        </div>
                       </div>
                     )}
                   </div>
