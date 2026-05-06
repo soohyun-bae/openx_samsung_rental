@@ -11,18 +11,18 @@ export const ResearchCard = () => {
       <motion.div
         initial={{
           WebkitMaskImage:
-            "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%)",
+            "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
           maskImage:
-            "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%)",
+            "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
         }}
         whileInView={{
           WebkitMaskImage:
-            "linear-gradient(to right, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%)",
+            "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
           maskImage:
-            "linear-gradient(to right, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%)",
+            "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
         }}
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="absolute top-70 right-22 w-[75%] -rotate-[13.11deg]"
       >
         <img
