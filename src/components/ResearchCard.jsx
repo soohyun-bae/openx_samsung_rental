@@ -91,9 +91,7 @@ export const ResearchCard = () => {
             bgColor={"bg-[linear-gradient(180deg,#0049FF_0%,white_100%)]"}
             tText={
               <p className="leading-6 text-[#014AFF]">
-                <span className="text-research-graph-md font-extrabold">
-                  100조
-                </span>
+                <span className="text-subTitle font-extrabold">100조</span>
                 <br /> <span className="text-md font-light">(예상)</span>
               </p>
             }

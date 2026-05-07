@@ -58,19 +58,12 @@ export const Carousel = ({
   return (
     <div className="relative flex flex-col items-center gap-10">
       {/* viewport */}
-      <div className="w-full overflow-hidden" ref={emblaRef}>
+      <div className="w-full" ref={emblaRef}>
         <div className="flex items-stretch">
           {children.map((child, index) => (
             <div
               key={index}
-              className={`
-                min-w-0
-                flex-[0_0_85%]
-                px-3
-                md:flex-[0_0_55%]
-                xl:flex-[0_0_33%]
-                ${slideClassName}
-              `}
+              className={`min-w-0 flex-[0_0_85%] px-3 md:flex-[0_0_55%] xl:flex-[0_0_33%] ${slideClassName} `}
             >
               {typeof child === "function"
                 ? child({
@@ -85,28 +78,18 @@ export const Carousel = ({
 
       {/* controls */}
       {(showDots || showArrows) && (
-        <div className="flex items-center gap-[121px]">
+        <div className="flex items-center gap-[143px]">
           {/* prev */}
           {showArrows && (
             <button
               onClick={scrollPrev}
-              className="
-                flex h-[60px] w-[60px]
-                items-center justify-center
-                rounded-full bg-[#F3F3F3]
-                transition hover:bg-[#E9E9E9]
-              "
+              className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-[#F3F3F3] shadow-[0px_0px_5px_rgba(0,0,0,0.1)] transition hover:bg-[#E9E9E9]"
             >
-              <svg
-                width="10"
-                height="18"
-                viewBox="0 0 10 18"
-                fill="none"
-              >
+              <svg width="25" height="25" viewBox="-2 -2 16 21" fill="none">
                 <path
                   d="M9 1L1 9L9 17"
-                  stroke="#BFBFBF"
-                  strokeWidth="2"
+                  stroke="white"
+                  strokeWidth="5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
@@ -116,21 +99,16 @@ export const Carousel = ({
 
           {/* dots */}
           {showDots && (
-            <div className="flex items-center gap-[40px]">
+            <div className="flex items-center gap-[25px]">
               {scrollSnaps.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => scrollTo(index)}
-                  className={`
-                    h-[10px]
-                    rounded-full
-                    transition-all duration-300
-                    ${
-                      selectedIndex === index
-                        ? "w-[10px] bg-[#2455FF]"
-                        : "w-[10px] bg-[#D9D9D9]"
-                    }
-                  `}
+                  className={`h-[10px] rounded-full transition-all duration-300 ${
+                    selectedIndex === index
+                      ? "w-[10px] bg-[#2455FF]"
+                      : "w-[10px] bg-[#D9D9D9]"
+                  } `}
                 />
               ))}
             </div>
@@ -140,19 +118,9 @@ export const Carousel = ({
           {showArrows && (
             <button
               onClick={scrollNext}
-              className="
-                flex h-[60px] w-[60px]
-                items-center justify-center
-                rounded-full bg-[#EEF3FF]
-                transition hover:bg-[#E4ECFF]
-              "
+              className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-[#EEF3FF] shadow-[0px_0px_5px_rgba(0,0,0,0.1)] transition hover:bg-[#E4ECFF]"
             >
-              <svg
-                width="25"
-                height="25"
-                  viewBox="-2 -2 10 22"
-                fill="none"
-              >
+              <svg width="25" height="25" viewBox="-2 -2 10 22" fill="none">
                 <path
                   d="M1 1L9 9L1 17"
                   stroke="white"

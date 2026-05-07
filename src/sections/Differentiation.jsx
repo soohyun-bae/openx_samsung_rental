@@ -6,7 +6,7 @@ const Differentiation = () => {
   return (
     <section
       id="dirrentiation"
-      className="flex flex-col gap-17.5 bg-[linear-gradient(100deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] py-25 px-7.5 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((180/1920)*100vw),180px)]"
+      className="flex flex-col gap-17.5 bg-[linear-gradient(100deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] px-7.5 py-25 md:px-[clamp(30px,calc((100/1920)*100vw),100px)] xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -18,8 +18,11 @@ const Differentiation = () => {
           en="DIFFERENTIATION POINT"
           ko={
             <>
-              가전 렌탈 창업, <br className="md:hidden" />
-              이래서 다릅니다
+              <span className="text-2xl leading-[55px] font-normal">
+                가전 렌탈 창업,
+              </span>{" "}
+              <br />
+              <span className="leading-[55px]">이래서 다릅니다</span>
             </>
           }
           description={

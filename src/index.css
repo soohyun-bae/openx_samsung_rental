@@ -40,7 +40,7 @@
   --color-kakao: #ffeb3b;
 
   --text-xs: 15px;
-  --text-sm: 16px;
+
   --text-md: clamp(16px, calc((20/1920) * 100vw), 20px);
   --text-middle: clamp(20px, calc((25/1920) * 100vw), 25px);
   --text-lg: clamp(24px, calc((30/1920) * 100vw), 30px);
@@ -51,9 +51,14 @@
 
   --text-ko-section-title: clamp(35px, calc(60/1920) * 100vw, 60px);
   --text-research-graph-sm: clamp(12px, calc((20/1920) * 100vw), 20px);
-  --text-research-graph-md: clamp(25px, calc((35/1920) * 100vw), 35px);
-  --text-trouble-shooting-card-title: clamp(18px, calc((25/1920) * 100vw), 25px);
+  --text-trouble-shooting-card-title: clamp(
+    18px,
+    calc((25/1920) * 100vw),
+    25px
+  );
 
+  --text-sm: clamp(14px, calc((20/1920) * 100vw), 20px);
+  --text-subTitle: clamp(25px, calc((35/1920) * 100vw), 35px);
   --text-nav: clamp(18px, calc((20/1920) * 100vw), 20px);
 
   --animate-money1: money1 2s ease-in;
