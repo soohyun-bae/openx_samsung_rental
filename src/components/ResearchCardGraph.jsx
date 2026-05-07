@@ -42,20 +42,21 @@ export const ResearchCardGraph = ({
               }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className={`w-[clamp(42px,calc((77/1920)*100vw),77px)] ${height} rounded-t-2xl ${bgColor}`}
+              className={`w-[42px] lg:w-[77px] ${height} rounded-t-2xl ${bgColor}`}
             />
           </>
         ) : (
           <>
             <div
-              className={`w-[clamp(42px,calc((77/1920)*100vw),77px)] ${height} rounded-t-2xl ${bgColor}`}
+              className={`w-[42px] lg:w-[77px] ${height} rounded-t-2xl ${bgColor}`}
             />
           </>
         )}
       </div>
-      <p className="text-research-graph-sm text-light-black flex justify-around pb-[19px] font-semibold">
+
+      {/* <p className="text-research-graph-sm text-light-black flex justify-around pb-[19px] font-semibold">
         {year}
-      </p>
+      </p> */}
     </div>
   );
 };

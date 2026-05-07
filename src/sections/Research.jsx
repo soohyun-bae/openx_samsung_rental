@@ -21,7 +21,7 @@ const Research = () => {
         }
         description={"국내 렌탈시장 규모 추이 및 전망"}
       />
-      <div className="relative z-2 pt-[clamp(35px,calc((50/1920)*100vw),50px)]">
+      <div className="relative flex justify-center z-2 pt-[clamp(35px,calc((50/1920)*100vw),50px)]">
         <ResearchCard />
       </div>
     </section>
