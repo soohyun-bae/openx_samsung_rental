@@ -3,12 +3,13 @@ import { SectionTitle } from "../components/SectionTitle.jsx";
 
 const Research = () => {
   return (
-    <section className="relative bg-[#FAFBFF] px-[17px] py-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((180/1920)*100vw),200px)]">
+    <section className="bg-blue-bg relative overflow-hidden px-[17px] py-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:pt-[clamp(100px,calc((180/1920)*100vw),200px)]">
       <img
-        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1777536862/samsung_rental_bg_img_ku3gjt.png"
-        className="absolute -bottom-6"
+        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778129451/white-background_2_vwsypd.png"
+        className="absolute top-0 left-0 h-full w-full object-cover"
       />
       <SectionTitle
+        zIndex
         en="RESEARCH"
         ko={
           <>

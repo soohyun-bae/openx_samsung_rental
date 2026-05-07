@@ -25,10 +25,20 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Cafe24Dangdanghae";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-sans: "Pretendard", sans-serif;
   --font-line: "LineSeed", sans-serif;
+  --font-cafe: "Cafe24Dangdanghae", sans-serif;
 
+  --color-blue-bg: #a8b8f6;
   --color-blue: #1428a0;
   --color-dark-blue: #0d1b3e;
   --color-light-blue: #0049ff;
@@ -60,6 +70,8 @@
   --text-sm: clamp(14px, calc((20/1920) * 100vw), 20px);
   --text-subTitle: clamp(25px, calc((35/1920) * 100vw), 35px);
   --text-nav: clamp(18px, calc((20/1920) * 100vw), 20px);
+
+  --leading-sectionTitle-ko: clamp(10px, calc((70/1920) * 100vw), 70px);
 
   --animate-money1: money1 2s ease-in;
   --animate-money2: money2 2s ease-in;

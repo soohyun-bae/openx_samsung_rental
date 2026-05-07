@@ -73,15 +73,15 @@ const Navbar = () => {
       <div
         className={`fixed top-0 left-0 z-100 w-full text-white transition-all duration-300 ease-out lg:hidden ${
           isScrolled
-            ? "bg-white/80 pb-6"
-            : "h-40 bg-linear-to-b from-white from-50% to-transparent"
+            ? "bg-white py-4"
+            : " bg-bg-[linear-gradient(180deg,#0F1520_0%,transparent_100%)] py-7"
         }`}
       >
-        <nav className="mx-auto mt-8.25 flex w-[90%] items-center justify-between">
+        <nav className="mx-auto flex w-[90%] items-center justify-between">
           <button>
             <img
               className={`w-[78px] cursor-pointer`}
-              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776910703/samsung_logo_fn1psv.png"
+              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/v1776910703/samsung_logo_fn1psv.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"}`}
               alt="logo"
               onClick={(event) => {
                 event.preventDefault();
@@ -91,7 +91,7 @@ const Navbar = () => {
           </button>
           <button className="cursor-pointer" onClick={onClickSmMenu}>
             <img
-              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776737974/hamburger-menu_xnwojj.png"
+              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778135354/mobile_nav_wq5uaz.png"
               className={isSmMenuActive ? "hidden" : "h-6 w-6"}
               alt="hambuger-menu"
             />
@@ -134,9 +134,7 @@ const Navbar = () => {
       </div>
       <header
         className={`fixed top-0 left-0 z-100 hidden w-full transition-all duration-300 ease-out md:hidden lg:block ${
-          isScrolled
-            ? "bg-white/70 pb-4 text-black shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
-            : "h-94.25 bg-linear-to-b from-white from-26% to-transparent text-white"
+          isScrolled ? "bg-white pb-4" : "h-[131px] bg-transparent"
         }`}
       >
         <div
@@ -149,7 +147,7 @@ const Navbar = () => {
           >
             <img
               className={`${isScrolled ? "w-[131.5px]" : "w-[131.5px]"} cursor-pointer`}
-              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776910703/samsung_logo_fn1psv.png"
+              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/v1776910703/samsung_logo_fn1psv.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"}`}
               alt="logo"
               onClick={(event) => {
                 event.preventDefault();
@@ -164,7 +162,9 @@ const Navbar = () => {
                 className={`text-nav transition-colors duration-200 ${
                   activeSection === item.link
                     ? "text-dark-blue font-bold"
-                    : "font-light text-black"
+                    : isScrolled
+                      ? "font-light text-black"
+                      : "font-light text-white"
                 }`}
                 href="#"
                 onClick={(event) => {
