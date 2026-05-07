@@ -71,7 +71,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 z-10 w-full text-white transition-all duration-300 ease-out lg:hidden ${
+        className={`fixed top-0 left-0 z-100 w-full text-white transition-all duration-300 ease-out lg:hidden ${
           isScrolled
             ? "bg-white/80 pb-6"
             : "h-40 bg-linear-to-b from-white from-50% to-transparent"
@@ -97,7 +97,7 @@ const Navbar = () => {
             />
           </button>
           {isSmMenuActive && (
-            <div className="fixed inset-0 z-50 lg:hidden">
+            <div className="fixed inset-0 z-100 lg:hidden">
               <div className="absolute inset-0 bg-black/40" />
               <div className="absolute top-0 right-0 h-screen w-85 bg-white/80 shadow-xl">
                 <div className="flex items-center justify-end border-b border-[#8a8989ae] p-8">
@@ -133,7 +133,7 @@ const Navbar = () => {
         </nav>
       </div>
       <header
-        className={`fixed top-0 left-0 z-50 hidden w-full transition-all duration-300 ease-out md:hidden lg:block ${
+        className={`fixed top-0 left-0 z-100 hidden w-full transition-all duration-300 ease-out md:hidden lg:block ${
           isScrolled
             ? "bg-white/70 pb-4 text-black shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
             : "h-94.25 bg-linear-to-b from-white from-26% to-transparent text-white"

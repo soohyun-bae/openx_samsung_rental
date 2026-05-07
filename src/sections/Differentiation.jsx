@@ -18,7 +18,7 @@ const Differentiation = () => {
           en="DIFFERENTIATION POINT"
           ko={
             <>
-              삼성전자 가전 렌탈 창업, <br className="md:hidden" />
+              가전 렌탈 창업, <br className="md:hidden" />
               이래서 다릅니다
             </>
           }
