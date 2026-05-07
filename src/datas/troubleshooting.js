@@ -9,7 +9,7 @@ export const troubleshootingCard = [
     ],
   },
   {
-    title: "기존 창업의 문제점",
+    title: "기존의 문제점",
     content: [
       "수천만 원의 초기 투자금",
       "매달 나가는 임대료/인건비",
