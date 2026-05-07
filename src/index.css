@@ -42,6 +42,7 @@
   --color-blue: #1428a0;
   --color-dark-blue: #0d1b3e;
   --color-light-blue: #0049ff;
+  --color-border-blue: #2488ff;
   --color-light-black: #424242;
   --color-gray: #424242;
   --color-border-gray: #eeeeee;
@@ -67,6 +68,7 @@
     25px
   );
 
+  --text-xs: clamp(12px, calc((20/1920) * 100vw), 20px);
   --text-sm: clamp(14px, calc((20/1920) * 100vw), 20px);
   --text-subTitle: clamp(25px, calc((35/1920) * 100vw), 35px);
   --text-nav: clamp(18px, calc((20/1920) * 100vw), 20px);
