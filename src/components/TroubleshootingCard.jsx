@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const TroubleshootingCard = () => {
   return (
     <div className="flex-row-center relative w-full">
-      <div className="flex-col-center relative w-full lg:flex-row-reverse lg:gap-15">
+      <div className="flex-col-center relative w-full lg:flex-row-reverse">
         {/* 위 카드 */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -22,7 +22,7 @@ export const TroubleshootingCard = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="-mt-8 w-full"
+          className="-mt-8 w-full lg:mt-0 lg:w-[92%] lg:translate-x-8"
         >
           <div className="relative z-10">
             <Card item={troubleshootingCard[1]} />
@@ -39,32 +39,50 @@ const Card = ({ item, isTop = false }) => {
       className={`relative flex w-full flex-col items-center rounded-[20px] border ${
         isTop
           ? "border-[#2488FF] bg-white font-semibold"
-          : "border-border-gray bg-light-gray shadow-lg shadow-black/5"
+          : "border-border-gray bg-light-gray shadow-lg shadow-black/5 lg:rounded-r-[0px] lg:border-r-0"
       } `}
     >
       <div
-        className={`font-line text-trouble-shooting-card-title absolute rounded-[58px] px-[20px] leading-[20px] text-nowrap text-white ${isTop ? "bg-blue -top-6 py-[12px] font-bold" : "font-regular top-16 bg-[#747474] py-[10px] lg:-top-6"} `}
+        className={`font-line text-trouble-shooting-card-title absolute rounded-[58px] px-[20px] leading-[20px] text-nowrap text-white ${isTop ? "-top-6 bg-[#0039C9] py-[12px] font-bold" : "font-regular top-16 bg-[#9F9F9F] py-[10px] lg:-top-6"} `}
       >
         <span className="relative top-[2px]">{item.title}</span>
       </div>
 
       <div
-        className={`${isTop ? "pt-[45px] pb-[36px]" : "pt-[140px] pb-[35px] lg:pt-[45px]"} space-y-4`}
+        className={`${isTop ? "pt-[45px] pb-[36px] lg:py-[74px]" : "pt-[140px] pb-[35px] lg:py-[70px]"} space-y-4`}
       >
         {item.content.map((content, idx) => (
           <div
             key={idx}
             className={`${isTop ? "" : ""}flex items-center gap-4`}
           >
-            <img
-              className="h-6 w-6"
-              src={
-                isTop
-                  ? "https://res.cloudinary.com/dnigvhehc/image/upload/v1776664636/blue-checkbox_f6p3cc.png"
-                  : "https://res.cloudinary.com/dnigvhehc/image/upload/v1776665114/x-icon_v6lctg.png"
-              }
-            />
-            <p>{content}</p>
+            <div className="relative">
+              <img
+                className="h-6 w-6"
+                src={
+                  isTop
+                    ? "https://res.cloudinary.com/dnigvhehc/image/upload/v1778202802/checkbox-icon_uson6l.png"
+                    : "https://res.cloudinary.com/dnigvhehc/image/upload/v1778202624/x-icon_mk2veb.png"
+                }
+              />
+              {isTop ? (
+                <motion.div
+                  initial={{ opacity: 0, scaleX: 0 }}
+                  whileInView={{ opacity: 1, scaleX: 1 }}
+                  style={{ transformOrigin: "right" }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                  className="absolute top-1/2 right-5 hidden h-px w-[10vw] -translate-y-1/2 bg-[linear-gradient(90deg,white_0%,#0039C9_100%)] xl:block"
+                />
+              ) : (
+                <></>
+              )}
+            </div>
+            <p
+              className={`${isTop ? "text-troubleshooting-top-content text-black" : "text-md text-[#9B9B9B]"}`}
+            >
+              {content}
+            </p>
           </div>
         ))}
       </div>
