@@ -7,7 +7,7 @@ export const SectionTitle = ({ en, ko, description, zIndex = false }) => {
         <p className="text-xs leading-none font-semibold text-[#747474]">
           {en}
         </p>
-        <h3 className="font-line to-light-blue from-border-blue text-ko-section-title leading-sectionTitle-ko bg-linear-to-b bg-clip-text font-light text-nowrap text-transparent">
+        <h3 className="font-line to-blue from-dark-blue text-ko-section-title leading-sectionTitle-ko font-regular bg-linear-to-b bg-clip-text text-nowrap text-transparent">
           {ko}
         </h3>
       </div>

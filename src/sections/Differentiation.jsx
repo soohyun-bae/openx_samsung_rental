@@ -17,13 +17,11 @@ const Differentiation = () => {
         <SectionTitle
           en="DIFFERENTIATION POINT"
           ko={
-            <>
-              <span className="text-2xl leading-[55px] font-normal">
-                가전 렌탈 창업,
-              </span>{" "}
+            <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)]">
+              가전 렌탈 창업,
               <br />
-              <span className="leading-[55px]">이래서 다릅니다</span>
-            </>
+              <span className="font-bold">이래서 다릅니다</span>
+            </p>
           }
           description={
             <>
