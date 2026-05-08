@@ -17,13 +17,11 @@ const Troubleshooting = () => {
         <SectionTitle
           en="TROUBLESHOOTING"
           ko={
-            <>
-              <span className="text-2xl leading-[55px] font-normal">
-                리스크 높은 창업을
-              </span>
+            <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)]">
+              리스크 높은 창업을
               <br />
-              <span className="leading-[55px]">고민만하고 계신가요?</span>
-            </>
+              <span className="font-bold">고민만하고 계신가요?</span>
+            </p>
           }
           description={
             <>

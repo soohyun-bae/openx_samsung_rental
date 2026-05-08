@@ -4,7 +4,7 @@ export const UpArrow = () => {
       viewBox="0 0 800 355"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-auto w-full"
+      className="h-auto w-full border border-black"
     >
       <defs>
         <marker
@@ -15,15 +15,15 @@ export const UpArrow = () => {
           refY="6"
           orient="auto"
         >
-          <path d="M3,2 L5,6 L5,9 L11,5 Z" fill="#E6EDFF" />
+          <path d="M3,2 L5,6 L3,9 L11,6 Z" fill="#E6EDFF" />
         </marker>
       </defs>
       <path
         d="
           M0 355 
-          C280 350, 560 350, 710 150
+          C200 355, 400 380, 720 130
           L680 115
-          C600 200, 500 330, 0 355 
+          C600 200, 400 330, 0 355 
           "
         fill="#E6EDFF"
       />
@@ -57,10 +57,10 @@ export const UpArrow = () => {
 //       />
 //       <path
 //         d="
-//           M0 352 
+//           M0 352
 //           C280 350, 560 250, 760 90
 //           L750 50
-//           C560 220, 280 310, 0 352 
+//           C560 220, 280 310, 0 352
 //           "
 //         fill="#E6EDFF"
 //       />

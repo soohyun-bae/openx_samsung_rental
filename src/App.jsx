@@ -36,16 +36,16 @@ function App() {
       <Hero />
       <Research />
       <Troubleshooting />
+      <Reliability />
       <Differentiation />
       <RevenueStructure />
       <Support />
-      <Reliability />
-      {/* <div
+      <div
         className="fixed right-0 left-0 z-50"
         style={{ bottom: `${bottomOffset}px` }}
       >
         <FooterTabContainer />
-      </div> */}
+      </div>
       <div ref={footerRef}>
         <Footer />
       </div>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const ResearchCard = () => {
   return (
-    <div className="relative lg:flex lg:flex-col lg:items-center w-[449px] space-y-[39px] overflow-hidden rounded-t-[30px] border-t border-r border-l border-[#2488FF] bg-white px-[33px] pt-[44px] pb-[clamp(100px,calc((137/1920)*100vw),137px)] lg:w-full">
+    <div className="relative w-[449px] space-y-[39px] overflow-hidden rounded-t-[30px] border-t border-r border-l border-[#2488FF] bg-white px-[33px] pt-[44px] pb-[clamp(100px,calc((137/1920)*100vw),137px)] lg:flex lg:w-full lg:flex-col lg:items-center">
       <p className="font-line text-left text-[clamp(28px,calc((45/1920)*100vw),45px)] leading-[33px] font-bold text-[#014AFF]">
         2026년 100조 <br className="lg:hidden" /> 돌파 예상!
       </p>
@@ -26,13 +26,12 @@ export const ResearchCard = () => {
             }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="absolute bottom-60 -left-3 w-[88%] -rotate-[15deg] max-[500px]:bottom-60 max-[500px]:w-[65vw] lg:hidden"
+            className="absolute bottom-55 -left-3 w-[88%] -rotate-[15deg] max-[500px]:bottom-60 max-[500px]:w-[65vw] lg:hidden"
           >
-            <UpArrow />
+            <img src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778052384/mobile_research_arrow_nfjdy0.png" />
           </motion.div>
 
           <div className="relative z-5 flex w-full items-end justify-around">
-            
             <ResearchCardGraph
               height={"h-[53px]"}
               bgColor={"bg-[#B8B8B8]"}
@@ -107,7 +106,7 @@ export const ResearchCard = () => {
               }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="absolute -z-1 bottom-25 left-15 hidden w-[75%] xl:bottom-20 2xl:bottom-8 2xl:left-23  xl:w-[75%] 2xl:w-[80%] xl:left-20 -rotate-[13deg] lg:block"
+              className="absolute bottom-25 left-15 -z-1 hidden w-[75%] -rotate-[13deg] lg:block xl:bottom-20 xl:left-20 xl:w-[75%] 2xl:bottom-8 2xl:left-23 2xl:w-[80%]"
             >
               <img
                 className="w-full xl:skew-y-7 2xl:skew-y-15"
@@ -125,7 +124,7 @@ export const ResearchCard = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 bg-[linear-gradient(180deg,transparent_0%,black_100%)] opacity-5 w-full h-[10%]" />
+      <div className="absolute bottom-0 left-0 h-[10%] w-full bg-[linear-gradient(180deg,transparent_0%,black_100%)] opacity-5" />
     </div>
   );
 };

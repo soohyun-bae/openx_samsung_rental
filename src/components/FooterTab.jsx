@@ -136,7 +136,7 @@ const DesktopFooterTab = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex-row-center gap-[30px]">
-      <p className="font-line from-dark-blue to-blue bg-linear-to-l bg-clip-text text-[clamp(16px,calc((40/1920)*100vw),40px)] font-bold text-transparent">
+      <p className="font-line from-dark-blue to-blue bg-linear-to-l bg-clip-text text-[clamp(16px,calc((40/1920)*100vw),40px)] leading-[45px] font-bold text-transparent">
         빠른 창업상담
       </p>
       <div className="flex items-center gap-[11px]">
@@ -145,14 +145,14 @@ const DesktopFooterTab = () => {
           name="성함"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(14px,calc((18/1920)*100vw),18px)] text-[15px]"
+          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(14px,calc((18/1920)*100vw),18px)] text-[15px] leading-none"
         />
         <input
           placeholder="연락처 (- 제외 숫자만 입력)"
           name="연락처"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(14px,calc((18/1920)*100vw),18px)] text-[15px]"
+          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(14px,calc((18/1920)*100vw),18px)] text-[15px] leading-none"
         />
       </div>
       <div className="flex items-center gap-[11px]">
@@ -190,7 +190,7 @@ const DesktopFooterTab = () => {
           disabled={state.submitting}
           className="cursor-pointer rounded-[12px] bg-[linear-gradient(120deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] px-[32px] py-[14px]"
         >
-          <p className="text-[clamp(16px,calc((20/1920)*100vw),20px)] font-bold text-[#091B35]">
+          <p className="text-[clamp(16px,calc((20/1920)*100vw),20px)] leading-[28px] font-bold text-[#091B35]">
             {state.submitting ? "제출 중..." : "상담신청"}
           </p>
         </button>
@@ -201,9 +201,9 @@ const DesktopFooterTab = () => {
         >
           <img
             src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776911568/kakaoicon_ro4ptg.png"
-            className="h-[clamp(25px,calc((31/1920)*100vw),31px)] w-[clamp(23px,calc((29/1920)*100vw),29px)]"
+            className="h-[clamp(25px,calc((31/1920)*100vw),29px)] w-[clamp(23px,calc((29/1920)*100vw),29px)]"
           />
-          <p className="text-[clamp(16px,calc((20/1920)*100vw),20px)] font-bold text-[#091B35]">
+          <p className="text-[clamp(16px,calc((20/1920)*100vw),20px)] leading-none font-bold text-[#091B35]">
             카톡 상담
           </p>
         </a>
