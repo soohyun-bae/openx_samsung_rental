@@ -134,11 +134,11 @@ const Navbar = () => {
       </div>
       <header
         className={`fixed top-0 left-0 z-100 hidden w-full transition-all duration-300 ease-out md:hidden lg:block ${
-          isScrolled ? "bg-white pb-4" : "h-[131px] bg-transparent"
+          isScrolled ? "bg-white pb-4" : "bg-transparent"
         }`}
       >
         <div
-          className={`${isScrolled ? "mt-5" : "mt-[54.96px]"} mx-auto flex h-10.25 w-full items-center justify-between px-23.25`}
+          className={`${isScrolled ? "pt-5" : " pt-[34px] pb-[14px]"} mx-auto flex w-full items-center justify-between px-23.25`}
         >
           <button
             type="button"
@@ -146,7 +146,7 @@ const Navbar = () => {
             className="transition-all duration-300"
           >
             <img
-              className={`${isScrolled ? "w-[131.5px]" : "w-[131.5px]"} cursor-pointer`}
+              className={`${isScrolled ? "w-[clamp(78px,calc((131/1920)*100vw),131px)]" : "w-[clamp(78px,calc((131/1920)*100vw),131px)]"} cursor-pointer`}
               src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/v1776910703/samsung_logo_fn1psv.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"}`}
               alt="logo"
               onClick={(event) => {

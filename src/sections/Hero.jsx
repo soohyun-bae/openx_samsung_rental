@@ -24,8 +24,8 @@ const Hero = () => {
       >
         <div className="absolute top-0 flex flex-col items-center gap-[26px] md:gap-[50px]">
           <img
-            src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778131666/hero_title_yyedq4.png"
-            className="w-[clamp(285px,calc((741/1920)*100vw),741px)]"
+            src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778461451/hero_title_jaqsbu.png"
+            className="w-[clamp(285px,calc((741/1920)*100vw),736px)]"
           />
           <button className="rounded-[50px] border border-white bg-white/25 px-[clamp(30px,calc((40/1920)*100vw),40px)] py-[clamp(10px,calc((15/1920)*100vw),15px)]">
             <p className="text-sm leading-[22.5px] font-bold text-white">
