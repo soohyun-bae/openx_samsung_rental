@@ -20,7 +20,9 @@ const RevenueStructure = () => {
           ko={
             <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)]">
               가전 렌탈 <br />
-              <span className="font-bold">판매하면 얼마나 벌까?</span>
+              <span className="text-[clamp(35px,calc((60/1920)*100vw),60px)] font-bold">
+                판매하면 얼마나 벌까?
+              </span>
             </p>
           }
           description={

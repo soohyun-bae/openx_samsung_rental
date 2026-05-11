@@ -5,9 +5,9 @@ export const differentiationCardData = [
     title: "월 10만원으로 운영",
     description: (
       <>
-        수천만 원의 초기 투자 없이 월 서비스비용 10만원
-        <br />
-        만으로 나만의 렌탈 사업을 시작할 수 있습니다
+        수천만 원의 초기 투자 없이 <br className="md:hidden" /> 월 서비스비용
+        10만원 만으로 <br />
+        나만의 렌탈 사업을 시작할 수 있습니다
       </>
     ),
   },
@@ -40,8 +40,9 @@ export const differentiationCardData = [
     title: "본사가 다 해드립니다",
     description: (
       <>
-        쇼핑몰 구축부터 배송/설치/AS까지 본사의 체계적인{" "}
-        <br className="hidden md:block" /> 시스템으로 사업 운영에만 집중하세요
+        쇼핑몰 구축부터 배송/설치/AS까지 <br className="md:hidden" /> 본사의
+        체계적인 <br className="hidden md:block" /> 시스템으로 사업 운영에만
+        집중하세요
       </>
     ),
   },

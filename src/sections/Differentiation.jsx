@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const Differentiation = () => {
   return (
     <section
-      id="dirrentiation"
-      className="flex flex-col gap-17.5 bg-[linear-gradient(100deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] py-25 md:px-0 xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]"
+      id="diffentiation"
+      className="flex flex-col gap-[50px] bg-[linear-gradient(100deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] py-25 md:px-0 xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -20,7 +20,9 @@ const Differentiation = () => {
             <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)]">
               가전 렌탈 창업,
               <br />
-              <span className="font-bold">이래서 다릅니다</span>
+              <span className="text-[clamp(35px,calc((60/1920)*100vw),60px)] font-bold">
+                이래서 다릅니다
+              </span>
             </p>
           }
           description={

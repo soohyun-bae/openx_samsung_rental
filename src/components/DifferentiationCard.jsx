@@ -42,7 +42,9 @@ export const DifferentiationCard = () => {
             <div className="flex flex-col items-center gap-5">
               <p
                 className={`text-subTitle text-center font-bold transition-colors duration-300 ${
-                  isActive ? "text-[#1637A2]" : "text-[#98A3D4]"
+                  isActive
+                    ? "bg-linear-to-b from-[#014AFF] to-[#2488FF] bg-clip-text text-transparent"
+                    : "text-[#98A3D4]"
                 } `}
               >
                 {item.title}

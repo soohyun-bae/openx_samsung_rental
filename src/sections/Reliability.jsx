@@ -17,7 +17,7 @@ const Reliability = () => {
         <SectionTitle
           en="RELIABILITY"
           ko={
-            <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)] font-bold">
+            <p className="text-[clamp(35px,calc((60/1920)*100vw),60px)] leading-[clamp(40px,calc((70/1920)*100vw),70px)] font-bold">
               왜 가전 렌탈 <br className="lg:hidden" /> 창업일까?
             </p>
           }

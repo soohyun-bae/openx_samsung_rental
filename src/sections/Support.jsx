@@ -3,18 +3,25 @@ import { SupportContents } from "../components/SupportContents.jsx";
 
 const Support = () => {
   return (
-    <section className="bg-[linear-gradient(100deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] px-7.5 py-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((180/1920)*100vw),180px)]">
+    <section className="flex flex-col gap-[50px] py-25 md:px-0 xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]">
       <SectionTitle
         en="SUPPORT SYSTEM"
         ko={
-          <>
+          <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)]">
             처음이어도 괜찮습니다 <br />
-            본사가 처음부터 <br className="md:hidden" />
-            끝까지 함께합니다
+            <span className="text-[clamp(35px,calc((60/1920)*100vw),60px)] font-bold">
+              저희가 처음부터 <br /> 끝까지 함께합니다
+            </span>
+          </p>
+        }
+        description={
+          <>
+            경험이 없어도 괜찮습니다 <br />
+            성공까지 함께하는 파트너입니다
           </>
         }
       />
-      <div className="mt-[70px]">
+      <div>
         <SupportContents />
       </div>
     </section>

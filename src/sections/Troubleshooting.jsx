@@ -20,7 +20,9 @@ const Troubleshooting = () => {
             <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)]">
               리스크 높은 창업을
               <br />
-              <span className="font-bold">고민만하고 계신가요?</span>
+              <span className="text-[clamp(35px,calc((60/1920)*100vw),60px)] font-bold">
+                고민만하고 계신가요?
+              </span>
             </p>
           }
           description={

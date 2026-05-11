@@ -20,7 +20,10 @@ const Research = () => {
           en="RESEARCH"
           ko={
             <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)]">
-              급성장하는 <br /> <span className="font-bold">가전 렌탈시장</span>
+              급성장하는 <br />{" "}
+              <span className="text-[clamp(35px,calc((60/1920)*100vw),60px)] font-bold">
+                가전 렌탈시장
+              </span>
             </p>
           }
           description={"국내 렌탈시장 규모 추이 및 전망"}

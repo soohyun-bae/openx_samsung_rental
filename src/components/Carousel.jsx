@@ -80,7 +80,7 @@ export const Carousel = ({
 
       {/* controls */}
       {(showDots || showArrows) && (
-        <div className="flex items-center gap-[143px]">
+        <div className="flex items-center gap-[clamp(80px,calc((143/1920)*100vw),143px)]">
           {/* prev */}
           {showArrows && (
             <button
