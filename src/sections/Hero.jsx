@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="relative flex flex-col justify-between md:h-[1094px]">
       <img
         className="hidden md:block md:h-full md:w-full md:object-cover md:object-center"
-        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778132503/hero_toqu9e.png"
+        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778460943/hero_snckav.png"
       />
       <img
         className="h-screen w-full object-cover object-center md:hidden"

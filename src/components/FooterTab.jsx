@@ -7,7 +7,7 @@ export const FooterTabContainer = () => {
       <div className="bg-white xl:hidden">
         <MobileFooterTab />
       </div>
-      <div className="hidden xl:flex xl:justify-center xl:bg-linear-to-t xl:from-white xl:from-90% xl:to-transparent xl:pt-[40px] xl:pb-[23px]">
+      <div className="hidden xl:flex xl:justify-center xl:bg-linear-to-t xl:from-white xl:from-90% xl:to-transparent xl:pt-[30px] xl:pb-[20px]">
         <DesktopFooterTab />
       </div>
     </div>
@@ -136,7 +136,7 @@ const DesktopFooterTab = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex-row-center gap-[30px]">
-      <p className="font-line from-dark-blue to-blue bg-linear-to-l bg-clip-text text-[clamp(16px,calc((40/1920)*100vw),40px)] leading-[45px] font-bold text-transparent">
+      <p className="font-line from-dark-blue to-blue bg-linear-to-l bg-clip-text text-[clamp(16px,calc((40/1920)*100vw),40px)] leading-[40px] font-bold text-transparent">
         빠른 창업상담
       </p>
       <div className="flex items-center gap-[11px]">
@@ -145,14 +145,14 @@ const DesktopFooterTab = () => {
           name="성함"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(14px,calc((18/1920)*100vw),18px)] text-[15px] leading-none"
+          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(10px,calc((18/1920)*100vw),12px)] text-[15px] leading-none"
         />
         <input
           placeholder="연락처 (- 제외 숫자만 입력)"
           name="연락처"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(14px,calc((18/1920)*100vw),18px)] text-[15px] leading-none"
+          className="rounded-[12px] border-2 border-[#ededed] bg-[#fafafa] px-[clamp(16px,calc((32/1920)*100vw),32px)] py-[clamp(10px,calc((18/1920)*100vw),12px)] text-[15px] leading-none"
         />
       </div>
       <div className="flex items-center gap-[11px]">
@@ -178,7 +178,7 @@ const DesktopFooterTab = () => {
               />
             </svg>
           </span>
-          <span className="ml-[12px] text-[16px] font-light">
+          <span className="ml-[12px] text-[16px] leading-[20px] font-light">
             개인정보 수집에 <br />
             동의합니다
           </span>
@@ -188,14 +188,14 @@ const DesktopFooterTab = () => {
         <button
           type="submit"
           disabled={state.submitting}
-          className="cursor-pointer rounded-[12px] bg-[linear-gradient(120deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] px-[32px] py-[14px]"
+          className="cursor-pointer rounded-[12px] bg-[linear-gradient(120deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] px-[32px] py-[7px]"
         >
           <p className="text-[clamp(16px,calc((20/1920)*100vw),20px)] leading-[28px] font-bold text-[#091B35]">
             {state.submitting ? "제출 중..." : "상담신청"}
           </p>
         </button>
         <a
-          className="bg-kakao flex-row-center cursor-pointer gap-[14px] rounded-[12px] px-[24px] py-[14px]"
+          className="bg-kakao flex-row-center cursor-pointer gap-[14px] rounded-[12px] px-[24px] py-[7px]"
           href="https://open.kakao.com/o/s9TbPHri"
           target="_blanck"
         >
