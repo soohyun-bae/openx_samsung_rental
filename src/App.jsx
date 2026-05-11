@@ -9,6 +9,8 @@ import RevenueStructure from "./sections/RevenueStructure.jsx";
 import Support from "./sections/Support.jsx";
 import Troubleshooting from "./sections/Troubleshooting.jsx";
 import Research from "./sections/Research.jsx";
+import { Categories } from "./sections/Categories.jsx";
+import { Expense } from "./sections/Expense.jsx";
 
 function App() {
   const footerRef = useRef(null);
@@ -40,6 +42,8 @@ function App() {
       <Differentiation />
       <RevenueStructure />
       <Support />
+      <Categories />
+      <Expense />
       {/* <div
         className="fixed right-0 left-0 z-50"
         style={{ bottom: `${bottomOffset}px` }}
