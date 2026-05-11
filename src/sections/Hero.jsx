@@ -3,38 +3,38 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col justify-between md:h-[1094px]">
+    <section className="relative flex h-full w-full flex-col justify-between">
       <img
-        className="hidden md:block md:h-full md:w-full md:object-cover md:object-center"
+        className="hidden h-screen w-full object-cover object-bottom pt-10 lg:block"
         src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778460943/hero_snckav.png"
       />
       <img
-        className="h-screen w-full object-cover object-center md:hidden"
-        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778133853/mobile_hero_qcgucz.png"
+        className="h-screen w-full object-fill object-center lg:hidden"
+        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778467278/mobile_hero_aotih8.png"
       />
       <header>
         <Navbar />
       </header>
       <motion.div
-        className="flex-col-center absolute top-[clamp(130px,calc((192/1920)*100vw),192px)] left-1/2 z-5 h-full h-max w-full -translate-x-1/2 bg-[linear-gradient(180deg,#0F1520_0%,transparent_100%)] md:bg-none"
+        className="flex-col-center absolute top-[clamp(130px,calc((192/1920)*100vw),192px)] left-1/2 z-5 h-max w-full -translate-x-1/2 bg-[linear-gradient(180deg,#0F1520_0%,transparent_100%)] md:bg-none"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="absolute top-0 flex flex-col items-center gap-[26px] md:gap-[50px]">
-          <img
-            src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778461451/hero_title_jaqsbu.png"
-            className="w-[clamp(285px,calc((741/1920)*100vw),736px)]"
-          />
-          <button className="rounded-[50px] border border-white bg-white/25 px-[clamp(30px,calc((40/1920)*100vw),40px)] py-[clamp(10px,calc((15/1920)*100vw),15px)]">
-            <p className="text-sm leading-[22.5px] font-bold text-white">
-              삼성렌탈 가맹점 모집
-            </p>
-          </button>
+        <div className="absolute top-[clamp(120px,calc((160/1920)*100vw),160px)] flex flex-col items-center md:gap-[50px] lg:top-[15vw]">
+          <div className="relative flex w-[90%] flex-col items-center gap-[23px] lg:w-[70%]">
+            <img src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778467629/mobile_horo_title_top_zmtuhc.png" />
+            <img src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778467629/mobile_hero_title_second_e42jfe.png" />
+            <button className="absolute top-110 rounded-[50px] border border-white bg-black/70 px-[clamp(30px,calc((40/1920)*100vw),40px)] py-[clamp(10px,calc((15/1920)*100vw),15px)]">
+              <p className="text-xs leading-none font-bold text-white">
+                삼성렌탈 가맹점 모집
+              </p>
+            </button>
+          </div>
         </div>
       </motion.div>
-      <div className="absolute -bottom-17 left-0 z-15 h-[11%] w-full bg-[linear-gradient(0deg,transparent_0%,#1428A0_100%)] opacity-[20%] blur-lg" />
+      {/* <div className="absolute -bottom-17 left-0 z-15 h-[11%] w-full bg-[linear-gradient(0deg,transparent_0%,#1428A0_100%)] opacity-[20%] blur-lg" /> */}
     </section>
   );
 };

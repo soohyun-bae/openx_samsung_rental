@@ -28,9 +28,9 @@ export const differentiationCardData = [
     title: "삼성이라는 이름의 힘",
     description: (
       <>
-        대한민국 가전 1위 브랜드 삼성. 고객이 먼저 신뢰하는{" "}
-        <br className="hidden md:block" /> 브랜드로 영업의 절반은 이미
-        완성됩니다
+        대한민국 가전 1위 브랜드 삼성. <br className="md:hidden" />
+        고객이 먼저 신뢰하는 <br className="hidden md:block" /> 브랜드로
+        <br className="md:hidden" /> 영업의 절반은 이미 완성됩니다
       </>
     ),
   },

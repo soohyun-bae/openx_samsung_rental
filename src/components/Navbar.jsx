@@ -72,9 +72,7 @@ const Navbar = () => {
     <>
       <div
         className={`fixed top-0 left-0 z-100 w-full text-white transition-all duration-300 ease-out lg:hidden ${
-          isScrolled
-            ? "bg-white py-4"
-            : " bg-bg-[linear-gradient(180deg,#0F1520_0%,transparent_100%)] py-7"
+          isScrolled ? "bg-white py-4" : " pt-[23px] pb-[77px]"
         }`}
       >
         <nav className="mx-auto flex w-[90%] items-center justify-between">
@@ -133,8 +131,10 @@ const Navbar = () => {
         </nav>
       </div>
       <header
-        className={`fixed top-0 left-0 z-100 hidden w-full transition-all duration-300 ease-out md:hidden lg:block ${
-          isScrolled ? "bg-white pb-4" : "bg-transparent"
+        className={`fixed top-0 left-0 z-100 hidden w-full transition-all duration-300 ease-out lg:block ${
+          isScrolled
+            ? "bg-white pb-4"
+            : "bg-[linear-gradient(180deg,#001835_12%,transparent_63%)] pb-[300px]"
         }`}
       >
         <div

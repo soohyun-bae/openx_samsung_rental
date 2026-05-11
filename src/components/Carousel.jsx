@@ -56,23 +56,25 @@ export const Carousel = ({
   }, [emblaApi]);
 
   return (
-    <div className="relative flex flex-col items-center gap-10">
+    <div className="relative flex flex-col items-center justify-center gap-[50px]">
       {/* viewport */}
-      <div className="w-full" ref={emblaRef}>
-        <div className="flex items-stretch">
-          {children.map((child, index) => (
-            <div
-              key={index}
-              className={`min-w-0 flex-[0_0_85%] px-3 md:flex-[0_0_55%] xl:flex-[0_0_33%] ${slideClassName} `}
-            >
-              {typeof child === "function"
-                ? child({
-                    isActive: selectedIndex === index,
-                    index,
-                  })
-                : child}
-            </div>
-          ))}
+      <div className="w-full">
+        <div ref={emblaRef} className="w-full">
+          <div className="flex items-stretch">
+            {children.map((child, index) => (
+              <div
+                key={index}
+                className={`flex min-w-0 flex-[0_0_80%] justify-center px-4 md:flex-[0_0_55%] lg:flex-[0_0_40%] ${slideClassName} `}
+              >
+                {typeof child === "function"
+                  ? child({
+                      isActive: selectedIndex === index,
+                      index,
+                    })
+                  : child}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -83,9 +85,15 @@ export const Carousel = ({
           {showArrows && (
             <button
               onClick={scrollPrev}
-              className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-[#F3F3F3] shadow-[0px_0px_5px_rgba(0,0,0,0.1)] transition hover:bg-[#E9E9E9]"
+              className="flex h-[clamp(30px,calc((60/1920)*100vw),60px)] w-[clamp(30px,calc((60/1920)*100vw),60px)] items-center justify-center rounded-full bg-[#F3F3F3] shadow-[0px_0px_5px_rgba(0,0,0,0.1)] transition hover:bg-[#E8EBFF]"
             >
-              <svg width="25" height="25" viewBox="-2 -2 16 21" fill="none">
+              <svg
+                className="h-[clamp(14px,calc((25/1920)*100vw),25px)] w-[clamp(14px,calc((25/1920)*100vw),25px)]"
+                width="25"
+                height="25"
+                viewBox="-2 -2 16 21"
+                fill="none"
+              >
                 <path
                   d="M9 1L1 9L9 17"
                   stroke="white"
@@ -118,9 +126,15 @@ export const Carousel = ({
           {showArrows && (
             <button
               onClick={scrollNext}
-              className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-[#EEF3FF] shadow-[0px_0px_5px_rgba(0,0,0,0.1)] transition hover:bg-[#E4ECFF]"
+              className="flex h-[clamp(30px,calc((60/1920)*100vw),60px)] w-[clamp(30px,calc((60/1920)*100vw),60px)] items-center justify-center rounded-full bg-[#F3F3F3] shadow-[0px_0px_5px_rgba(0,0,0,0.1)] transition hover:bg-[#E8EBFF]"
             >
-              <svg width="25" height="25" viewBox="-2 -2 10 22" fill="none">
+              <svg
+                className="h-[clamp(14px,calc((25/1920)*100vw),25px)] w-[clamp(14px,calc((25/1920)*100vw),25px)]"
+                width="25"
+                height="25"
+                viewBox="-2 -2 10 22"
+                fill="none"
+              >
                 <path
                   d="M1 1L9 9L1 17"
                   stroke="white"
