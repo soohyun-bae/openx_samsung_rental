@@ -68,7 +68,7 @@ export const Carousel = ({
             {duplicatedChildren.map((child, index) => (
               <div
                 key={index}
-                className={`flex flex-[0_0_80%] justify-center lg:flex-[0_0_60%] xl:flex-[0_0_40%] 2xl:flex-[0_0_25%] ${slideClassName} `}
+                className={`flex flex-[0_0_80%] justify-center lg:flex-[0_0_40%] xl:flex-[0_0_30%] 2xl:flex-[0_0_25%] ${slideClassName} `}
               >
                 {typeof child === "function"
                   ? child({
