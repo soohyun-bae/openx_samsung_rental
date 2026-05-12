@@ -6,6 +6,7 @@ export const ResearchCardGraph = ({
   bgColor,
   year,
   ani = false,
+  delay = 0,
 }) => {
   return (
     <div className="flex w-[45px] flex-col items-center gap-[8px]">
@@ -41,7 +42,7 @@ export const ResearchCardGraph = ({
                   "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
               }}
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.4, ease: "easeOut", delay: `${delay}` }}
               className={`w-[42px] lg:w-[77px] ${height} rounded-t-2xl ${bgColor}`}
             />
           </>

@@ -7,7 +7,7 @@ const Research = () => {
     <section className="relative overflow-hidden bg-white px-[17px] pt-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:pt-[clamp(100px,calc((180/1920)*100vw),200px)]">
       <img
         loading="lazy"
-        src="https://res.cloudinary.com/dnigvhehc/image/upload/q_auto/v1778129451/white-background_2_vwsypd.png"
+        src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778129451/white-background_2_vwsypd.png"
         className="absolute top-0 left-0 h-full w-full object-cover"
       />
       <motion.div

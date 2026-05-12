@@ -1,4 +1,5 @@
 import { categoryCard } from "../datas/categoryCard.jsx";
+import { motion } from "framer-motion";
 
 export const CategoryCard = () => {
   return (
@@ -9,7 +10,7 @@ export const CategoryCard = () => {
             key={index}
             className="flex flex-col items-center gap-[10px] lg:gap-[20px]"
           >
-            <div className="w-[clamp(127px,calc((176/1920)*100vw),176px)]">
+            <div className="w-[clamp(127px,calc((176/1920)*100vw),176px)] transition-all duration-300 ease-out hover:scale-[120%] hover:drop-shadow-[0_20px_40px_rgba(0,0,0,0.16)]">
               <img className="h-full w-full" src={item.imgSrc} />
             </div>
 

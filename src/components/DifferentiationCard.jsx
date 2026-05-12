@@ -23,19 +23,7 @@ export const DifferentiationCard = () => {
           <div className="flex flex-col items-center gap-12">
             {/* icon */}
             <div className="flex h-[clamp(141px,calc((150/1920)*100vw),150px)] w-[clamp(141px,calc((150/1920)*100vw),150px)] items-center justify-center rounded-full bg-[#F8F8F8]">
-              <img
-                src={item.imgSrc}
-                alt={item.title}
-                className={
-                  index === 1
-                    ? "w-[96px]"
-                    : index === 2
-                      ? "w-[219px]"
-                      : index === 3
-                        ? "w-[76px]"
-                        : "w-[80px]"
-                }
-              />
+              <img src={item.imgSrc} alt={item.title} className={"w-[219px]"} />
             </div>
 
             {/* text */}

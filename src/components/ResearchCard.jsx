@@ -28,11 +28,16 @@ export const ResearchCard = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="absolute bottom-55 -left-3 w-[88%] -rotate-[15deg] max-[500px]:bottom-60 max-[500px]:w-[65vw] lg:hidden"
           >
-            <img src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778052384/mobile_research_arrow_nfjdy0.png" />
+            <img
+              loading="lazy"
+              src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778052384/mobile_research_arrow_nfjdy0.png"
+            />
           </motion.div>
 
           <div className="relative z-5 flex w-full items-end justify-around">
             <ResearchCardGraph
+              ani
+              delay={0}
               height={"h-[53px]"}
               bgColor={"bg-[#B8B8B8]"}
               tText={
@@ -44,6 +49,8 @@ export const ResearchCard = () => {
               // year={"2011"}
             />
             <ResearchCardGraph
+              ani
+              delay={0.15}
               height={"h-[87px]"}
               bgColor={"bg-[#B8B8B8]"}
               tText={
@@ -56,6 +63,8 @@ export const ResearchCard = () => {
               // year={"2016"}
             />
             <ResearchCardGraph
+              ani
+              delay={0.3}
               height={"h-[140px]"}
               bgColor={"bg-[#B8B8B8]"}
               tText={
@@ -68,6 +77,8 @@ export const ResearchCard = () => {
               // year={"2018"}
             />
             <ResearchCardGraph
+              ani
+              delay={0.45}
               height={"h-[184px]"}
               bgColor={"bg-[#B8B8B8]"}
               tText={
@@ -81,6 +92,7 @@ export const ResearchCard = () => {
             />
             <ResearchCardGraph
               ani
+              delay={0.6}
               height={"h-[367px]"}
               bgColor={"bg-[linear-gradient(180deg,#0049FF_0%,white_100%)]"}
               tText={
@@ -109,8 +121,9 @@ export const ResearchCard = () => {
               className="absolute bottom-25 left-15 -z-1 hidden w-[75%] -rotate-[13deg] lg:block xl:bottom-20 xl:left-20 xl:w-[75%] 2xl:bottom-8 2xl:left-23 2xl:w-[80%]"
             >
               <img
+                loading="lazy"
                 className="w-full xl:skew-y-7 2xl:skew-y-15"
-                src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778040784/research_arrow_imaana.png"
+                src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778040784/research_arrow_imaana.png"
               />
             </motion.div>
             <div className="bg-border-gray absolute bottom-0 left-0 h-[1px] w-full" />

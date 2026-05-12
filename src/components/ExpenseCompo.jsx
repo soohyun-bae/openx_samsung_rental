@@ -12,7 +12,7 @@ export const ExpenseCompo = () => {
       </div>
 
       {/* 테이블 */}
-      <div className="w-full">
+      <div className="w-full rounded-[20px] shadow-[4px_4px_12px_rgba(0,0,0,0.15)]">
         {/* 가맹비 */}
         <div className="flex items-center border-b border-[#E3E3E3]">
           <div className="bg-border-gray flex-1 rounded-tl-[20px] py-[18px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] font-semibold text-[#5E5E5E]">

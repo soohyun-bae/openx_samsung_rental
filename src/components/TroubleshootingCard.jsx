@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 export const TroubleshootingCard = () => {
   return (
     <div className="flex-row-center relative w-full">
-      <div className="flex-col-center relative w-full lg:flex-row-reverse">
+      <div className="flex-col-center relative w-full lg:hidden">
         {/* 위 카드 */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
           className="relative z-20 flex w-full flex-col justify-center"
         >
           <Card item={troubleshootingCard[0]} isTop />
@@ -21,7 +21,32 @@ export const TroubleshootingCard = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="-mt-8 w-full lg:mt-0 lg:w-[92%] lg:translate-x-8"
+        >
+          <div className="relative z-10">
+            <Card item={troubleshootingCard[1]} />
+          </div>
+        </motion.div>
+      </div>
+      <div className="relative hidden w-full flex-row-reverse items-center justify-center lg:flex">
+        {/* 위 카드 */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.6 }}
+          className="relative z-20 flex w-full flex-col justify-center"
+        >
+          <Card item={troubleshootingCard[0]} isTop />
+        </motion.div>
+
+        {/* 아래 카드 */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           className="-mt-8 w-full lg:mt-0 lg:w-[92%] lg:translate-x-8"
         >
           <div className="relative z-10">
@@ -61,8 +86,8 @@ const Card = ({ item, isTop = false }) => {
                 className="h-6 w-6"
                 src={
                   isTop
-                    ? "https://res.cloudinary.com/dnigvhehc/image/upload/v1778202802/checkbox-icon_uson6l.png"
-                    : "https://res.cloudinary.com/dnigvhehc/image/upload/v1778202624/x-icon_mk2veb.png"
+                    ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778202802/checkbox-icon_uson6l.png"
+                    : "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778202624/x-icon_mk2veb.png"
                 }
               />
               {isTop ? (
