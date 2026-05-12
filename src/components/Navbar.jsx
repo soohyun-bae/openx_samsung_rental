@@ -89,20 +89,20 @@ const Navbar = () => {
           </button>
           <button className="cursor-pointer" onClick={onClickSmMenu}>
             <img
-              src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778135354/mobile_nav_wq5uaz.png"
+              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/v1778567081/mobile_navbar_black_hb33fu.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1778135354/mobile_nav_wq5uaz.png"}`}
               className={isSmMenuActive ? "hidden" : "h-6 w-6"}
               alt="hambuger-menu"
             />
           </button>
           {isSmMenuActive && (
             <div className="fixed inset-0 z-100 lg:hidden">
-              <div className="absolute inset-0 bg-black/40" />
+              <div className="absolute inset-0 bg-black/60" />
               <div className="absolute top-0 right-0 h-screen w-85 bg-white/80 shadow-xl">
-                <div className="flex items-center justify-end border-b border-[#8a8989ae] p-8">
+                <div className="flex items-center justify-end border-b border-[#8a8989ae] p-6.5">
                   <button type="button" onClick={onClickSmMenu}>
                     <img
-                      src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776665114/x-icon_v6lctg.png"
-                      className="h-6 w-6"
+                      src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778567436/x_icon_pjlvrt.png"
+                      className="h-4 w-4"
                     />
                   </button>
                 </div>
@@ -112,7 +112,7 @@ const Navbar = () => {
                       key={index}
                       className={`text-nav block pb-6 transition-colors duration-200 ${
                         activeSection === item.link
-                          ? "text-yellow font-bold"
+                          ? "font-bold text-black"
                           : "font-light text-black"
                       }`}
                       href={`#${item.link}`}

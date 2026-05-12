@@ -10,7 +10,7 @@ const Hero = () => {
         src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778460943/hero_snckav.png"
       />
       <img
-        className="hidden h-screen w-full 2xl:block"
+        className="hidden h-screen w-full pb-10 2xl:block"
         src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778560411/hero_test_oq28h4.png"
       />
       <img
@@ -18,7 +18,7 @@ const Hero = () => {
         className="h-screen w-full object-fill object-center lg:hidden"
         src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778553058/mobile_hero_azys7u.png"
       />
-      <button className="absolute bottom-29 left-1/2 -translate-x-1/2 rounded-[50px] border border-white bg-black/70 px-[clamp(30px,calc((40/1920)*100vw),40px)] py-[clamp(10px,calc((15/1920)*100vw),15px)] lg:bottom-18 2xl:hidden">
+      <button className="absolute bottom-29 left-1/2 -translate-x-1/2 rounded-[50px] border border-white bg-black/70 px-[clamp(30px,calc((40/1920)*100vw),40px)] py-[clamp(10px,calc((15/1920)*100vw),15px)] lg:bottom-35 2xl:hidden">
         <p className="text-xs leading-none font-bold text-white">
           삼성렌탈 가맹점 모집
         </p>

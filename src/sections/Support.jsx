@@ -3,7 +3,10 @@ import { SupportContents } from "../components/SupportContents.jsx";
 
 const Support = () => {
   return (
-    <section className="flex flex-col gap-[50px] py-25 md:px-0 xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]">
+    <section
+      id="support"
+      className="flex flex-col gap-[50px] py-25 md:px-0 xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]"
+    >
       <SectionTitle
         en="SUPPORT SYSTEM"
         ko={
