@@ -31,7 +31,7 @@ export const Expense = () => {
           }
         />
       </motion.div>
-      <div>
+      <div className="">
         <ExpenseCompo />
       </div>
     </section>
