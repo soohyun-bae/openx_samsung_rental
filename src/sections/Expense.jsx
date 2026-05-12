@@ -6,7 +6,7 @@ export const Expense = () => {
   return (
     <section
       id="expense"
-      className="flex flex-col gap-[50px] bg-white py-25 md:px-0 xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]"
+      className="flex flex-col gap-[50px] bg-white py-25 md:px-0 lg:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
