@@ -10,7 +10,7 @@ const Hero = () => {
         src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778460943/hero_snckav.png"
       />
       <img
-        className="hidden h-screen w-full pb-10 2xl:block"
+        className="hidden h-screen w-full 2xl:block"
         src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778560411/hero_test_oq28h4.png"
       />
       <img
