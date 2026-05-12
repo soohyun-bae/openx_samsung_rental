@@ -132,9 +132,7 @@ const Navbar = () => {
       </div>
       <header
         className={`fixed top-0 left-0 z-100 hidden w-full transition-all duration-300 ease-out lg:block ${
-          isScrolled
-            ? "bg-white pb-4"
-            : "bg-[linear-gradient(180deg,#001835_12%,transparent_63%)] pb-[300px]"
+          isScrolled ? "bg-white pb-4" : ""
         }`}
       >
         <div
