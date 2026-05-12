@@ -2,7 +2,7 @@ import { revenueCard } from "../datas/revenueCard.jsx";
 
 export const RevenueStructureCardDesktop = () => {
   return (
-    <div className="flex gap-[25px]">
+    <div className="flex justify-center gap-[25px]">
       {revenueCard.map((item, index) => (
         <div className="relative flex w-[383px] flex-col items-center justify-around rounded-[30px] bg-white shadow-sm shadow-black/5">
           <div className="flex h-full w-max flex-col items-center justify-center gap-[50px] px-[30px] pt-[71px] pb-[42px]">
