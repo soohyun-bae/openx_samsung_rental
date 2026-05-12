@@ -6,12 +6,11 @@ const Hero = () => {
     <section className="relative flex h-screen w-full flex-col justify-between">
       <img
         className="hidden h-full w-full object-cover object-bottom md:block"
-        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778569982/hero_rvuwcr.png"
+        src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778569982/hero_rvuwcr.png"
       />
       <img
-        loading="lazy"
         className="h-screen w-full object-cover object-center md:hidden"
-        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778570334/mobile_hero_ni2ot2.png"
+        src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778570334/mobile_hero_ni2ot2.png"
       />
       {/* <button className="absolute bottom-29 left-1/2 -translate-x-1/2 rounded-[50px] border border-white bg-black/70 px-[clamp(30px,calc((40/1920)*100vw),40px)] py-[clamp(10px,calc((15/1920)*100vw),15px)] lg:bottom-35 lg:hidden">
         <p className="text-xs leading-none font-bold text-white">

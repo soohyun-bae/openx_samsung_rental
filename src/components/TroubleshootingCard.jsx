@@ -1,4 +1,4 @@
-import { troubleshootingCard } from "../datas/troubleshooting.js";
+import { troubleshootingCard } from "../datas/troubleshooting.jsx";
 import { motion } from "framer-motion";
 
 export const TroubleshootingCard = () => {

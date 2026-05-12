@@ -1,5 +1,4 @@
 import { categoryCard } from "../datas/categoryCard.jsx";
-import { motion } from "framer-motion";
 
 export const CategoryCard = () => {
   return (

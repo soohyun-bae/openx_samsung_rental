@@ -75,7 +75,7 @@ export const RevenueGraph = () => {
             className="absolute bottom-0 2xl:h-[425px] 2xl:w-[238.23px]"
             >
               <img
-                src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776841282/revenue-graph-arrow_lkgsah.png"
+                src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776841282/revenue-graph-arrow_lkgsah.png"
                 className="h-[292px] w-[115px] 2xl:h-[425px] 2xl:w-[238.23px]"
               />
           </motion.div>

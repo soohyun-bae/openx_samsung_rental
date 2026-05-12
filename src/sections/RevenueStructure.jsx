@@ -7,7 +7,7 @@ const RevenueStructure = () => {
   return (
     <section
       id="revenue"
-      className="flex flex-col gap-17.5 bg-[url('https://res.cloudinary.com/dnigvhehc/image/upload/v1778478038/mobile_revenue_bg_img_z1lmww.png')] bg-cover bg-no-repeat px-7.5 py-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] lg:bg-[url('https://res.cloudinary.com/dnigvhehc/image/upload/v1778480228/flow_bg_img_lgiqdy.png')] xl:py-[clamp(100px,calc((180/1920)*100vw),180px)]"
+      className="flex flex-col gap-17.5 bg-[url('https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778478038/mobile_revenue_bg_img_z1lmww.png')] bg-cover bg-no-repeat px-7.5 py-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] lg:bg-[url('https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778480228/flow_bg_img_lgiqdy.png')] xl:py-[clamp(100px,calc((180/1920)*100vw),180px)]"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}

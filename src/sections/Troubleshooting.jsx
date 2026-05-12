@@ -18,17 +18,17 @@ const Troubleshooting = () => {
           en="TROUBLESHOOTING"
           ko={
             <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)]">
-              리스크 높은 창업을
+              리스크 높은 창업
               <br />
               <span className="text-[clamp(35px,calc((60/1920)*100vw),60px)] font-bold">
-                고민만하고 계신가요?
+                확신이 필요하신가요?
               </span>
             </p>
           }
           description={
             <>
-              삼성전자 가전 렌탈 창업은 <br className="md:hidden" />
-              기존 창업의 부담을 모두 덜어드립니다
+              무거운 부담은 버리고, <br className="md:hidden" />
+              가볍게 가전 렌탈로 시작하세요
             </>
           }
         />

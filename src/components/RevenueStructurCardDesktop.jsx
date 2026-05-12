@@ -6,7 +6,7 @@ export const RevenueStructureCardDesktop = () => {
       {revenueCard.map((item, index) => (
         <div className="relative flex w-[383px] flex-col items-center justify-around rounded-[30px] bg-white shadow-sm shadow-black/5">
           <div className="flex h-full w-max flex-col items-center justify-center gap-[50px] px-[30px] pt-[71px] pb-[42px]">
-            <div className="flex h-[clamp(200px,calc((278/1920)*100vw),278px)] w-[clamp(200px,calc((278/1920)*100vw),278px)] items-end">
+            <div className="flex h-[clamp(200px,calc((278/1920)*100vw),278px)] w-[clamp(200px,calc((278/1920)*100vw),278px)] items-end transition-all duration-300 ease-out hover:scale-[120%]">
               <img className="h-auto w-full" src={item.deskImgSrc} />
             </div>
             <p className="font-line leading-auto revenue-title-text-animate text-[clamp(25px,calc((45/1920)*100vw),45px)] font-bold text-nowrap">

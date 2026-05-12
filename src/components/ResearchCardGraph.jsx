@@ -7,16 +7,33 @@ export const ResearchCardGraph = ({
   year,
   ani = false,
   delay = 0,
+  popText = false,
 }) => {
+  const textAnimation = popText
+    ? { opacity: 1, y: 0, scale: [1, 1.18, 1] }
+    : { opacity: 1, y: 0 };
+
+  const textTransition = popText
+    ? {
+        opacity: { duration: 0.8 },
+        y: { duration: 0.8 },
+        scale: {
+          delay: delay + 0.4,
+          duration: 0.4,
+          ease: "easeOut",
+          times: [0, 0.45, 1],
+        },
+      }
+    : { duration: 0.8 };
   return (
     <div className="flex w-[45px] flex-col items-center gap-[8px]">
       <div className="flex flex-col items-center gap-[14px]">
         {ani ? (
           <motion.p
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 50, scale: 1 }}
+            whileInView={textAnimation}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.8 }}
+            transition={textTransition}
             className="text-research-graph-sm text-center font-bold text-nowrap text-[#747474]"
           >
             {tText}

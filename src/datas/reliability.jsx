@@ -1,9 +1,9 @@
 export const reliabilityCardData = [
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1778213609/reliability-1_pj3vsa.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778213609/reliability-1_pj3vsa.png",
     mobileImgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1778207331/mobile_reliability-1_hvac7f.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778207331/mobile_reliability-1_hvac7f.png",
     lgText: (
       <p className="font-line text-reliability-lg leading-[clamp(30px,calc((44/1920)*100vw),44px)]">
         사는 시대는 끝났다, <br />{" "}
@@ -19,9 +19,9 @@ export const reliabilityCardData = [
   },
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1778213495/reliability-2_mlymds.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778213495/reliability-2_mlymds.png",
     mobileImgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1778207332/mobile_reliability-2_kydkiv.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778207332/mobile_reliability-2_kydkiv.png",
     lgText: (
       <p className="font-line text-reliability-lg leading-[clamp(30px,calc((44/1920)*100vw),44px)]">
         가전 렌탈 시장의 <br />
@@ -37,9 +37,9 @@ export const reliabilityCardData = [
   },
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1778213522/reliability-3_pac27l.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778213522/reliability-3_pac27l.png",
     mobileImgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1778207331/mobile_reliability-3_xjjfzz.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778207331/mobile_reliability-3_xjjfzz.png",
     lgText: (
       <p className="font-line text-reliability-lg leading-[clamp(30px,calc((44/1920)*100vw),44px)]">
         비스포크 가전, <br />
@@ -50,7 +50,7 @@ export const reliabilityCardData = [
       <>
         정수기부터 TV, 냉장고, 에어컨까지 <br className="hidden lg:block" />
         글로벌 품질 <br className="lg:hidden" />
-        인증을 획득한 제품력 제품력이 곧 영업력입니다
+        인증을 획득한 제품력이 곧 영업력입니다
       </>
     ),
   },

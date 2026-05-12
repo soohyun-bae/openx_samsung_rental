@@ -3,14 +3,6 @@
 
 @font-face {
   font-family: "LineSeed";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Th.woff2")
-    format("woff2");
-  font-weight: 100;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "LineSeed";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2")
     format("woff2");
   font-weight: 400;
@@ -147,8 +139,8 @@ h1 {
 
 @layer utilities {
   .revenue-title-text-animate {
-    background: linear-gradient(to bottom, #014aff, #1428a0, #014aff);
-    background-size: 100% 300%;
+    background: linear-gradient(to right, #014aff, #1428a0, #014aff);
+    background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -159,13 +151,13 @@ h1 {
 
 @keyframes revenueTitleGradient {
   0% {
-    background-position: 0% 0%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 0% 100%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 0%;
+    background-position: 0% 50%;
   }
 }
 
@@ -177,6 +169,7 @@ h1 {
     background-position: 200% center;
   }
 }
+
 
 /* Navbar Styles */
 /* .navbar-base {

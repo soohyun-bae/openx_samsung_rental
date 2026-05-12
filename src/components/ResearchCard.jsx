@@ -92,6 +92,7 @@ export const ResearchCard = () => {
             />
             <ResearchCardGraph
               ani
+              popText
               delay={0.6}
               height={"h-[367px]"}
               bgColor={"bg-[linear-gradient(180deg,#0049FF_0%,white_100%)]"}

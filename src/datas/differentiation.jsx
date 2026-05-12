@@ -1,7 +1,7 @@
 export const differentiationCardData = [
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1778565394/differentiation_3_bfmqzg.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778565394/differentiation_3_bfmqzg.png",
     title: "월 10만원으로 운영",
     description: (
       <>
@@ -13,7 +13,7 @@ export const differentiationCardData = [
   },
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1778565393/differentiation_1_bdvnp1.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778565393/differentiation_1_bdvnp1.png",
     title: "매장 없이 어디서든",
     description: (
       <>
@@ -24,7 +24,7 @@ export const differentiationCardData = [
   },
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1778565394/differentiation_2_nwz8f5.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778565394/differentiation_2_nwz8f5.png",
     title: "삼성이라는 이름의 힘",
     description: (
       <>
@@ -36,12 +36,12 @@ export const differentiationCardData = [
   },
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1778565504/differentiation_4_zayfck.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778565504/differentiation_4_zayfck.png",
     title: "본사가 다 해드립니다",
     description: (
       <>
         쇼핑몰 구축부터 배송/설치/AS까지 <br className="md:hidden" /> 본사의
-        체계적인 <br className="hidden md:block" /> 시스템으로 사업 운영에만
+        체계적인 <br className="hidden md:block" /> 시스템으로 <br  className="md:hidden"/> 사업 운영에만
         집중하세요
       </>
     ),

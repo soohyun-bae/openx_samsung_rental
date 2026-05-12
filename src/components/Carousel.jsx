@@ -1,10 +1,17 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
+const defaultSlideSizeClassName =
+  "flex-[0_0_70%] lg:flex-[0_0_40%] xl:flex-[0_0_30%] 2xl:max-[2560px]:flex-[0_0_30%] 2xl:max-w-[600px] min-[2561px]:flex-[0_0_45%]";
+
+const defaultControlsSizeClassName =
+  "w-[calc(80%_-_32px)] lg:w-[calc(40%_-_32px)] xl:w-[calc(30%_-_32px)] 2xl:w-[calc(30%_-_32px)] min-[2561px]:w-[calc(45%_-_32px)]";
 export const Carousel = ({
   children,
   options = {},
   slideClassName = "",
+  slideSizeClassName = defaultSlideSizeClassName,
+  controlsSizeClassName = defaultControlsSizeClassName,
   showDots = true,
   showArrows = true,
   controlsClassName = "",
@@ -68,7 +75,7 @@ export const Carousel = ({
             {duplicatedChildren.map((child, index) => (
               <div
                 key={index}
-                className={`flex flex-[0_0_80%] justify-center lg:flex-[0_0_40%] xl:flex-[0_0_30%] 2xl:flex-[0_0_25%] ${slideClassName} `}
+                className={`flex justify-center px-4 ${slideSizeClassName} ${slideClassName} `}
               >
                 {typeof child === "function"
                   ? child({
@@ -88,7 +95,7 @@ export const Carousel = ({
       {(showDots || showArrows) && (
         <div className="flex w-full items-center justify-center">
           <div
-            className={`flex items-center justify-between ${controlsClassName}`}
+            className={`flex items-center justify-between ${controlsSizeClassName} ${controlsClassName}`}
           >
             {/* prev */}
             {showArrows && (

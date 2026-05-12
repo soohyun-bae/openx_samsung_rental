@@ -16,7 +16,7 @@ const MobileFooter = () => {
     <div className="flex-col-center gap-[36px]">
       <img
         className={`w-[107.51px] cursor-pointer`}
-        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"
+        src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776921960/samsung-logo-white_zvr1xt.png"
         alt="logo"
         onClick={(event) => {
           event.preventDefault();

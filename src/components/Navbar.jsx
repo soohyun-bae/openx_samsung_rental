@@ -79,7 +79,7 @@ const Navbar = () => {
           <button>
             <img
               className={`w-[78px] cursor-pointer`}
-              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/v1776910703/samsung_logo_fn1psv.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"}`}
+              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776910703/samsung_logo_fn1psv.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"}`}
               alt="logo"
               onClick={(event) => {
                 event.preventDefault();
@@ -89,7 +89,7 @@ const Navbar = () => {
           </button>
           <button className="cursor-pointer" onClick={onClickSmMenu}>
             <img
-              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/v1778567081/mobile_navbar_black_hb33fu.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1778135354/mobile_nav_wq5uaz.png"}`}
+              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778567081/mobile_navbar_black_hb33fu.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1778135354/mobile_nav_wq5uaz.png"}`}
               className={isSmMenuActive ? "hidden" : "h-6 w-6"}
               alt="hambuger-menu"
             />
@@ -101,7 +101,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-end border-b border-[#8a8989ae] p-6.5">
                   <button type="button" onClick={onClickSmMenu}>
                     <img
-                      src="https://res.cloudinary.com/dnigvhehc/image/upload/v1778567436/x_icon_pjlvrt.png"
+                      src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778567436/x_icon_pjlvrt.png"
                       className="h-4 w-4"
                     />
                   </button>
@@ -145,7 +145,7 @@ const Navbar = () => {
           >
             <img
               className={`${isScrolled ? "w-[clamp(78px,calc((131/1920)*100vw),131px)]" : "w-[clamp(78px,calc((131/1920)*100vw),131px)]"} cursor-pointer`}
-              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/v1776910703/samsung_logo_fn1psv.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"}`}
+              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776910703/samsung_logo_fn1psv.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"}`}
               alt="logo"
               onClick={(event) => {
                 event.preventDefault();

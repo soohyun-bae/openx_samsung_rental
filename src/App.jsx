@@ -1,7 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Footer } from "./components/Footer.jsx";
 import { FooterTabContainer } from "./components/FooterTab.jsx";
 import Navbar from "./components/Navbar.jsx";
+import { Admin } from "./pages/Admin.jsx";
+import { AdminLogin } from "./pages/AdminLogin.jsx";
 import Differentiation from "./sections/Differentiation.jsx";
 import Hero from "./sections/Hero.jsx";
 import Reliability from "./sections/Reliability.jsx";
@@ -13,25 +15,59 @@ import { Categories } from "./sections/Categories.jsx";
 import { Expense } from "./sections/Expense.jsx";
 
 function App() {
+  const pathname = window.location.pathname;
+  const isAdminPage = pathname === "/admin";
+  const isAdminLoginPage = pathname === "/admin/login";
   const footerRef = useRef(null);
-  const [bottomOffset, setBottomOffset] = useState(0);
+  const footerTabRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (!footerRef.current) return;
+    if (isAdminPage || isAdminLoginPage) return;
+
+    let frameId = null;
+
+    const updateFooterTab = () => {
+      if (!footerRef.current || !footerTabRef.current) return;
+
       const footerTop = footerRef.current.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
+      const bottomOffset = Math.max(windowHeight - footerTop, 0);
 
-      if (footerTop < windowHeight) {
-        setBottomOffset(windowHeight - footerTop);
-      } else {
-        setBottomOffset(0);
-      }
+      footerTabRef.current.style.bottom = `${bottomOffset}px`;
     };
 
+    const handleScroll = () => {
+      if (frameId) return;
+
+      frameId = requestAnimationFrame(() => {
+        updateFooterTab();
+        frameId = null;
+      });
+    };
+
+    updateFooterTab();
+
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("resize", updateFooterTab);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", updateFooterTab);
+
+      if (frameId) {
+        cancelAnimationFrame(frameId);
+      }
+    };
+  }, [isAdminLoginPage, isAdminPage]);
+
+  if (isAdminPage) {
+    return <Admin />;
+  }
+
+  if (isAdminLoginPage) {
+    return <AdminLogin />;
+  }
+
   return (
     <div className="relative">
       {/* <Navbar /> */}
@@ -44,10 +80,7 @@ function App() {
       <Support />
       <Categories />
       <Expense />
-      <div
-        className="fixed right-0 left-0 z-50"
-        style={{ bottom: `${bottomOffset}px` }}
-      >
+      <div ref={footerTabRef} className="fixed right-0 bottom-0 left-0 z-50">
         <FooterTabContainer />
       </div>
       <div ref={footerRef}>
