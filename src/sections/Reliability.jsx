@@ -6,7 +6,7 @@ const Reliability = () => {
   return (
     <section
       id="reliability"
-      className="flex flex-col justify-center gap-[30px] bg-[linear-gradient(110deg,#E6ECF3_0%,white_50%,#E6ECF3_100%)] px-7.5 py-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((180/1920)*100vw),180px)]"
+      className="flex flex-col justify-center gap-[30px] bg-[linear-gradient(110deg,#E6ECF3_0%,white_50%,#E6ECF3_100%)] px-7.5 py-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((180/1920)*100vw),180px)] 2xl:px-[20%]"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}

@@ -6,7 +6,7 @@ export const Expense = () => {
   return (
     <section
       id="expense"
-      className="flex flex-col gap-[50px] bg-white py-25 md:px-0 lg:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]"
+      className="flex flex-col gap-[50px] bg-white py-25 md:px-0 lg:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((200/1920)*100vw),200px)] 2xl:px-[20%]"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -24,10 +24,10 @@ export const Expense = () => {
             </p>
           }
           description={
-            <>
+            <div className="leading-6 md:text-nowrap">
               저희만의 시스템을 통해 저렴한 창업 비용으로 <br />
               리스크 걱정 없이 가전 렌탈 창업에 도전할 수 있습니다
-            </>
+            </div>
           }
         />
       </motion.div>

@@ -4,7 +4,7 @@ import { differentiationCardData } from "../datas/differentiation";
 
 export const DifferentiationCard = () => {
   return (
-    <Carousel>
+    <Carousel controlsClassName="w-full max-w-[504px]">
       {differentiationCardData.map((item, index) => ({ isActive }) => (
         <motion.div
           animate={{

@@ -7,6 +7,7 @@ export const Carousel = ({
   slideClassName = "",
   showDots = true,
   showArrows = true,
+  controlsClassName = "",
 }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
@@ -15,6 +16,9 @@ export const Carousel = ({
     dragFree: false,
     ...options,
   });
+
+  const duplicatedChildren =
+    children.length < 6 ? [...children, ...children] : children;
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
@@ -61,14 +65,16 @@ export const Carousel = ({
       <div className="w-full">
         <div ref={emblaRef} className="w-full">
           <div className="flex items-stretch">
-            {children.map((child, index) => (
+            {duplicatedChildren.map((child, index) => (
               <div
                 key={index}
-                className={`flex min-w-0 flex-[0_0_80%] justify-center px-4 md:flex-[0_0_55%] lg:flex-[0_0_40%] ${slideClassName} `}
+                className={`flex flex-[0_0_80%] justify-center lg:flex-[0_0_60%] xl:flex-[0_0_40%] 2xl:flex-[0_0_25%] ${slideClassName} `}
               >
                 {typeof child === "function"
                   ? child({
-                      isActive: selectedIndex === index,
+                      isActive:
+                        selectedIndex % children.length ===
+                        index % children.length,
                       index,
                     })
                   : child}
@@ -80,71 +86,75 @@ export const Carousel = ({
 
       {/* controls */}
       {(showDots || showArrows) && (
-        <div className="flex items-center gap-[clamp(80px,calc((143/1920)*100vw),143px)]">
-          {/* prev */}
-          {showArrows && (
-            <button
-              onClick={scrollPrev}
-              className="flex h-[clamp(30px,calc((60/1920)*100vw),60px)] w-[clamp(30px,calc((60/1920)*100vw),60px)] items-center justify-center rounded-full bg-[#F3F3F3] shadow-[0px_0px_5px_rgba(0,0,0,0.1)] transition hover:bg-[#E8EBFF]"
-            >
-              <svg
-                className="h-[clamp(14px,calc((25/1920)*100vw),25px)] w-[clamp(14px,calc((25/1920)*100vw),25px)]"
-                width="25"
-                height="25"
-                viewBox="-2 -2 16 21"
-                fill="none"
+        <div className="flex w-full items-center justify-center">
+          <div
+            className={`flex items-center justify-between ${controlsClassName}`}
+          >
+            {/* prev */}
+            {showArrows && (
+              <button
+                onClick={scrollPrev}
+                className="flex h-[clamp(30px,calc((60/1920)*100vw),60px)] w-[clamp(30px,calc((60/1920)*100vw),60px)] items-center justify-center rounded-full bg-[#F3F3F3] shadow-[0px_0px_5px_rgba(0,0,0,0.1)] transition hover:bg-[#E8EBFF]"
               >
-                <path
-                  d="M9 1L1 9L9 17"
-                  stroke="white"
-                  strokeWidth="5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-          )}
+                <svg
+                  className="h-[clamp(14px,calc((25/1920)*100vw),25px)] w-[clamp(14px,calc((25/1920)*100vw),25px)]"
+                  width="25"
+                  height="25"
+                  viewBox="-2 -2 16 21"
+                  fill="none"
+                >
+                  <path
+                    d="M9 1L1 9L9 17"
+                    stroke="white"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            )}
 
-          {/* dots */}
-          {showDots && (
-            <div className="flex items-center gap-[25px]">
-              {scrollSnaps.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => scrollTo(index)}
-                  className={`h-[10px] rounded-full transition-all duration-300 ${
-                    selectedIndex === index
-                      ? "w-[10px] bg-[#2455FF]"
-                      : "w-[10px] bg-[#D9D9D9]"
-                  } `}
-                />
-              ))}
-            </div>
-          )}
+            {/* dots */}
+            {showDots && (
+              <div className="flex items-center gap-[15px]">
+                {Array.from({ length: children.length }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => scrollTo(index)}
+                    className={`h-[10px] rounded-full transition-all duration-300 ${
+                      selectedIndex % children.length === index
+                        ? "w-[10px] bg-[#2455FF]"
+                        : "w-[10px] bg-[#D9D9D9]"
+                    } `}
+                  />
+                ))}
+              </div>
+            )}
 
-          {/* next */}
-          {showArrows && (
-            <button
-              onClick={scrollNext}
-              className="flex h-[clamp(30px,calc((60/1920)*100vw),60px)] w-[clamp(30px,calc((60/1920)*100vw),60px)] items-center justify-center rounded-full bg-[#F3F3F3] shadow-[0px_0px_5px_rgba(0,0,0,0.1)] transition hover:bg-[#E8EBFF]"
-            >
-              <svg
-                className="h-[clamp(14px,calc((25/1920)*100vw),25px)] w-[clamp(14px,calc((25/1920)*100vw),25px)]"
-                width="25"
-                height="25"
-                viewBox="-2 -2 10 22"
-                fill="none"
+            {/* next */}
+            {showArrows && (
+              <button
+                onClick={scrollNext}
+                className="flex h-[clamp(30px,calc((60/1920)*100vw),60px)] w-[clamp(30px,calc((60/1920)*100vw),60px)] items-center justify-center rounded-full bg-[#F3F3F3] shadow-[0px_0px_5px_rgba(0,0,0,0.1)] transition hover:bg-[#E8EBFF]"
               >
-                <path
-                  d="M1 1L9 9L1 17"
-                  stroke="white"
-                  strokeWidth="5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-          )}
+                <svg
+                  className="h-[clamp(14px,calc((25/1920)*100vw),25px)] w-[clamp(14px,calc((25/1920)*100vw),25px)]"
+                  width="25"
+                  height="25"
+                  viewBox="-2 -2 10 22"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L9 9L1 17"
+                    stroke="white"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            )}
+          </div>
         </div>
       )}
     </div>

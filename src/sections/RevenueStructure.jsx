@@ -26,7 +26,7 @@ const RevenueStructure = () => {
             </p>
           }
           description={
-            <div className="md:text-nowrap">
+            <div className="leading-6 md:text-nowrap">
               계약이 쌓일수록 매달 반복되는 안정적인 수익, <br /> 렌탈 사업은 한
               번의 계약이 장기 수익으로 이어집니다
             </div>

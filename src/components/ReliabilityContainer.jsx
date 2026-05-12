@@ -24,7 +24,7 @@ export const ReliabilityContainer = () => {
               className="rounded-2xl bg-transparent drop-shadow-[4px_4px_10px_rgba(0,0,0,0.3)]"
             />
             <div
-              className={`absolute top-1/2 z-5 flex -translate-y-1/2 flex-col gap-[18px] text-white ${index === 1 ? "right-1/2 text-right " : "left-1/2"}`}
+              className={`absolute top-1/2 z-5 flex -translate-y-1/2 flex-col gap-[18px] text-white ${index === 1 ? "right-1/2 pr-15 text-right" : "left-1/2 pl-15"}`}
             >
               <p>{item.lgText}</p>
               <p className="text-reliability-sm font-light">{item.smText}</p>

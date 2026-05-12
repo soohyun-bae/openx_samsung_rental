@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const SupportContents = () => {
   return (
-    <Carousel>
+    <Carousel controlsClassName="w-full max-w-[540px]">
       {supportCard.map((item, index) => ({ isActive }) => (
         <motion.div
           animate={{
@@ -14,7 +14,7 @@ export const SupportContents = () => {
           transition={{
             duration: 0.35,
           }}
-          className={`h-full w-full max-w-[504px] rounded-[30px] border bg-white py-14 transition-all duration-300 ${
+          className={`h-full w-full max-w-[540px] rounded-[30px] border bg-white py-14 transition-all duration-300 ${
             isActive
               ? "border-[#4B8EFF] shadow-[0_10px_20px_rgba(0,0,0,0.05)]"
               : "border-[#E8E8E8] shadow-[0_10px_20px_rgba(0,0,0,0.05)]"

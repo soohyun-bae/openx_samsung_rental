@@ -5,7 +5,8 @@ export const ExpenseCompo = () => {
         <p className="text-[clamp(16px,calc((30/1920)*100vw),30px)] font-bold">
           항목
         </p>
-        <p className="">|</p>
+        {/* <p className="">|</p> */}
+        <div className="relative z-500 w-[1px] bg-white" />
         <p className="text-[clamp(16px,calc((30/1920)*100vw),30px)] font-bold">
           금액
         </p>
@@ -15,7 +16,7 @@ export const ExpenseCompo = () => {
       <div className="w-full rounded-[20px] shadow-[4px_4px_12px_rgba(0,0,0,0.15)]">
         {/* 가맹비 */}
         <div className="flex items-center border-b border-[#E3E3E3]">
-          <div className="bg-border-gray flex-1 rounded-tl-[20px] py-[18px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] font-semibold text-[#5E5E5E]">
+          <div className="bg-border-gray flex-1 rounded-tl-[20px] py-[18px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] font-semibold text-[#5E5E5E] lg:py-[45px]">
             가맹비
           </div>
           <div className="flex-1 py-[18px] text-center text-[clamp(14px,calc((20/1920)*100vw),20px)] text-[#424242]">
@@ -25,7 +26,7 @@ export const ExpenseCompo = () => {
 
         {/* 교육비 */}
         <div className="flex items-center border-b border-[#E3E3E3]">
-          <div className="bg-border-gray flex-1 py-[18px] text-center text-sm text-[clamp(14px,calc((25/1920)*100vw),25px)] font-semibold text-[#5E5E5E]">
+          <div className="bg-border-gray flex-1 py-[18px] text-center text-sm text-[clamp(14px,calc((25/1920)*100vw),25px)] font-semibold text-[#5E5E5E] lg:py-[45px]">
             교육비
           </div>
           <div className="flex-1 py-[18px] text-center text-[clamp(14px,calc((20/1920)*100vw),20px)] text-[#424242]">
@@ -35,7 +36,7 @@ export const ExpenseCompo = () => {
 
         {/* 보증금 */}
         <div className="flex items-center border-b border-[#E3E3E3]">
-          <div className="bg-border-gray flex-1 py-[18px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] font-semibold text-[#5E5E5E]">
+          <div className="bg-border-gray flex-1 py-[18px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] font-semibold text-[#5E5E5E] lg:py-[45px]">
             보증금
           </div>
           <div className="flex-1 py-[18px] text-center text-[clamp(14px,calc((20/1920)*100vw),20px)] text-[#424242]">
@@ -45,12 +46,12 @@ export const ExpenseCompo = () => {
 
         {/* 홈페이지 분양대금 */}
         <div className="bg-border-gray flex items-center border-b border-[#E3E3E3]">
-          <div className="flex-1 py-6 text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-relaxed font-semibold text-[#5E5E5E]">
+          <div className="flex-1 py-6 text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-relaxed font-semibold text-[#5E5E5E] lg:py-[45px]">
             홈페이지
             <br />
             분양대금
           </div>
-          <div className="flex flex-1 flex-col items-center gap-[6.5px] bg-white py-[18px] md:flex-row md:justify-center md:gap-[2px]">
+          <div className="flex flex-1 flex-col items-center gap-[6.5px] bg-white py-[18px] md:flex-row md:justify-center md:gap-[2px] lg:py-[45px]">
             {/* 분납 */}
             <div className="flex w-[80%] flex-col items-center gap-0 md:items-end">
               <span className="w-full rounded-[9px] bg-[#014AFF] px-4 py-1 text-center text-[clamp(10px,calc((16/1920)*100vw),16px)] font-semibold text-white md:w-[60%] md:rounded-r-[0px]">
@@ -78,7 +79,7 @@ export const ExpenseCompo = () => {
 
         {/* 월 운영비 */}
         <div className="flex items-center">
-          <div className="bg-border-gray flex-1 rounded-bl-[20px] py-[18px] text-center text-sm text-[clamp(14px,calc((25/1920)*100vw),25px)] font-semibold text-[#5E5E5E]">
+          <div className="bg-border-gray flex-1 rounded-bl-[20px] py-[18px] text-center text-sm text-[clamp(14px,calc((25/1920)*100vw),25px)] font-semibold text-[#5E5E5E] lg:py-[45px]">
             월 운영비
           </div>
           <div className="flex-1 text-center text-sm text-[#5E5E5E]">없음</div>

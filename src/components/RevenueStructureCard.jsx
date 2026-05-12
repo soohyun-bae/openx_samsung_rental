@@ -5,7 +5,7 @@ export const RevenueStructureCard = () => {
   return (
     <div className="flex w-max flex-col items-start">
       {revenueCard.map((item, index) => (
-        <div className="flex w-max items-center gap-[24px]">
+        <div className="flex w-max items-center gap-[10px]">
           <div className="h-[clamp(160px,calc((200/768)*100vw),200px)] w-[clamp(160px,calc((200/768)*100vw),200px)]">
             <img
               className="h-full w-full object-contain"

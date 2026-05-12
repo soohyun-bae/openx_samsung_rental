@@ -132,7 +132,7 @@ const Navbar = () => {
       </div>
       <header
         className={`fixed top-0 left-0 z-100 hidden w-full transition-all duration-300 ease-out lg:block ${
-          isScrolled ? "bg-white pb-4" : ""
+          isScrolled ? "bg-white/80 pb-4" : ""
         }`}
       >
         <div

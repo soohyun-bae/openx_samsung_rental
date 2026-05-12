@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const ResearchCard = () => {
   return (
     <div className="relative w-[449px] space-y-[39px] overflow-hidden rounded-t-[30px] border-t border-r border-l border-[#2488FF] bg-white px-[33px] pt-[44px] pb-[clamp(100px,calc((137/1920)*100vw),137px)] lg:flex lg:w-full lg:flex-col lg:items-center">
-      <p className="font-line text-left text-[clamp(28px,calc((45/1920)*100vw),45px)] leading-[33px] font-bold text-[#014AFF]">
+      <p className="font-line text-left text-[clamp(28px,calc((45/1920)*100vw),45px)] leading-[33px] font-bold text-[#014AFF] 2xl:pt-10 2xl:pb-30">
         2026년 100조 <br className="lg:hidden" /> 돌파 예상!
       </p>
       {/* </div> */}

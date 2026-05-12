@@ -18,10 +18,10 @@ const Support = () => {
           </p>
         }
         description={
-          <>
-            경험이 없어도 괜찮습니다 <br />
+          <div className="leading-6 md:text-nowrap">
+            경험이 없어도 괜찮습니다 <br className="md:hidden" />
             성공까지 함께하는 파트너입니다
-          </>
+          </div>
         }
       />
       <div>

@@ -6,7 +6,7 @@ export const Categories = () => {
   return (
     <section
       id="category"
-      className="flex flex-col gap-[50px] bg-[#F1F5FE] py-25 md:px-0 xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]"
+      className="flex flex-col gap-[50px] bg-[#F1F5FE] py-25 md:px-0 xl:py-[clamp(100px,calc((200/1920)*100vw),200px)] 2xl:px-[20%]"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -28,7 +28,7 @@ export const Categories = () => {
           description={<>폭넓은 제품군으로 최적의 선택을 제공합니다</>}
         />
       </motion.div>
-      <div>
+      <div className="w-full">
         <CategoryCard />
       </div>
     </section>

@@ -29,7 +29,8 @@ export const supportCard = [
     title: "고객 상담/AS 렌탈사 처리",
     description: (
       <>
-        고객 문의, 설치 일정, 사후관리까지 <br className="lg:hidden" /> 렌탈사
+        고객 문의, 설치 일정, 사후관리까지 <br className="lg:hidden" /> 렌탈사{" "}
+        <br className="hidden lg:block" />
         고객센터에서 전담 처리합니다. <br />
         사업주는 영업에만 집중하세요
       </>
