@@ -94,7 +94,7 @@ const Card = ({ item, isTop = false }) => {
                 <motion.div
                   initial={{ opacity: 0, scaleX: 0 }}
                   whileInView={{ opacity: 1, scaleX: 1 }}
-                  style={{ transformOrigin: "right" }}
+                  style={{ transformOrigin: "left" }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                   className="absolute top-1/2 right-5 hidden h-px w-[10vw] -translate-y-1/2 bg-[linear-gradient(90deg,white_0%,#0039C9_100%)] xl:block"
