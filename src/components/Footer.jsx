@@ -4,7 +4,7 @@ export const Footer = () => {
       <div className="xl:hidden">
         <MobileFooter />
       </div>
-      <div className="hidden xl:block">
+      <div className="hidden w-full lg:block">
         <DesktopFooter />
       </div>
     </div>
@@ -40,16 +40,29 @@ const MobileFooter = () => {
 
 const DesktopFooter = () => {
   return (
-    <div>
-      <img
-        className={`w-[107.51px] cursor-pointer`}
-        src="https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"
-        alt="logo"
-        onClick={(event) => {
-          event.preventDefault();
-          handleSmNavClick("main");
-        }}
-      />
+    <div className="w-full">
+      <div className="flex w-full items-start justify-around">
+        <div className="flex flex-col">
+          <div className="flex gap-2 text-[15px] font-light text-white/80">
+            <p>오픈엑스</p>
+            <p>|</p>
+            <p>대표이사 : 김미진</p>
+            <p>|</p>
+            <p>가맹문의 : 010-2973-7375</p>
+          </div>
+          <div className="text-[15px] font-light text-white/80">
+            <p>주소 : 서울시 마포구 성암로330, DMC첨단산업센터 B동 808호</p>
+          </div>
+          <div className="text-[15px] font-light text-white/80">
+            <p>Copyright © 2026 삼성전자가전렌탈. All rights reserved.​</p>
+          </div>
+        </div>
+        <div className="flex gap-2 text-[15px] font-light text-white/80">
+          <p>개인정보처리방침</p>
+          <p>|</p>
+          <p>이메일 무단수집거부</p>
+        </div>
+      </div>
     </div>
   );
 };
