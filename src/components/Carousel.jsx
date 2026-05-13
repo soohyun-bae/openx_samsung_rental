@@ -130,7 +130,7 @@ export const Carousel = ({
                     onClick={() => scrollTo(index)}
                     className={`h-[10px] rounded-full transition-all duration-300 ${
                       selectedIndex % children.length === index
-                        ? "w-[10px] bg-[#2455FF]"
+                        ? "w-[10px] bg-blue"
                         : "w-[10px] bg-[#D9D9D9]"
                     } `}
                   />

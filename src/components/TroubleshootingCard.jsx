@@ -63,7 +63,7 @@ const Card = ({ item, isTop = false }) => {
     <div
       className={`relative flex w-full flex-col items-center rounded-[20px] border ${
         isTop
-          ? "border-[#2488FF] bg-white font-semibold"
+          ? "border-blue bg-white font-semibold"
           : "border-border-gray bg-light-gray shadow-lg shadow-black/5 lg:rounded-r-[0px] lg:border-r-0"
       } `}
     >
