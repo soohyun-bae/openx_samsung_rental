@@ -5,8 +5,8 @@ export const differentiationCardData = [
     title: "월 10만원으로 운영",
     description: (
       <>
-        수천만 원의 초기 투자 없이 <br className="md:hidden" /> 월 서비스비용
-        10만원 만으로 <br />
+        수천만 원의 초기 투자 없이 <br className="md:hidden" /> 월 서비스 비용
+        10만원으로 <br />
         나만의 렌탈 사업을 시작할 수 있습니다
       </>
     ),
