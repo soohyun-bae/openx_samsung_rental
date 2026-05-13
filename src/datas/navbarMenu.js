@@ -1,5 +1,9 @@
 export const navbarMenu = [
   {
+    title: "렌탈 시장 전망",
+    link: "research",
+  },
+  {
     title: "가전 렌탈 창업",
     link: "solution",
   },

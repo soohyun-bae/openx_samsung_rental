@@ -36,7 +36,7 @@ export const FooterTabContainer = () => {
       <div className="bg-white xl:hidden">
         <MobileFooterTab />
       </div>
-      <div className="hidden xl:flex xl:justify-center xl:bg-linear-to-t xl:from-white xl:from-90% xl:to-transparent xl:pt-[30px] xl:pb-[20px]">
+      <div className="hidden xl:flex xl:justify-center xl:bg-white xl:pt-[30px] xl:pb-[20px] xl:shadow-[0px_-10px_20px_rgba(0,0,0,0.12)]">
         <DesktopFooterTab />
       </div>
     </div>
@@ -82,9 +82,7 @@ const MobileFooterTab = () => {
             src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776911568/kakaoicon_ro4ptg.png"
             className="h-[25px] w-[27px]"
           />
-          <p className="text-[16px] font-bold text-[#1A1A1A]">
-            바로 상담하기
-          </p>
+          <p className="text-[16px] font-bold text-[#1A1A1A]">바로 상담하기</p>
         </button>
         <button
           onClick={tabOpenHandle}
@@ -124,7 +122,10 @@ const MobileFooterTab = () => {
           />
         </div>
         <div className="flex justify-center">
-          <label htmlFor="agree-mobile" className="flex cursor-pointer items-center">
+          <label
+            htmlFor="agree-mobile"
+            className="flex cursor-pointer items-center"
+          >
             <input
               id="agree-mobile"
               type="checkbox"
@@ -192,7 +193,7 @@ const DesktopFooterTab = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex-row-center gap-[30px]">
-      <p className="font-line pt-1 from-dark-blue to-blue bg-linear-to-l bg-clip-text text-[clamp(16px,calc((40/1920)*100vw),40px)] leading-[40px] font-bold text-transparent">
+      <p className="font-line from-dark-blue to-blue bg-linear-to-l bg-clip-text pt-1 text-[clamp(16px,calc((40/1920)*100vw),40px)] leading-[40px] font-bold text-transparent">
         빠른 창업상담
       </p>
       <div className="flex items-center gap-[11px]">
