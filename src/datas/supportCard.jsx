@@ -31,7 +31,7 @@ export const supportCard = [
       <>
         고객 문의, 설치 일정, 사후관리까지 <br className="md:hidden" /> 렌탈사{" "}
         <br className="hidden lg:block" />
-        고객센터에서 전담 처리합니다. <br />
+        고객센터에서 전담 처리합니다. <br className="md:hidden" />
         사업주는 영업에만 집중하세요
       </>
     ),
