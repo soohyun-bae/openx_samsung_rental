@@ -14,7 +14,7 @@ export const RevenueStructureCard = () => {
             />
           </div>
           <div className="flex flex-col items-start gap-[22px]">
-            <p className="w-max rounded-[50px] bg-[#014AFF] px-[35px] py-[13px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-none font-bold text-white">
+            <p className="w-max rounded-[50px] text-nowrap bg-[#014AFF] px-[35px] py-[13px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-none font-bold text-white">
               {item.title}
             </p>
             <p className="font-line bg-linear-to-b from-[#014AFF] to-[#1428A0] bg-clip-text text-[clamp(25px,calc((45/1920)*100vw),45px)] leading-none font-bold text-nowrap text-transparent">

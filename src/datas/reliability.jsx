@@ -48,8 +48,8 @@ export const reliabilityCardData = [
     ),
     smText: (
       <>
-        정수기부터 TV, 냉장고, 에어컨까지 <br className="hidden lg:block" />
-        글로벌 품질 <br className="lg:hidden" />
+        정수기부터 TV, 냉장고, 에어컨까지
+        글로벌 품질 <br />
         인증을 획득한 제품력이 곧 영업력입니다
       </>
     ),

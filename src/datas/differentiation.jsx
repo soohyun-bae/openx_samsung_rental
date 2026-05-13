@@ -26,7 +26,7 @@ export const differentiationCardData = [
   {
     imgSrc:
       "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778565394/differentiation_2_nwz8f5.png",
-    title: "삼성이라는 이름의 힘",
+    title: "대기업 브랜드의 힘",
     description: (
       <>
         대한민국 가전 1위 브랜드 삼성. <br className="md:hidden" />
