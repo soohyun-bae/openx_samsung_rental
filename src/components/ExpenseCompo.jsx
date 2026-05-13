@@ -19,7 +19,7 @@ export const ExpenseCompo = () => {
           <div className="flex-1 rounded-tl-[20px] py-[18px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-none font-semibold text-[#5E5E5E] lg:py-[45px]">
             가맹비
           </div>
-          <div className="flex-1 bg-white py-[18px] text-center text-[clamp(14px,calc((20/1920)*100vw),20px)] text-[#424242]">
+          <div className="flex-1 bg-white py-[18px] text-center text-[clamp(14px,calc((20/1920)*100vw),20px)] text-[#424242] lg:py-[45px]">
             없음
           </div>
         </div>
@@ -29,7 +29,7 @@ export const ExpenseCompo = () => {
           <div className="flex-1 py-[18px] text-center text-sm text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-none font-semibold text-[#5E5E5E] lg:py-[45px]">
             교육비
           </div>
-          <div className="flex-1 bg-white py-[18px] text-center text-[clamp(14px,calc((20/1920)*100vw),20px)] text-[#424242]">
+          <div className="flex-1 bg-white py-[18px] text-center text-[clamp(14px,calc((20/1920)*100vw),20px)] text-[#424242] lg:py-[45px]">
             없음
           </div>
         </div>
@@ -39,7 +39,7 @@ export const ExpenseCompo = () => {
           <div className="flex-1 py-[18px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-none font-semibold text-[#5E5E5E] lg:py-[45px]">
             보증금
           </div>
-          <div className="flex-1 bg-white py-[18px] text-center text-[clamp(14px,calc((20/1920)*100vw),20px)] text-[#424242]">
+          <div className="flex-1 bg-white py-[18px] text-center text-[clamp(14px,calc((20/1920)*100vw),20px)] text-[#424242] lg:py-[45px]">
             없음
           </div>
         </div>
