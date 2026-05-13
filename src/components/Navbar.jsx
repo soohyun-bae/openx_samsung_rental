@@ -153,7 +153,7 @@ const Navbar = () => {
               }}
             />
           </button>
-          <div className="space-x-20">
+          <div className="space-x-10">
             {navbarMenu.map((item, index) => (
               <a
                 key={index}

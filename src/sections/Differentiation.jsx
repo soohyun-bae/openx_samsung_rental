@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Differentiation = () => {
   return (
     <section
-      id="diffentiation"
+      id="differentiation"
       className="flex flex-col gap-[50px] bg-[linear-gradient(100deg,#EEEEEE_0%,white_50%,#EEEEEE_100%)] py-25 md:px-0 xl:py-[clamp(100px,calc((200/1920)*100vw),200px)]"
     >
       <motion.div
