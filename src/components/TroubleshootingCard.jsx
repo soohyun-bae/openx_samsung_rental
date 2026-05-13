@@ -1,27 +1,29 @@
 import { troubleshootingCard } from "../datas/troubleshooting.jsx";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export const TroubleshootingCard = () => {
+  const containerRef = useRef(null);
+  const isInView = useInView(containerRef, { once: true, amount: 0.2 });
+
   return (
-    <div className="flex-row-center relative w-full">
+    <div ref={containerRef} className="flex-row-center relative w-full">
       <div className="flex-col-center relative w-full lg:hidden">
         {/* 위 카드 */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.8 }}
           className="relative z-20 flex w-full flex-col justify-center"
         >
-          <Card item={troubleshootingCard[0]} isTop />
+          <Card item={troubleshootingCard[0]} isTop isInView={isInView} />
         </motion.div>
 
         {/* 아래 카드 */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.8 }}
           className="-mt-8 w-full lg:mt-0 lg:w-[92%] lg:translate-x-8"
         >
           <div className="relative z-10">
@@ -33,20 +35,18 @@ export const TroubleshootingCard = () => {
         {/* 위 카드 */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+          transition={{ duration: 0.8 }}
           className="relative z-20 flex w-full flex-col justify-center"
         >
-          <Card item={troubleshootingCard[0]} isTop />
+          <Card item={troubleshootingCard[0]} isTop isInView={isInView} />
         </motion.div>
 
         {/* 아래 카드 */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+          transition={{ duration: 0.8 }}
           className="-mt-8 w-full lg:mt-0 lg:w-[92%] lg:translate-x-8"
         >
           <div className="relative z-10">
@@ -58,7 +58,7 @@ export const TroubleshootingCard = () => {
   );
 };
 
-const Card = ({ item, isTop = false }) => {
+const Card = ({ item, isTop = false, isInView = false }) => {
   return (
     <div
       className={`relative flex w-full flex-col items-center rounded-[20px] border ${
@@ -93,10 +93,13 @@ const Card = ({ item, isTop = false }) => {
               {isTop ? (
                 <motion.div
                   initial={{ opacity: 0, scaleX: 0 }}
-                  whileInView={{ opacity: 1, scaleX: 1 }}
+                  animate={
+                    isInView
+                      ? { opacity: 1, scaleX: 1 }
+                      : { opacity: 0, scaleX: 0 }
+                  }
                   style={{ transformOrigin: "left" }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.8, delay: 0.6 }}
+                  transition={{ duration: 0.8 }}
                   className="absolute top-1/2 right-5 hidden h-px w-[10vw] -translate-y-1/2 bg-[linear-gradient(90deg,white_0%,#0039C9_100%)] xl:block"
                 />
               ) : (
