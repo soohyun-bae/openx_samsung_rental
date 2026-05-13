@@ -15,7 +15,7 @@ const Troubleshooting = () => {
         transition={{ duration: 0.8 }}
       >
         <SectionTitle
-          en="TROUBLESHOOTING"
+          en="SOLUTION"
           ko={
             <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)]">
               리스크 높은 창업
