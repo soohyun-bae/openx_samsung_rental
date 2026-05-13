@@ -16,7 +16,7 @@ export const RevenueStructureCardDesktop = () => {
               {item.price}
             </p>
           </div>
-          <p className="left-center absolute -top-5 flex w-[clamp(120px,calc((190/1920)*100vw),190px)] items-center justify-center rounded-[50px] bg-[#014AFF] px-[35px] py-[13px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-none font-semibold text-nowrap text-white">
+          <p className="left-center absolute -top-5 flex w-[clamp(120px,calc((190/1920)*100vw),190px)] items-center justify-center rounded-[50px] bg-blue px-[35px] py-[13px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-none font-semibold text-nowrap text-white">
             {item.title}
           </p>
         </div>
