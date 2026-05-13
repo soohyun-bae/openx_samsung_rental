@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Troubleshooting = () => {
   return (
     <section
-      id="troubleshooting"
+      id="solution"
       className="flex-col-center w-full gap-17.5 px-[37.5px] py-25 md:px-[clamp(30px,calc((360/1920)*100vw),360px)] xl:py-[clamp(100px,calc((180/1920)*100vw),200px)] 2xl:px-[20%]"
     >
       <motion.div

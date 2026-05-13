@@ -13,7 +13,7 @@ const Support = () => {
           <p className="leading-[clamp(40px,calc((70/1920)*100vw),70px)]">
             처음이어도 괜찮습니다 <br />
             <span className="text-[clamp(35px,calc((60/1920)*100vw),60px)] font-bold">
-              저희가 처음부터 <br /> 끝까지 함께합니다
+              저희가 처음부터 <br className="md:hidden" /> 끝까지 함께합니다
             </span>
           </p>
         }

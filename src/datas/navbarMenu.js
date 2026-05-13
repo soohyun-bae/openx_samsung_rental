@@ -1,7 +1,7 @@
 export const navbarMenu = [
   {
     title: "가전 렌탈 창업",
-    link: "troubleshooting",
+    link: "solution",
   },
   {
     title: "창업소개",
