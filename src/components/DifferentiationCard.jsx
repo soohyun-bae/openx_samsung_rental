@@ -14,13 +14,13 @@ export const DifferentiationCard = () => {
           transition={{
             duration: 0.35,
           }}
-          className={`flex justify-center h-full w-full max-w-[504px] rounded-[30px] border bg-white py-14 transition-all duration-300 ${
+          className={`flex h-full w-full max-w-[504px] justify-center rounded-[30px] border bg-white py-14 transition-all duration-300 ${
             isActive
               ? "border-[#4B8EFF] shadow-[0_10px_20px_rgba(0,0,0,0.05)]"
               : "border-[#E8E8E8] shadow-[0_10px_20px_rgba(0,0,0,0.05)]"
           } `}
         >
-          <div className="w-[70%] flex flex-col items-center gap-12">
+          <div className="flex w-[70%] flex-col items-center gap-12">
             {/* icon */}
             <div className="flex h-[clamp(141px,calc((150/1920)*100vw),150px)] w-[clamp(141px,calc((150/1920)*100vw),150px)] items-center justify-center rounded-full bg-[#F8F8F8]">
               <img src={item.imgSrc} alt={item.title} className={"w-[219px]"} />
@@ -29,7 +29,7 @@ export const DifferentiationCard = () => {
             {/* text */}
             <div className="flex flex-col items-center gap-5">
               <p
-                className={`text-subTitle text-center font-bold transition-colors duration-300 ${
+                className={`text-subTitle text-center font-bold text-nowrap transition-colors duration-300 ${
                   isActive
                     ? "bg-linear-to-b from-[#014AFF] to-[#2488FF] bg-clip-text text-transparent"
                     : "text-[#98A3D4]"
@@ -38,7 +38,7 @@ export const DifferentiationCard = () => {
                 {item.title}
               </p>
 
-              <p className="text-nowrap text-center text-sm leading-[20px] break-keep text-[#666666] lg:leading-[28px]">
+              <p className="text-center text-sm leading-[20px] text-nowrap break-keep text-[#666666] lg:leading-[28px]">
                 {item.description}
               </p>
             </div>

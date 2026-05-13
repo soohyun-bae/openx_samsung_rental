@@ -1,8 +1,25 @@
-import { UpArrow } from "../assets/svg/UpArrow.jsx";
 import { ResearchCardGraph } from "./ResearchCardGraph.jsx";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export const ResearchCard = () => {
+  const graphRef = useRef(null);
+  const graphInView = useInView(graphRef, { once: true, amount: 0.01 });
+
+  const arrowInitial = {
+    WebkitMaskImage:
+      "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
+    maskImage:
+      "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
+  };
+
+  const arrowAnimation = {
+    WebkitMaskImage:
+      "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
+    maskImage:
+      "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
+  };
+
   return (
     <div className="relative w-[449px] space-y-[39px] overflow-hidden rounded-t-[30px] border-t border-r border-l border-[#2488FF] bg-white px-[33px] pt-[44px] pb-[clamp(100px,calc((137/1920)*100vw),137px)] lg:flex lg:w-full lg:flex-col lg:items-center">
       <p className="font-line text-left text-[clamp(28px,calc((45/1920)*100vw),45px)] leading-[33px] font-bold text-[#014AFF] 2xl:pt-10 2xl:pb-30">
@@ -12,19 +29,8 @@ export const ResearchCard = () => {
       <div className="relative w-full">
         <div className="relative flex w-full flex-col">
           <motion.div
-            initial={{
-              WebkitMaskImage:
-                "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
-              maskImage:
-                "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
-            }}
-            whileInView={{
-              WebkitMaskImage:
-                "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
-              maskImage:
-                "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
-            }}
-            viewport={{ once: true, amount: 0.5 }}
+            initial={arrowInitial}
+            animate={graphInView ? arrowAnimation : arrowInitial}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="absolute bottom-55 -left-3 w-[88%] -rotate-[15deg] max-[500px]:bottom-60 max-[500px]:w-[65vw] lg:hidden"
           >
@@ -34,9 +40,13 @@ export const ResearchCard = () => {
             />
           </motion.div>
 
-          <div className="relative z-5 flex w-full items-end justify-around">
+          <div
+            ref={graphRef}
+            className="relative z-5 flex w-full items-end justify-around"
+          >
             <ResearchCardGraph
               ani
+              isInView={graphInView}
               delay={0}
               height={"h-[53px]"}
               bgColor={"bg-[#B8B8B8]"}
@@ -50,6 +60,7 @@ export const ResearchCard = () => {
             />
             <ResearchCardGraph
               ani
+              isInView={graphInView}
               delay={0.15}
               height={"h-[87px]"}
               bgColor={"bg-[#B8B8B8]"}
@@ -64,6 +75,7 @@ export const ResearchCard = () => {
             />
             <ResearchCardGraph
               ani
+              isInView={graphInView}
               delay={0.3}
               height={"h-[140px]"}
               bgColor={"bg-[#B8B8B8]"}
@@ -78,6 +90,7 @@ export const ResearchCard = () => {
             />
             <ResearchCardGraph
               ani
+              isInView={graphInView}
               delay={0.45}
               height={"h-[184px]"}
               bgColor={"bg-[#B8B8B8]"}
@@ -93,6 +106,7 @@ export const ResearchCard = () => {
             <ResearchCardGraph
               ani
               popText
+              isInView={graphInView}
               delay={0.6}
               height={"h-[367px]"}
               bgColor={"bg-[linear-gradient(180deg,#0049FF_0%,white_100%)]"}
@@ -105,19 +119,8 @@ export const ResearchCard = () => {
               // year={"2026"}
             />
             <motion.div
-              initial={{
-                WebkitMaskImage:
-                  "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
-                maskImage:
-                  "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
-              }}
-              whileInView={{
-                WebkitMaskImage:
-                  "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
-                maskImage:
-                  "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
-              }}
-              viewport={{ once: true, amount: 0.5 }}
+              initial={arrowInitial}
+              animate={graphInView ? arrowAnimation : arrowInitial}
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="absolute bottom-25 left-15 -z-1 hidden w-[75%] -rotate-[13deg] lg:block xl:bottom-20 xl:left-20 xl:w-[75%] 2xl:bottom-8 2xl:left-23 2xl:w-[80%]"
             >

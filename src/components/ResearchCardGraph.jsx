@@ -4,8 +4,8 @@ export const ResearchCardGraph = ({
   height,
   tText,
   bgColor,
-  year,
   ani = false,
+  isInView = false,
   delay = 0,
   popText = false,
 }) => {
@@ -31,8 +31,7 @@ export const ResearchCardGraph = ({
         {ani ? (
           <motion.p
             initial={{ opacity: 0, y: 50, scale: 1 }}
-            whileInView={textAnimation}
-            viewport={{ once: true, amount: 0.2 }}
+            animate={isInView ? textAnimation : { opacity: 0, y: 50, scale: 1 }}
             transition={textTransition}
             className="text-research-graph-sm text-center font-bold text-nowrap text-[#747474]"
           >
@@ -52,14 +51,22 @@ export const ResearchCardGraph = ({
                 maskImage:
                   "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
               }}
-              whileInView={{
-                WebkitMaskImage:
-                  "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
-                maskImage:
-                  "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
-              }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.4, ease: "easeOut", delay: `${delay}` }}
+              animate={
+                isInView
+                  ? {
+                      WebkitMaskImage:
+                        "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
+                      maskImage:
+                        "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)",
+                    }
+                  : {
+                      WebkitMaskImage:
+                        "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
+                      maskImage:
+                        "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%)",
+                    }
+              }
+              transition={{ duration: 0.4, ease: "easeOut", delay }}
               className={`w-[42px] lg:w-[77px] ${height} rounded-t-2xl ${bgColor}`}
             />
           </>

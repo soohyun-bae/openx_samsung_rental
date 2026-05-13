@@ -17,8 +17,9 @@ export const differentiationCardData = [
     title: "매장 없이 어디서든",
     description: (
       <>
-        시간과 공간의 제약 없이 온라인으로 365일 <br />
-        24시간 자유롭게 운영할 수 있습니다
+        시간과 공간의 제약 없이 <br className="md:hidden" /> 온라인으로{" "}
+        <br className="hidden md:block" /> 365일 24시간 자유롭게{" "}
+        <br className="md:hidden" /> 운영할 수 있습니다
       </>
     ),
   },
@@ -41,8 +42,8 @@ export const differentiationCardData = [
     description: (
       <>
         쇼핑몰 구축부터 배송/설치/AS까지 <br className="md:hidden" /> 본사의
-        체계적인 <br className="hidden md:block" /> 시스템으로 <br  className="md:hidden"/> 사업 운영에만
-        집중하세요
+        체계적인 <br className="hidden md:block" /> 시스템으로{" "}
+        <br className="md:hidden" /> 사업 운영에만 집중하세요
       </>
     ),
   },
