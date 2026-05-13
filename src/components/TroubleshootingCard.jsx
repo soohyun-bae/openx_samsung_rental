@@ -70,7 +70,9 @@ const Card = ({ item, isTop = false }) => {
       <div
         className={`font-line text-trouble-shooting-card-title absolute flex items-center justify-center rounded-[58px] px-[20px] text-center leading-none text-nowrap text-white ${isTop ? "-top-6 bg-[#0039C9] py-[12px] font-bold" : "font-regular top-16 bg-[#9F9F9F] py-[10px] lg:-top-6"} `}
       >
-        <span className="relative text-center lg:top-[2px]">{item.title}</span>
+        <span className="relative top-[2px] text-center max-[500px]:top-0">
+          {item.title}
+        </span>
       </div>
 
       <div
