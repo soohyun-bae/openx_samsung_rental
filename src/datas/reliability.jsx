@@ -6,7 +6,7 @@ export const reliabilityCardData = [
       "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778207331/mobile_reliability-1_hvac7f.png",
     lgText: (
       <p className="font-line text-reliability-lg leading-[clamp(30px,calc((44/1920)*100vw),44px)]">
-        사는 시대는 끝났다, <br />{" "}
+        구매하는 시대는 끝났다, <br />{" "}
         <span className="text-subTitle font-bold">렌탈 관리받는 시대다</span>
       </p>
     ),

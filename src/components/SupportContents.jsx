@@ -16,7 +16,7 @@ export const SupportContents = () => {
           }}
           className={`flex h-full w-full max-w-[540px] justify-center rounded-[30px] border bg-white px-[40px] py-14 transition-all duration-300 ${
             isActive
-              ? "border-[#4B8EFF] shadow-[0_10px_20px_rgba(0,0,0,0.05)]"
+              ? "border-blue shadow-[0_10px_20px_rgba(0,0,0,0.05)]"
               : "border-[#E8E8E8] shadow-[0_10px_20px_rgba(0,0,0,0.05)]"
           } `}
         >
@@ -31,7 +31,7 @@ export const SupportContents = () => {
               <p
                 className={`text-subTitle text-center font-bold text-nowrap transition-colors duration-300 ${
                   isActive
-                    ? "bg-linear-to-b from-[#014AFF] to-[#2488FF] bg-clip-text text-transparent"
+                    ? "bg-linear-to-b to-blue from-dark-blue bg-clip-text text-transparent"
                     : "text-[#98A3D4]"
                 } `}
               >

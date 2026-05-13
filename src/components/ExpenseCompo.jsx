@@ -1,7 +1,7 @@
 export const ExpenseCompo = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-[5.68px] px-[50px]">
-      <div className="flex w-full justify-evenly rounded-[61px] bg-[#014AFF] py-[13px] text-white">
+      <div className="flex w-full justify-evenly rounded-[61px] bg-blue py-[13px] text-white">
         <p className="text-[clamp(16px,calc((30/1920)*100vw),30px)] font-bold">
           항목
         </p>
