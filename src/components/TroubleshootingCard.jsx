@@ -68,7 +68,7 @@ const Card = ({ item, isTop = false, isInView = false }) => {
       } `}
     >
       <div
-        className={`font-line text-trouble-shooting-card-title absolute rounded-[58px] px-[20px] leading-[20px] text-nowrap text-white ${isTop ? "-top-6 bg-[#0039C9] py-[12px] font-bold" : "font-regular top-16 bg-[#9F9F9F] py-[10px] lg:-top-6"} `}
+        className={`font-line text-trouble-shooting-card-title absolute rounded-[58px] px-[20px] leading-none text-nowrap text-white ${isTop ? "-top-6 bg-[#0039C9] py-[12px] font-bold" : "font-regular top-16 bg-[#9F9F9F] py-[10px] lg:-top-6"} `}
       >
         <span className="relative top-[2px]">{item.title}</span>
       </div>
