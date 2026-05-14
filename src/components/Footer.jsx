@@ -148,13 +148,15 @@ const MobileFooter = ({ onOpenModal }) => {
         }}
       />
       <div className="flex-col-center gap-3 text-[12px] font-light text-white/50">
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 items-center">
           <div className="flex items-center gap-2 text-nowrap">
             <p className="">(주)오픈엑스</p>
             <p>|</p>
             <p>대표이사 : 김미진</p>
             <p>|</p>
             <p>가맹문의 : 010-4861-8407</p>
+            <p>|</p>
+            <p>사업자등록번호 : 310-81-34293</p>
           </div>
           <p className="text-nowrap">
             주소 : 서울시 마포구 성암로330, DMC첨단산업센터 B동 808호
@@ -180,6 +182,8 @@ const DesktopFooter = ({ onOpenModal }) => {
             <p>대표이사 : 김미진</p>
             <p>|</p>
             <p>가맹문의 : 010-4861-8407</p>
+            <p>|</p>
+            <p>사업자등록번호 : 310-81-34293</p>
           </div>
           <div className="text-[15px] font-light text-white/80">
             <p>주소 : 서울시 마포구 성암로330, DMC첨단산업센터 B동 808호</p>
