@@ -151,9 +151,9 @@ const MobileFooter = ({ onOpenModal }) => {
         <div className="flex flex-col gap-1 items-center">
           <div className="flex items-center gap-2 text-nowrap">
             <p className="">(주)오픈엑스</p>
-            <p>|</p>
             <p>대표이사 : 김미진</p>
-            <p>|</p>
+          </div>
+          <div className="flex gap-2 text-nowrap">
             <p>가맹문의 : 010-4861-8407</p>
             <p>|</p>
             <p>사업자등록번호 : 310-81-34293</p>
@@ -163,7 +163,7 @@ const MobileFooter = ({ onOpenModal }) => {
           </p>
         </div>
         <p className="text-nowrap">
-          Copyright © 2026 삼성전자가전렌탈. All rights reserved.​
+          Copyright © 2026 삼성전자가전렌탈. All rights reserved.
         </p>
         <FooterPolicyLinks onOpenModal={onOpenModal} />
       </div>
