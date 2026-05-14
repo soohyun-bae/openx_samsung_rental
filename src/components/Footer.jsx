@@ -60,7 +60,7 @@ export const Footer = () => {
 
   return (
     <div className="flex-col-center bg-black px-[50px] pt-[54px] pb-[100px]">
-      <div className="xl:hidden">
+      <div className="lg:hidden">
         <MobileFooter onOpenModal={openModal} />
       </div>
       <div className="hidden w-full lg:block">
