@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { hasSupabaseConfig, supabase } from "../lib/supabaseClient";
 
-const landingPageId = Number(import.meta.env.VITE_LANDING_PAGE_ID || 1);
+const landingPageId = Number(import.meta.env.VITE_LANDING_PAGE_ID || 2);
 
 const submitInquiry = async ({ name, phone, agree }) => {
   if (!hasSupabaseConfig) {

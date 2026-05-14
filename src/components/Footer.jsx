@@ -154,7 +154,7 @@ const MobileFooter = ({ onOpenModal }) => {
             <p>|</p>
             <p>대표이사 : 김미진</p>
             <p>|</p>
-            <p>가맹문의 : 010-2973-7375</p>
+            <p>가맹문의 : 010-4861-8407</p>
           </div>
           <p className="text-nowrap">
             주소 : 서울시 마포구 성암로330, DMC첨단산업센터 B동 808호
@@ -179,7 +179,7 @@ const DesktopFooter = ({ onOpenModal }) => {
             <p>|</p>
             <p>대표이사 : 김미진</p>
             <p>|</p>
-            <p>가맹문의 : 010-2973-7375</p>
+            <p>가맹문의 : 010-4861-8407</p>
           </div>
           <div className="text-[15px] font-light text-white/80">
             <p>주소 : 서울시 마포구 성암로330, DMC첨단산업센터 B동 808호</p>
