@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { hasSupabaseConfig, supabase } from "../lib/supabaseClient";
+//
 
 const landingPageId = Number(import.meta.env.VITE_LANDING_PAGE_ID || 2);
 
