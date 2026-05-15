@@ -75,7 +75,7 @@ const MobileFooterTab = () => {
     <div className="flex flex-col">
       <div className="flex">
         <button
-          href="https://open.kakao.com/o/s9TbPHri"
+          href="http://pf.kakao.com/_qgusX/chat"
           className="bg-kakao flex-row-center w-[50%] cursor-pointer gap-[11px] py-[13px]"
         >
           <img
@@ -254,7 +254,7 @@ const DesktopFooterTab = () => {
         </button>
         <a
           className="bg-kakao flex-row-center cursor-pointer gap-[14px] rounded-[12px] px-[24px] py-[7px]"
-          href="https://open.kakao.com/o/s9TbPHri"
+          href="http://pf.kakao.com/_qgusX/chat"
           target="_blanck"
         >
           <img
