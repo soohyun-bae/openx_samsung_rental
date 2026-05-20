@@ -79,7 +79,7 @@ const Navbar = () => {
           <button>
             <img
               className={`w-[78px] cursor-pointer`}
-              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776910703/samsung_logo_fn1psv.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"}`}
+              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779262386/navy_logo_urtfsd.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779262386/white_logo_wb1ndz.png"}`}
               alt="logo"
               onClick={(event) => {
                 event.preventDefault();
@@ -145,7 +145,7 @@ const Navbar = () => {
           >
             <img
               className={`${isScrolled ? "w-[clamp(78px,calc((131/1920)*100vw),131px)]" : "w-[clamp(78px,calc((131/1920)*100vw),131px)]"} cursor-pointer`}
-              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776910703/samsung_logo_fn1psv.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1776921960/samsung-logo-white_zvr1xt.png"}`}
+              src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779262386/navy_logo_urtfsd.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779262386/white_logo_wb1ndz.png"}`}
               alt="logo"
               onClick={(event) => {
                 event.preventDefault();
