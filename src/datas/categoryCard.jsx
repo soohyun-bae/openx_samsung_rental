@@ -36,7 +36,7 @@ export const categoryCard = [
   },
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778485250/category8_a74z0j.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779430046/desktop_aircon_round_pnud0a.png",
     name: "에어컨",
   },
 ];
