@@ -1,10 +1,10 @@
 export const revenueCard = [
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778478323/mobile_revenue_card1_gux2kj.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779427968/aircon_round_evhh89.png",
     deskImgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778480600/revenue_card1_inf4bs.png",
-    title: "냉난방기",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779427832/aircon_lgufpk.png",
+    title: "에어컨",
     price: "최대 90만원",
   },
   {
