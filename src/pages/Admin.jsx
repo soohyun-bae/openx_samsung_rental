@@ -32,6 +32,8 @@ export const Admin = () => {
   const [configs, setConfigs] = useState({});
   const [loading, setLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
+  const [memos, setMemos] = useState({});
+  const [savingMemoId, setSavingMemoId] = useState(null);
 
   const activeFields = useMemo(() => {
     return configs[activeLandingId] || [];
@@ -147,16 +149,40 @@ export const Admin = () => {
         }
       });
 
+      const fetchedSubmissions = submissionResult.data || [];
+      const initialMemos = {};
+      fetchedSubmissions.forEach((s) => {
+        initialMemos[s.id] = s.memo || "";
+      });
+
       setAdmin(adminData);
       setLandingPages(formattedLandingPages);
       setActiveLandingId(landingIds[0]);
-      setSubmissions(submissionResult.data || []);
+      setSubmissions(fetchedSubmissions);
       setConfigs(nextConfigs);
+      setMemos(initialMemos);
       setLoading(false);
     };
 
     init();
   }, []);
+
+  const handleMemoChange = (submissionId, value) => {
+    setMemos((prev) => ({ ...prev, [submissionId]: value }));
+  };
+
+  const handleMemoSave = async (submissionId) => {
+    setSavingMemoId(submissionId);
+    const { error } = await supabase
+      .from("form_submissions")
+      .update({ memo: memos[submissionId] ?? "" })
+      .eq("id", submissionId);
+    if (error) {
+      console.error("메모 저장 실패:", error.message);
+      alert(`메모 저장에 실패했습니다: ${error.message}`);
+    }
+    setSavingMemoId(null);
+  };
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
@@ -259,6 +285,11 @@ export const Admin = () => {
                         {field.label || field.name}
                       </th>
                     ))}
+                    {activeLandingId === 2 && (
+                      <th className="border-b border-[#e3e8f2] px-4 py-3 font-semibold">
+                        메모
+                      </th>
+                    )}
                   </tr>
                 </thead>
                 <tbody>
@@ -275,6 +306,25 @@ export const Admin = () => {
                           {formatValue(submission.form_data?.[field.name])}
                         </td>
                       ))}
+                      {activeLandingId === 2 && (
+                        <td className="px-4 py-3 align-top">
+                          <textarea
+                            value={memos[submission.id] ?? ""}
+                            onChange={(e) =>
+                              handleMemoChange(submission.id, e.target.value)
+                            }
+                            onBlur={() => handleMemoSave(submission.id)}
+                            rows={2}
+                            placeholder="메모 입력..."
+                            className="w-full min-w-[200px] resize-y rounded border border-[#d9deea] px-2 py-1 text-sm text-[#1a1a1a] placeholder-[#b0b8c8] focus:border-[#014AFF] focus:outline-none"
+                          />
+                          {savingMemoId === submission.id && (
+                            <p className="mt-1 text-xs text-[#747474]">
+                              저장 중...
+                            </p>
+                          )}
+                        </td>
+                      )}
                     </tr>
                   ))}
                 </tbody>
