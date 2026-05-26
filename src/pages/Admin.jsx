@@ -318,7 +318,7 @@ export const Admin = () => {
                               handleMemoChange(submission.id, e.target.value)
                             }
                             onBlur={() => handleMemoSave(submission.id)}
-                            rows={2}
+                            rows={1}
                             placeholder="메모 입력..."
                             className="w-full min-w-[200px] resize-y rounded border border-[#d9deea] px-2 py-1 text-sm text-[#1a1a1a] placeholder-[#b0b8c8] focus:border-[#014AFF] focus:outline-none"
                           />
