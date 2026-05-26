@@ -16,12 +16,12 @@ export const categoryCard = [
   },
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1779427367/moving_style_rkisj4.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779427367/moving_style_rkisj4.png",
     name: "무빙스타일",
   },
   {
     imgSrc:
-      "https://res.cloudinary.com/dnigvhehc/image/upload/v1779427551/water_purifier_xhjal6.png",
+      "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779773469/water_purifier_qwjcx5.png",
     name: "정수기",
   },
   {
