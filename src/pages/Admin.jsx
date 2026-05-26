@@ -289,11 +289,9 @@ export const Admin = () => {
                         {field.label || field.name}
                       </th>
                     ))}
-                    {activeLandingId === 2 && (
-                      <th className="border-b border-[#e3e8f2] px-4 py-3 font-semibold">
-                        메모
-                      </th>
-                    )}
+                    <th className="border-b border-[#e3e8f2] px-4 py-3 font-semibold">
+                      메모
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -310,25 +308,23 @@ export const Admin = () => {
                           {formatValue(submission.form_data?.[field.name])}
                         </td>
                       ))}
-                      {activeLandingId === 2 && (
-                        <td className="px-4 py-3 align-top">
-                          <textarea
-                            value={memos[submission.id] ?? ""}
-                            onChange={(e) =>
-                              handleMemoChange(submission.id, e.target.value)
-                            }
-                            onBlur={() => handleMemoSave(submission.id)}
-                            rows={1}
-                            placeholder="메모 입력..."
-                            className="w-full min-w-[200px] resize-y rounded border border-[#d9deea] px-2 py-1 text-sm text-[#1a1a1a] placeholder-[#b0b8c8] focus:border-[#014AFF] focus:outline-none"
-                          />
-                          {savingMemoId === submission.id && (
-                            <p className="mt-1 text-xs text-[#747474]">
-                              저장 중...
-                            </p>
-                          )}
-                        </td>
-                      )}
+                      <td className="px-4 py-3 align-top">
+                        <textarea
+                          value={memos[submission.id] ?? ""}
+                          onChange={(e) =>
+                            handleMemoChange(submission.id, e.target.value)
+                          }
+                          onBlur={() => handleMemoSave(submission.id)}
+                          rows={1}
+                          placeholder="메모 입력..."
+                          className="w-full min-w-[200px] resize-y rounded border border-[#d9deea] px-2 py-1 text-sm text-[#1a1a1a] placeholder-[#b0b8c8] focus:border-[#014AFF] focus:outline-none"
+                        />
+                        {savingMemoId === submission.id && (
+                          <p className="mt-1 text-xs text-[#747474]">
+                            저장 중...
+                          </p>
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -340,4 +336,3 @@ export const Admin = () => {
     </main>
   );
 };
-
