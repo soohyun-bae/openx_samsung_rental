@@ -173,13 +173,17 @@ export const Admin = () => {
 
   const handleMemoSave = async (submissionId) => {
     setSavingMemoId(submissionId);
-    const { error } = await supabase
+    const { data, error } = await supabase
       .from("form_submissions")
       .update({ memo: memos[submissionId] ?? "" })
-      .eq("id", submissionId);
+      .eq("id", submissionId)
+      .select("id, memo");
     if (error) {
       console.error("메모 저장 실패:", error.message);
       alert(`메모 저장에 실패했습니다: ${error.message}`);
+    } else if (!data || data.length === 0) {
+      console.warn("메모 저장: 업데이트된 행 없음 (RLS 정책 확인 필요)");
+      alert("메모가 저장되지 않았습니다. Supabase RLS 정책을 확인해주세요.");
     }
     setSavingMemoId(null);
   };
