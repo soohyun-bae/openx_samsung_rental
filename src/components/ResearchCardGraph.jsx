@@ -29,18 +29,18 @@ export const ResearchCardGraph = ({
     <div className="flex w-[45px] flex-col items-center gap-[8px]">
       <div className="flex flex-col items-center gap-[14px]">
         {ani ? (
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 50, scale: 1 }}
             animate={isInView ? textAnimation : { opacity: 0, y: 50, scale: 1 }}
             transition={textTransition}
             className="text-research-graph-sm text-center font-bold text-nowrap text-[#747474]"
           >
             {tText}
-          </motion.p>
+          </motion.div>
         ) : (
-          <p className="text-research-graph-sm text-center font-bold text-nowrap text-[#747474]">
+          <div className="text-research-graph-sm text-center font-bold text-nowrap text-[#747474]">
             {tText}
-          </p>
+          </div>
         )}
         {ani ? (
           <>

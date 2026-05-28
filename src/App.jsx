@@ -2,8 +2,6 @@ import { useEffect, useRef } from "react";
 import { Footer } from "./components/Footer.jsx";
 import { FooterTabContainer } from "./components/FooterTab.jsx";
 import Navbar from "./components/Navbar.jsx";
-import { Admin } from "./pages/Admin.jsx";
-import { AdminLogin } from "./pages/AdminLogin.jsx";
 import Differentiation from "./sections/Differentiation.jsx";
 import Hero from "./sections/Hero.jsx";
 import Reliability from "./sections/Reliability.jsx";
@@ -15,14 +13,15 @@ import { Categories } from "./sections/Categories.jsx";
 import { Expense } from "./sections/Expense.jsx";
 
 function App() {
-  const pathname = window.location.pathname;
-  const isAdminPage = pathname === "/admin";
-  const isAdminLoginPage = pathname === "/admin/login";
+  const { hash, pathname, search } = window.location;
+  const isAdminPath = pathname === "/admin" || pathname.startsWith("/admin/");
+  const adminPath = pathname.replace(/^\/admin\/?/, "/");
+  const adminSrc = `https://openx-form-admin.vercel.app${adminPath}${search}${hash}`;
   const footerRef = useRef(null);
   const footerTabRef = useRef(null);
 
   useEffect(() => {
-    if (isAdminPage || isAdminLoginPage) return;
+    if (isAdminPath) return;
 
     let frameId = null;
 
@@ -58,14 +57,16 @@ function App() {
         cancelAnimationFrame(frameId);
       }
     };
-  }, [isAdminLoginPage, isAdminPage]);
+  }, [isAdminPath]);
 
-  if (isAdminPage) {
-    return <Admin />;
-  }
-
-  if (isAdminLoginPage) {
-    return <AdminLogin />;
+  if (isAdminPath) {
+    return (
+      <iframe
+        title="OpenX admin"
+        src={adminSrc}
+        className="h-screen w-screen border-0"
+      />
+    );
   }
 
   return (

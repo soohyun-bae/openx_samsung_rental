@@ -7,13 +7,13 @@ export const SectionTitle = ({ en, ko, description, zIndex = false }) => {
         <p className="text-xs leading-none font-semibold text-[#747474]">
           {en}
         </p>
-        <h3 className="font-line to-blue from-dark-blue text-ko-section-title leading-sectionTitle-ko font-regular bg-linear-to-b bg-clip-text text-nowrap text-transparent">
+        <div className="font-line to-blue from-dark-blue text-ko-section-title leading-sectionTitle-ko font-regular bg-linear-to-b bg-clip-text text-nowrap text-transparent">
           {ko}
-        </h3>
+        </div>
       </div>
-      <p className="font-regular text-sm leading-[1.4] text-[#747474] md:leading-none">
+      <div className="font-regular text-sm leading-[1.4] text-[#747474] md:leading-none">
         {description}
-      </p>
+      </div>
     </div>
   );
 };

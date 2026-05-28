@@ -8,6 +8,7 @@ export const ReliabilityContainer = () => {
       <div className="hidden lg:block">
         {reliabilityCardData.map((item, index) => (
           <motion.div
+            key={`desktop-reliability-${item.imgSrc}`}
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -26,8 +27,8 @@ export const ReliabilityContainer = () => {
             <div
               className={`absolute top-1/2 z-5 flex -translate-y-1/2 flex-col gap-[18px] text-white ${index === 1 ? "right-1/2 pr-[3%] xl:pr-[5%] text-right" : "left-1/2 pl-[3%] xl:pl-[5%]"}`}
             >
-              <p>{item.lgText}</p>
-              <p className="text-reliability-sm font-light">{item.smText}</p>
+              <div>{item.lgText}</div>
+              <div className="text-reliability-sm font-light">{item.smText}</div>
             </div>
           </motion.div>
         ))}
@@ -35,7 +36,7 @@ export const ReliabilityContainer = () => {
       <div className="flex flex-col items-center gap-[25px] lg:hidden">
         {reliabilityCardData.map((item, index) => (
           <motion.div
-            key={index}
+            key={`mobile-reliability-${item.mobileImgSrc}`}
             className="relative"
             initial={{
               opacity: 0,
@@ -59,8 +60,8 @@ export const ReliabilityContainer = () => {
               src={item.mobileImgSrc}
             />
             <div className="absolute bottom-[26.59px] left-[24px] flex flex-col items-start gap-[15px] text-white">
-              <p>{item.lgText}</p>
-              <p className="text-reliability-sm font-light">{item.smText}</p>
+              <div>{item.lgText}</div>
+              <div className="text-reliability-sm font-light">{item.smText}</div>
             </div>
           </motion.div>
         ))}
