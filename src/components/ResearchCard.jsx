@@ -37,6 +37,7 @@ export const ResearchCard = () => {
             <img
               loading="lazy"
               src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778052384/mobile_research_arrow_nfjdy0.png"
+              alt="조사 그래프 섹션 화살표 이미지"
             />
           </motion.div>
 
@@ -128,6 +129,7 @@ export const ResearchCard = () => {
                 loading="lazy"
                 className="w-full xl:skew-y-7 2xl:skew-y-15"
                 src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778040784/research_arrow_imaana.png"
+                alt="조사 그래프 섹션 화살표 이미지"
               />
             </motion.div>
             <div className="bg-border-gray absolute bottom-0 left-0 h-[1px] w-full" />

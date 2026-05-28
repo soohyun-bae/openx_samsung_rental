@@ -12,6 +12,7 @@ const Research = () => {
         loading="lazy"
         src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778129451/white-background_2_vwsypd.png"
         className="absolute top-0 left-0 h-full w-full object-cover"
+        alt="조사 섹션 배경 이미지"
       />
       <motion.div
         initial={{ opacity: 0, y: 50 }}

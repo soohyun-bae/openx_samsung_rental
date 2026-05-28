@@ -140,15 +140,15 @@ const MobileFooter = ({ onOpenModal }) => {
     <div className="flex-col-center gap-[36px]">
       <img
         className={`w-[107.51px] cursor-pointer`}
-        src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776921960/samsung-logo-white_zvr1xt.png"
-        alt="logo"
+        src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779262386/white_logo_wb1ndz.png"
+        alt="삼성가전렌탈 로고 이미지"
         onClick={(event) => {
           event.preventDefault();
           handleSmNavClick("main");
         }}
       />
       <div className="flex-col-center gap-3 text-[12px] font-light text-white/50">
-        <div className="flex flex-col gap-1 items-center">
+        <div className="flex flex-col items-center gap-1">
           <div className="flex items-center gap-2 text-nowrap">
             <p className="">(주)오픈엑스</p>
             <p>대표이사 : 김미진</p>

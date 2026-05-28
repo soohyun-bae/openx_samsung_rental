@@ -80,7 +80,7 @@ const Navbar = () => {
             <img
               className={`w-[78px] cursor-pointer`}
               src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779262386/navy_logo_urtfsd.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779262386/white_logo_wb1ndz.png"}`}
-              alt="logo"
+              alt="삼성전자가전렌탈 로고 이미지"
               onClick={(event) => {
                 event.preventDefault();
                 handleSmNavClick("main");
@@ -91,7 +91,7 @@ const Navbar = () => {
             <img
               src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778567081/mobile_navbar_black_hb33fu.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/v1778135354/mobile_nav_wq5uaz.png"}`}
               className={isSmMenuActive ? "hidden" : "h-6 w-6"}
-              alt="hambuger-menu"
+              alt="햄버거 메뉴 아이콘 이미지"
             />
           </button>
           {isSmMenuActive && (
@@ -103,6 +103,7 @@ const Navbar = () => {
                     <img
                       src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778567436/x_icon_pjlvrt.png"
                       className="h-4 w-4"
+                      alt="닫기 아이콘 이미지"
                     />
                   </button>
                 </div>
@@ -146,7 +147,7 @@ const Navbar = () => {
             <img
               className={`${isScrolled ? "w-[clamp(78px,calc((131/1920)*100vw),131px)]" : "w-[clamp(78px,calc((131/1920)*100vw),131px)]"} cursor-pointer`}
               src={`${isScrolled ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779262386/navy_logo_urtfsd.png" : "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1779262386/white_logo_wb1ndz.png"}`}
-              alt="logo"
+              alt="삼성전자가전렌탈 로고 이미지"
               onClick={(event) => {
                 event.preventDefault();
                 handleSmNavClick("main");

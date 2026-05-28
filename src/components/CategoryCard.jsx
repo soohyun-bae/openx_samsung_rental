@@ -10,7 +10,11 @@ export const CategoryCard = () => {
             className="flex flex-col items-center gap-[10px] lg:gap-[20px]"
           >
             <div className="w-[clamp(127px,calc((176/1920)*100vw),176px)] transition-all duration-300 ease-out hover:scale-[120%] hover:drop-shadow-[0_20px_40px_rgba(0,0,0,0.16)] 2xl:w-[100%]">
-              <img className="h-full w-full" src={item.imgSrc} />
+              <img
+                className="h-full w-full"
+                src={item.imgSrc}
+                alt={`카테고리 카드 ${item.name} 이미지`}
+              />
             </div>
 
             <p className="text-[clamp(16px,calc((20/1920)*100vw),20px)] leading-none font-semibold">

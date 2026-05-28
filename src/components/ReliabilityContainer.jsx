@@ -23,12 +23,15 @@ export const ReliabilityContainer = () => {
             <img
               src={item.imgSrc}
               className="rounded-2xl bg-transparent drop-shadow-[4px_4px_10px_rgba(0,0,0,0.3)]"
+              alt={`신뢰성 섹션 카드 이미지`}
             />
             <div
-              className={`absolute top-1/2 z-5 flex -translate-y-1/2 flex-col gap-[18px] text-white ${index === 1 ? "right-1/2 pr-[3%] xl:pr-[5%] text-right" : "left-1/2 pl-[3%] xl:pl-[5%]"}`}
+              className={`absolute top-1/2 z-5 flex -translate-y-1/2 flex-col gap-[18px] text-white ${index === 1 ? "right-1/2 pr-[3%] text-right xl:pr-[5%]" : "left-1/2 pl-[3%] xl:pl-[5%]"}`}
             >
               <div>{item.lgText}</div>
-              <div className="text-reliability-sm font-light">{item.smText}</div>
+              <div className="text-reliability-sm font-light">
+                {item.smText}
+              </div>
             </div>
           </motion.div>
         ))}
@@ -58,10 +61,13 @@ export const ReliabilityContainer = () => {
             <img
               className="h-[300px] w-[300px] rounded-[20px] bg-transparent shadow-[4px_4px_10px_rgba(0,0,0,0.3)]"
               src={item.mobileImgSrc}
+              alt={`모바일 신뢰성 카드 이미지`}
             />
             <div className="absolute bottom-[26.59px] left-[24px] flex flex-col items-start gap-[15px] text-white">
               <div>{item.lgText}</div>
-              <div className="text-reliability-sm font-light">{item.smText}</div>
+              <div className="text-reliability-sm font-light">
+                {item.smText}
+              </div>
             </div>
           </motion.div>
         ))}

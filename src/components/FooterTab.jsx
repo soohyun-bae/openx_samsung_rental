@@ -82,6 +82,7 @@ const MobileFooterTab = () => {
           <img
             src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776911568/kakaoicon_ro4ptg.png"
             className="h-[25px] w-[27px]"
+            alt="카카오톡 아이콘 이미지"
           />
           <p className="text-[16px] font-bold text-[#1A1A1A]">바로 상담하기</p>
         </button>
@@ -99,6 +100,7 @@ const MobileFooterTab = () => {
                 : "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776911942/plus_ijtl5h.png"
             }
             className={tabOpen ? "h-[18px] w-[18px]" : "h-[14px] w-[14px]"}
+            alt={tabOpen ? "닫기 아이콘 이미지" : "열기 아이콘 이미지"}
           />
         </button>
       </div>
@@ -261,6 +263,7 @@ const DesktopFooterTab = () => {
           <img
             src="https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1776911568/kakaoicon_ro4ptg.png"
             className="h-[clamp(25px,calc((31/1920)*100vw),29px)] w-[clamp(23px,calc((29/1920)*100vw),29px)]"
+            alt="카카오톡 아이콘 이미지"
           />
           <p className="text-[clamp(16px,calc((20/1920)*100vw),20px)] leading-none font-bold text-[#091B35]">
             카톡 상담

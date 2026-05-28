@@ -10,13 +10,17 @@ export const RevenueStructureCardDesktop = () => {
         >
           <div className="flex h-full w-max flex-col items-center justify-center gap-[50px] px-[30px] pt-[71px] pb-[42px]">
             <div className="flex h-[clamp(200px,calc((278/1920)*100vw),278px)] w-[clamp(200px,calc((278/1920)*100vw),278px)] items-end transition-all duration-300 ease-out hover:scale-[120%]">
-              <img className="h-auto w-full" src={item.deskImgSrc} />
+              <img
+                className="h-auto w-full"
+                src={item.deskImgSrc}
+                alt="수익구조 섹션 카드 이미지"
+              />
             </div>
             <p className="font-line leading-auto revenue-title-text-animate text-[clamp(25px,calc((45/1920)*100vw),45px)] font-bold text-nowrap">
               {item.price}
             </p>
           </div>
-          <p className="left-center absolute -top-5 flex w-[clamp(120px,calc((190/1920)*100vw),190px)] items-center justify-center rounded-[50px] bg-blue px-[35px] py-[13px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-none font-semibold text-nowrap text-white">
+          <p className="left-center bg-blue absolute -top-5 flex w-[clamp(120px,calc((190/1920)*100vw),190px)] items-center justify-center rounded-[50px] px-[35px] py-[13px] text-center text-[clamp(14px,calc((25/1920)*100vw),25px)] leading-none font-semibold text-nowrap text-white">
             {item.title}
           </p>
         </div>

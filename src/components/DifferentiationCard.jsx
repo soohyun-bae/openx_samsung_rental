@@ -23,7 +23,11 @@ export const DifferentiationCard = () => {
           <div className="flex w-[70%] flex-col items-center gap-12">
             {/* icon */}
             <div className="flex h-[clamp(141px,calc((150/1920)*100vw),150px)] w-[clamp(141px,calc((150/1920)*100vw),150px)] items-center justify-center rounded-full bg-[#F8F8F8]">
-              <img src={item.imgSrc} alt={item.title} className={"w-[219px]"} />
+              <img
+                src={item.imgSrc}
+                alt="차별 포인트 카드 아이콘 이미지"
+                className={"w-[219px]"}
+              />
             </div>
 
             {/* text */}
@@ -31,7 +35,7 @@ export const DifferentiationCard = () => {
               <p
                 className={`text-subTitle text-center font-bold text-nowrap transition-colors duration-300 ${
                   isActive
-                    ? "bg-linear-to-b to-blue from-dark-blue bg-clip-text text-transparent"
+                    ? "to-blue from-dark-blue bg-linear-to-b bg-clip-text text-transparent"
                     : "text-[#98A3D4]"
                 } `}
               >

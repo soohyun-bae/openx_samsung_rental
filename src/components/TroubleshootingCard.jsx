@@ -91,6 +91,7 @@ const Card = ({ item, isTop = false }) => {
                     ? "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778202802/checkbox-icon_uson6l.png"
                     : "https://res.cloudinary.com/dnigvhehc/image/upload/f_auto,q_auto/v1778202624/x-icon_mk2veb.png"
                 }
+                alt={isTop ? "체크 아이콘 이미지" : "엑스 아이콘 이미지"}
               />
               {isTop ? (
                 <motion.div
