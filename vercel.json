@@ -2,6 +2,24 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "headers": [
     {
+      "source": "/api/form-submissions",
+      "headers": [
+        {
+          "key": "x-vercel-enable-rewrite-caching",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "source": "/api/form-config",
+      "headers": [
+        {
+          "key": "x-vercel-enable-rewrite-caching",
+          "value": "0"
+        }
+      ]
+    },
+    {
       "source": "/admin/:path*",
       "headers": [
         {
@@ -12,6 +30,14 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/api/form-submissions",
+      "destination": "https://openx-form-admin.vercel.app/api/form-submissions"
+    },
+    {
+      "source": "/api/form-config",
+      "destination": "https://openx-form-admin.vercel.app/api/form-config"
+    },
     {
       "source": "/:path*",
       "destination": "/index.html"

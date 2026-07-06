@@ -1,35 +1,5 @@
 import { useState } from "react";
-import { hasSupabaseConfig, supabase } from "../lib/supabaseClient";
-//
-
-const landingPageId = Number(import.meta.env.VITE_LANDING_PAGE_ID || 2);
-
-const submitInquiry = async ({ name, phone, agree }) => {
-  if (!hasSupabaseConfig) {
-    throw new Error("Supabase 환경변수가 없습니다.");
-  }
-
-  if (!name.trim() || !phone.trim()) {
-    throw new Error("이름과 전화번호를 입력해주세요.");
-  }
-
-  if (!agree) {
-    throw new Error("개인정보 수집에 동의해주세요.");
-  }
-
-  const { error } = await supabase.from("form_submissions").insert({
-    landing_page_id: landingPageId,
-    form_data: {
-      name: name.trim(),
-      phone: phone.trim(),
-    },
-  });
-
-  if (error) {
-    console.error("Supabase form_submissions insert failed:", error);
-    throw new Error(error.message || "문의 저장에 실패했습니다.");
-  }
-};
+import { submitInquiry } from "../lib/inquiryApi";
 
 export const FooterTabContainer = () => {
   return (
